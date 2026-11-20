@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 520" role="img" aria-labelledby="t">
+  <title id="t">Clay certificate of electronic signature with a verified seal</title>
+  <defs>
+    <linearGradient id="kSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff6e6"/><stop offset="1" stop-color="#fbe6ff"/>
+    </linearGradient>
+    <radialGradient id="kPaper" cx="30%" cy="15%" r="100%">
+      <stop offset="0" stop-color="#ffffff"/><stop offset=".7" stop-color="#fbf5e8"/><stop offset="1" stop-color="#e6dcc4"/>
+    </radialGradient>
+    <radialGradient id="kGreen" cx="32%" cy="25%" r="85%">
+      <stop offset="0" stop-color="#86efac"/><stop offset=".55" stop-color="#22c55e"/><stop offset="1" stop-color="#15803d"/>
+    </radialGradient>
+    <radialGradient id="kPink" cx="32%" cy="25%" r="85%">
+      <stop offset="0" stop-color="#ff9cc0"/><stop offset=".55" stop-color="#ff4d8b"/><stop offset="1" stop-color="#d92b68"/>
+    </radialGradient>
+    <radialGradient id="kOchre" cx="30%" cy="10%" r="100%">
+      <stop offset="0" stop-color="#ffe39a"/><stop offset=".55" stop-color="#e8b94a"/><stop offset="1" stop-color="#c9952a"/>
+    </radialGradient>
+    <radialGradient id="kLav" cx="35%" cy="20%" r="90%">
+      <stop offset="0" stop-color="#ddd1fb"/><stop offset=".55" stop-color="#b8a4ed"/><stop offset="1" stop-color="#8f78d4"/>
+    </radialGradient>
+    <radialGradient id="kTeal" cx="32%" cy="25%" r="85%">
+      <stop offset="0" stop-color="#4f7d7a"/><stop offset=".55" stop-color="#1a3a3a"/><stop offset="1" stop-color="#0c2222"/>
+    </radialGradient>
+    <filter id="kDrop" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="14" stdDeviation="12" flood-color="#4a2a3a" flood-opacity=".22"/>
+    </filter>
+    <filter id="kBlur"><feGaussianBlur stdDeviation="6"/></filter>
+  </defs>
+  <rect width="560" height="520" fill="url(#kSky)"/>
+
+  <path d="M-20 420 C 80 370, 180 360, 280 380 C 380 400, 460 360, 600 370 L600 540 L-20 540 Z" fill="url(#kOchre)"/>
+
+  <circle cx="86" cy="96" r="20" fill="url(#kLav)" filter="url(#kDrop)"/>
+  <circle cx="474" cy="70" r="12" fill="url(#kPink)" filter="url(#kDrop)"/>
+  <rect x="452" y="300" width="22" height="22" rx="7" transform="rotate(18 463 311)" fill="url(#kTeal)" filter="url(#kDrop)"/>
+
+  <ellipse cx="270" cy="440" rx="150" ry="16" fill="#3b2a1a" opacity=".2" filter="url(#kBlur)"/>
+
+  <!-- certificate -->
+  <g transform="rotate(-4 270 250)" filter="url(#kDrop)">
+    <rect x="140" y="70" width="260" height="350" rx="20" fill="url(#kPaper)"/>
+    <rect x="166" y="98" width="140" height="12" rx="6" fill="#0a0a0a"/>
+    <rect x="166" y="120" width="100" height="7" rx="3.5" fill="#bfb39a"/>
+    <!-- hash rows -->
+    <rect x="166" y="150" width="60" height="7" rx="3.5" fill="#9a9a9a"/>
+    <rect x="236" y="150" width="138" height="7" rx="3.5" fill="#d9cfb9"/>
+    <rect x="166" y="168" width="60" height="7" rx="3.5" fill="#9a9a9a"/>
+    <rect x="236" y="168" width="124" height="7" rx="3.5" fill="#d9cfb9"/>
+    <rect x="166" y="186" width="60" height="7" rx="3.5" fill="#9a9a9a"/>
+    <rect x="236" y="186" width="132" height="7" rx="3.5" fill="#d9cfb9"/>
+    <!-- timeline -->
+    <g fill="#1a3a3a">
+      <circle cx="172" cy="226" r="6"/><circle cx="172" cy="252" r="6"/><circle cx="172" cy="278" r="6"/><circle cx="172" cy="304" r="6"/>
+    </g>
+    <rect x="171" y="226" width="2" height="78" fill="#1a3a3a"/>
+    <rect x="188" y="222" width="120" height="7" rx="3.5" fill="#d9cfb9"/>
+    <rect x="188" y="248" width="96" height="7" rx="3.5" fill="#d9cfb9"/>
+    <rect x="188" y="274" width="132" height="7" rx="3.5" fill="#d9cfb9"/>
+    <rect x="188" y="300" width="108" height="7" rx="3.5" fill="#d9cfb9"/>
+    <path d="M170 372 C 188 344, 198 382, 214 358 C 224 344, 232 374, 246 356 C 254 348, 262 364, 282 352" fill="none" stroke="#ff4d8b" stroke-width="5" stroke-linecap="round"/>
+    <rect x="166" y="386" width="130" height="3" rx="1.5" fill="#bfb39a"/>
+  </g>
+
+  <!-- seal with ribbons -->
+  <g filter="url(#kDrop)">
+    <path d="M384 368 L366 446 L392 432 L408 456 L420 376 Z" fill="url(#kPink)"/>
+    <path d="M420 376 L436 452 L448 428 L474 438 L452 362 Z" fill="#d92b68"/>
+    <circle cx="418" cy="340" r="54" fill="url(#kGreen)"/>
+    <circle cx="418" cy="340" r="40" fill="none" stroke="#dcfce7" stroke-width="3" stroke-dasharray="4 6" opacity=".8"/>
+    <path d="M396 342 L412 358 L442 324" fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <ellipse cx="398" cy="314" rx="16" ry="8" fill="#fff" opacity=".35"/>
+  </g>
+</svg>

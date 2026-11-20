@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 520" role="img" aria-labelledby="t">
+  <title id="t">Clay shield character guarding a padlocked envelope</title>
+  <defs>
+    <linearGradient id="sSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f3efff"/><stop offset="1" stop-color="#ffeedd"/>
+    </linearGradient>
+    <radialGradient id="sTeal" cx="32%" cy="20%" r="90%">
+      <stop offset="0" stop-color="#5b8a86"/><stop offset=".5" stop-color="#1a3a3a"/><stop offset="1" stop-color="#0a1f1f"/>
+    </radialGradient>
+    <radialGradient id="sMint" cx="35%" cy="20%" r="90%">
+      <stop offset="0" stop-color="#d8f3ea"/><stop offset=".55" stop-color="#a4d4c5"/><stop offset="1" stop-color="#6fa894"/>
+    </radialGradient>
+    <radialGradient id="sPeach" cx="30%" cy="10%" r="100%">
+      <stop offset="0" stop-color="#ffd2b5"/><stop offset=".55" stop-color="#ffb084"/><stop offset="1" stop-color="#ea8a5c"/>
+    </radialGradient>
+    <radialGradient id="sOchre" cx="32%" cy="25%" r="85%">
+      <stop offset="0" stop-color="#ffe39a"/><stop offset=".55" stop-color="#e8b94a"/><stop offset="1" stop-color="#b98a22"/>
+    </radialGradient>
+    <radialGradient id="sLav" cx="35%" cy="20%" r="90%">
+      <stop offset="0" stop-color="#ddd1fb"/><stop offset=".55" stop-color="#b8a4ed"/><stop offset="1" stop-color="#8f78d4"/>
+    </radialGradient>
+    <radialGradient id="sPink" cx="32%" cy="25%" r="85%">
+      <stop offset="0" stop-color="#ff9cc0"/><stop offset=".55" stop-color="#ff4d8b"/><stop offset="1" stop-color="#d92b68"/>
+    </radialGradient>
+    <filter id="sDrop" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#3b2a4a" flood-opacity=".24"/>
+    </filter>
+    <filter id="sBlur"><feGaussianBlur stdDeviation="6"/></filter>
+    <filter id="sBlur3"><feGaussianBlur stdDeviation="3"/></filter>
+  </defs>
+  <rect width="560" height="520" fill="url(#sSky)"/>
+
+  <!-- hills -->
+  <path d="M-20 360 C 80 300, 160 230, 250 240 C 330 250, 360 320, 430 300 C 500 280, 540 240, 600 250 L600 540 L-20 540 Z" fill="url(#sLav)"/>
+  <path d="M-20 440 C 90 400, 200 392, 300 410 C 400 428, 480 400, 600 404 L600 540 L-20 540 Z" fill="url(#sPeach)"/>
+
+  <!-- orbiting blobs -->
+  <circle cx="92" cy="110" r="18" fill="url(#sOchre)" filter="url(#sDrop)"/>
+  <circle cx="478" cy="96" r="12" fill="url(#sPink)" filter="url(#sDrop)"/>
+  <circle cx="500" cy="200" r="8" fill="url(#sMint)" filter="url(#sDrop)"/>
+
+  <!-- key -->
+  <g transform="rotate(-24 120 260)" filter="url(#sDrop)">
+    <circle cx="96" cy="250" r="26" fill="url(#sOchre)"/>
+    <circle cx="96" cy="250" r="10" fill="#f3efff"/>
+    <rect x="116" y="242" width="74" height="16" rx="7" fill="url(#sOchre)"/>
+    <rect x="162" y="254" width="10" height="16" rx="3" fill="#c9952a"/>
+    <rect x="178" y="254" width="10" height="12" rx="3" fill="#c9952a"/>
+  </g>
+
+  <ellipse cx="290" cy="452" rx="120" ry="16" fill="#2a1a3a" opacity=".22" filter="url(#sBlur)"/>
+
+  <!-- shield mascot -->
+  <g filter="url(#sDrop)">
+    <path d="M290 110 C 340 140, 380 146, 410 146 C 414 270, 380 380, 290 440 C 200 380, 166 270, 170 146 C 200 146, 240 140, 290 110 Z" fill="url(#sTeal)"/>
+    <path d="M290 136 C 330 160, 360 166, 386 168 C 386 268, 356 356, 290 408 C 224 356, 194 268, 194 168 C 220 166, 250 160, 290 136 Z" fill="none" stroke="#4f7d7a" stroke-width="5" opacity=".7"/>
+    <ellipse cx="236" cy="176" rx="26" ry="12" fill="#fff" opacity=".22" filter="url(#sBlur3)"/>
+  </g>
+  <!-- face -->
+  <ellipse cx="260" cy="250" rx="15" ry="18" fill="#fff"/>
+  <ellipse cx="320" cy="250" rx="15" ry="18" fill="#fff"/>
+  <circle cx="263" cy="254" r="8" fill="#0a0a0a"/>
+  <circle cx="323" cy="254" r="8" fill="#0a0a0a"/>
+  <circle cx="266" cy="249" r="2.8" fill="#fff"/>
+  <circle cx="326" cy="249" r="2.8" fill="#fff"/>
+  <ellipse cx="236" cy="278" rx="10" ry="6" fill="#ff4d8b" opacity=".6"/>
+  <ellipse cx="344" cy="278" rx="10" ry="6" fill="#ff4d8b" opacity=".6"/>
+  <path d="M276 282 Q 290 296 304 282" fill="none" stroke="#fff" stroke-width="4.5" stroke-linecap="round"/>
+
+  <!-- padlock held -->
+  <g filter="url(#sDrop)">
+    <path d="M266 340 v-16 a24 24 0 0 1 48 0 v16" fill="none" stroke="#c9c2b0" stroke-width="10" stroke-linecap="round"/>
+    <rect x="252" y="334" width="76" height="62" rx="16" fill="url(#sOchre)"/>
+    <circle cx="290" cy="360" r="7" fill="#5a4210"/>
+    <rect x="287" y="362" width="6" height="16" rx="3" fill="#5a4210"/>
+  </g>
+  <!-- arms -->
+  <path d="M206 300 C 222 330, 240 350, 256 360" fill="none" stroke="#163232" stroke-width="15" stroke-linecap="round" filter="url(#sDrop)"/>
+  <path d="M374 300 C 358 330, 340 350, 324 360" fill="none" stroke="#163232" stroke-width="15" stroke-linecap="round" filter="url(#sDrop)"/>
+</svg>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 240" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+  <defs>
+    <radialGradient id="mLav" cx="30%" cy="10%" r="100%">
+      <stop offset="0" stop-color="#ddd1fb"/><stop offset=".55" stop-color="#b8a4ed"/><stop offset="1" stop-color="#8f78d4"/>
+    </radialGradient>
+    <radialGradient id="mPeach" cx="60%" cy="0%" r="100%">
+      <stop offset="0" stop-color="#ffd2b5"/><stop offset=".55" stop-color="#ffb084"/><stop offset="1" stop-color="#ea8a5c"/>
+    </radialGradient>
+    <radialGradient id="mOchre" cx="20%" cy="0%" r="100%">
+      <stop offset="0" stop-color="#ffe39a"/><stop offset=".55" stop-color="#e8b94a"/><stop offset="1" stop-color="#c9952a"/>
+    </radialGradient>
+    <radialGradient id="mMint" cx="50%" cy="0%" r="110%">
+      <stop offset="0" stop-color="#cdeee3"/><stop offset=".5" stop-color="#a4d4c5"/><stop offset="1" stop-color="#78b3a1"/>
+    </radialGradient>
+    <radialGradient id="mSnow" cx="35%" cy="25%" r="80%">
+      <stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#efe7d6"/>
+    </radialGradient>
+  </defs>
+  <path d="M0 150 C 120 90, 200 30, 300 34 C 390 38, 430 120, 520 120 C 600 120, 660 20, 760 22 C 860 24, 900 110, 990 110 C 1080 110, 1140 40, 1230 44 C 1330 48, 1390 110, 1440 130 L1440 240 L0 240 Z" fill="url(#mLav)"/>
+  <path d="M268 52 C 284 30, 322 28, 340 50 C 326 48, 320 62, 304 56 C 292 66, 282 54, 268 52 Z" fill="url(#mSnow)"/>
+  <path d="M728 40 C 744 18, 784 16, 800 40 C 786 38, 780 52, 764 46 C 752 56, 742 44, 728 40 Z" fill="url(#mSnow)"/>
+  <path d="M1198 62 C 1214 40, 1252 38, 1268 60 C 1254 58, 1248 72, 1232 66 C 1220 76, 1210 64, 1198 62 Z" fill="url(#mSnow)"/>
+  <path d="M0 190 C 90 150, 180 120, 280 140 C 380 160, 440 110, 560 112 C 680 114, 720 170, 840 160 C 960 150, 1020 100, 1140 108 C 1260 116, 1340 160, 1440 170 L1440 240 L0 240 Z" fill="url(#mPeach)"/>
+  <path d="M0 214 C 160 188, 300 200, 420 196 C 520 192, 600 170, 720 176 C 840 182, 900 210, 1040 206 C 1180 202, 1300 182, 1440 196 L1440 240 L0 240 Z" fill="url(#mOchre)"/>
+  <path d="M0 232 C 200 216, 420 226, 640 222 C 860 218, 1100 230, 1440 220 L1440 240 L0 240 Z" fill="url(#mMint)"/>
+</svg>

@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Send &amp; Sign — SharePoint-native e-signatures, built for Australian law</title>
+  <meta name="description" content="Send PDFs and Office documents for signature straight from SharePoint. Clients sign with no Microsoft login, and the signed copy returns to the original folder with a tamper-evident audit certificate.">
+  <meta property="og:title" content="Send &amp; Sign — SharePoint-native e-signatures, built for Australian law">
+  <meta property="og:description" content="Send PDFs and Office documents for signature straight from SharePoint. Clients sign with no Microsoft login, and the signed copy returns to the original folder with a tamper-evident audit certificate.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#fffaf0">
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="top-nav">
+  <div class="container">
+    <a class="brand" href="index.html" aria-label="Send &amp; Sign home">
+      <img src="assets/logo.svg" alt="" width="32" height="32">
+      Send &amp; Sign
+    </a>
+    <nav aria-label="Primary">
+      <ul class="nav-links">
+        <li><a data-page="features" href="features.html">Features</a></li>
+        <li><a data-page="onthego" href="onthego.html">On the go</a></li>
+        <li><a data-page="compliance" href="compliance.html">Compliance</a></li>
+        <li><a data-page="security" href="security.html">Security</a></li>
+        <li><a data-page="pricing" href="pricing.html">Pricing</a></li>
+        <li><a data-page="install" href="pricing.html#install">Install guide</a></li>
+      </ul>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-text" href="contact.html?intent=pilot">Start a pilot</a>
+      <a class="btn btn-primary" href="contact.html">Book a demo</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu"><span></span></button>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobile-menu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="features.html">Features</a></li>
+      <li><a href="onthego.html">On the go</a></li>
+      <li><a href="compliance.html">Compliance</a></li>
+      <li><a href="security.html">Security</a></li>
+      <li><a href="pricing.html">Pricing &amp; deployment</a></li>
+      <li><a href="contact.html?intent=pilot">Start a pilot</a></li>
+    </ul>
+    <a class="btn btn-primary" href="contact.html" style="width:100%">Book a demo</a>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="photo-hero panel-right" style="--focus: 40% center">
+    <img class="photo-hero-img" src="assets/hero/home-1920.jpg" srcset="assets/hero/home-960.jpg 960w, assets/hero/home-1920.jpg 1920w" sizes="100vw" alt="A clay-animated office worker sends a service agreement for signature from the Send &amp; Sign web part in SharePoint." width="1920" height="1072" fetchpriority="high">
+    <div class="container">
+      <div class="hero-panel">
+        <span class="badge-pill"><span class="dot"></span> Live on SharePoint Online &amp; the SharePoint Mobile App</span>
+        <h1 class="display-xl">SharePoint-native e&#8209;signatures. Built for Australian law.</h1>
+        <p class="lead">Send any PDF or Office document straight from a SharePoint library. Clients sign in seconds — no Microsoft guest account — and the signed copy lands back in the original folder.</p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="contact.html">Book a demo</a>
+          <a class="btn btn-secondary" href="#how-it-works">See how it works</a>
+        </div>
+        <ul class="hero-proof">
+          <li>Install in 5–10 minutes</li>
+          <li>Zero PowerShell</li>
+          <li>Up to 20 signers</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST STRIP -->
+  <section class="trust-strip" aria-label="Highlights">
+    <div class="container">
+      <ul>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#1a3a3a"/><path d="M7 12.5l3 3 7-7" stroke="#fff" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>SharePoint native</li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#ff4d8b"/><path d="M7 12.5l3 3 7-7" stroke="#fff" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Zero guest logins</li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#b8a4ed"/><path d="M7 12.5l3 3 7-7" stroke="#0a0a0a" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Tamper-evident audit trail</li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#e8b94a"/><path d="M7 12.5l3 3 7-7" stroke="#0a0a0a" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Built for Australian law</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="section anchor-offset" id="how-it-works">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">How it works</p>
+        <h2 class="display-lg">From SharePoint, to signed, to SharePoint.</h2>
+        <p class="lead">Four steps. Your staff never leave Microsoft 365, and your clients never need to join it.</p>
+      </div>
+      <div class="grid grid-4 steps">
+        <article class="step-card reveal">
+          <span class="step-num">1</span>
+          <h3 class="title-md">Select &amp; convert in SharePoint</h3>
+          <p>Browse any site or library you already have access to. Word, Excel, PowerPoint, RTF and ODT files convert to PDF automatically and get a SHA-256 fingerprint.</p>
+          <div class="ui">
+            <div class="ui-sub">Contracts › 2026 › Clients</div>
+            <div class="file-row"><span class="ico doc">DOCX</span><div><div class="name">Service_Agreement.docx</div><div class="meta">218 KB · modified today</div></div></div>
+          </div>
+        </article>
+        <article class="step-card reveal">
+          <span class="step-num">2</span>
+          <h3 class="title-md">Route &amp; dispatch</h3>
+          <p>Choose single or multi-signature — up to 20 recipients in parallel or in sequence — and send each person their own single-use link from your Microsoft 365 mailbox.</p>
+          <div class="ui">
+            <div class="ui-sub">Sequential · 3 signers</div>
+            <div class="route mt-sm"><span class="node done">1</span><span class="link"></span><span class="node active">2</span><span class="link"></span><span class="node">3</span></div>
+          </div>
+        </article>
+        <article class="step-card reveal">
+          <span class="step-num">3</span>
+          <h3 class="title-md">Zero-sign-in signing</h3>
+          <p>Your client opens a branded portal on any device, enters a 6-digit email code, accepts the consent notice and draws, types or uploads their signature.</p>
+          <div class="ui">
+            <div class="ui-sub">Enter the code we emailed you</div>
+            <div class="otp-boxes"><span class="filled">4</span><span class="filled">8</span><span class="filled">1</span><span class="filled">9</span><span></span><span></span></div>
+          </div>
+        </article>
+        <article class="step-card reveal">
+          <span class="step-num">4</span>
+          <h3 class="title-md">Certificate &amp; same-folder return</h3>
+          <p>The signed PDF gets an A4 audit certificate and is saved next to the untouched original. Everyone receives a completion email with a download link.</p>
+          <div class="ui">
+            <div class="file-row"><span class="ico">PDF</span><div><div class="name">Service_Agreement.pdf</div><div class="meta">Original · untouched</div></div></div>
+            <div class="file-row"><span class="ico signed">PDF</span><div><div class="name">Service_Agreement_Signed.pdf</div><div class="meta">Signed · certificate attached</div></div></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALUE CARDS -->
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="grid grid-3">
+        <article class="feature-card card-pink reveal">
+          <p class="eyebrow" style="color:rgba(255,255,255,.85)">For your clients</p>
+          <h3 class="display-sm">Zero sign-in. Zero friction.</h3>
+          <p>No Microsoft account, no guest invitation, no app to install. A single-use link and a 6-digit code sent to their email are all it takes.</p>
+          <div class="ui">
+            <div class="ui-title">Verify your identity <span class="chip chip-ok">Secure link</span></div>
+            <div class="otp-boxes"><span class="filled">2</span><span class="filled">7</span><span class="filled">0</span><span class="filled">3</span><span class="filled">5</span><span class="filled">6</span></div>
+            <div class="ui-sub">Code sent to j•••@client.com.au</div>
+          </div>
+        </article>
+        <article class="feature-card card-teal reveal">
+          <p class="eyebrow" style="color:var(--on-dark-soft)">For your team</p>
+          <h3 class="display-sm">SharePoint native &amp; mobile ready.</h3>
+          <p>Send, track, remind and revoke from a web part on any SharePoint page — or from the SharePoint Mobile App on iOS and Android.</p>
+          <div class="ui">
+            <div class="ui-title">Signed copy saved <span class="chip chip-ok">Same folder</span></div>
+            <div class="ui-sub">/sites/Sales/Shared Documents/Clients/Acme</div>
+            <div class="file-row"><span class="ico signed">PDF</span><div><div class="name">NDA_Acme_Signed.pdf</div><div class="meta">Just now · Send &amp; Sign</div></div></div>
+          </div>
+        </article>
+        <article class="feature-card card-lavender reveal">
+          <p class="eyebrow" style="color:var(--body-strong)">For every deal</p>
+          <h3 class="display-sm">Up to 20 signers, your order.</h3>
+          <p>Send to everyone at once in parallel, or enforce a strict 1 → 2 → 3 sequence where each signer is invited automatically when the previous one finishes.</p>
+          <div class="ui">
+            <div class="ui-title">Sequential routing <span class="ui-sub">2 of 4 signed</span></div>
+            <div class="route"><span class="node done">1</span><span class="link"></span><span class="node done">2</span><span class="link"></span><span class="node active">3</span><span class="link"></span><span class="node">4</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SHOWCASE -->
+  <section class="section" style="padding-top:0" aria-labelledby="showcase-title">
+    <div class="container">
+      <div class="showcase-head">
+        <div>
+          <p class="eyebrow">Product tour</p>
+          <h2 id="showcase-title" class="display-lg">Everything in one web part.</h2>
+        </div>
+        <div class="tabs" role="tablist" aria-label="Product tour">
+          <button class="tab" role="tab" id="tab-dashboard" aria-controls="panel-dashboard" aria-selected="true">Dashboard</button>
+          <button class="tab" role="tab" id="tab-routing" aria-controls="panel-routing" aria-selected="false" tabindex="-1">Multi-sign routing</button>
+          <button class="tab" role="tab" id="tab-mobile" aria-controls="panel-mobile" aria-selected="false" tabindex="-1">SharePoint Mobile</button>
+          <button class="tab" role="tab" id="tab-cert" aria-controls="panel-cert" aria-selected="false" tabindex="-1">Audit certificate</button>
+        </div>
+      </div>
+
+      <div class="showcase-panel active" role="tabpanel" id="panel-dashboard" aria-labelledby="tab-dashboard">
+        <div class="copy">
+          <h3 class="display-sm">A live dashboard for every envelope.</h3>
+          <p class="mt-md">Click a KPI card to filter. Open any row for a plain-English audit timeline with one-click SHA-256 copy, send a nudge, or revoke an unused link.</p>
+          <ul>
+            <li>Quiet 30-second background refresh</li>
+            <li>Automatic red <em>Needs attention</em> card if a seal or save ever fails</li>
+            <li>Active and Archived views, with admin-only tamper-evident archiving</li>
+          </ul>
+        </div>
+        <div class="mockup-frame card-peach">
+          <div class="product-mockup-card">
+            <div class="mock-toolbar"><div class="left"><img src="assets/logo.svg" alt="" width="22" height="22"> Send &amp; Sign</div><span class="mock-btn">+ New envelope</span></div>
+            <div class="kpi-grid">
+              <div class="kpi"><b>12</b><span>Awaiting signature</span></div>
+              <div class="kpi"><b>48</b><span>Signed</span></div>
+              <div class="kpi"><b>3</b><span>Reminder sent</span></div>
+              <div class="kpi"><b>2</b><span>Declined, revoked or expired</span></div>
+            </div>
+            <table class="table-ui">
+              <thead><tr><th>Document</th><th>Recipients</th><th>Status</th></tr></thead>
+              <tbody>
+                <tr><td>Supply_Agreement.pdf</td><td>Jane Doe +2 more</td><td><span class="chip chip-wait">Awaiting</span></td></tr>
+                <tr><td>Offer_Letter_KTan.docx</td><td>Kim Tan</td><td><span class="chip chip-ok">Signed</span></td></tr>
+                <tr><td>Quote_Q-1043.pdf</td><td>Ops Team</td><td><span class="chip chip-wait">Reminder sent</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="showcase-panel" role="tabpanel" id="panel-routing" aria-labelledby="tab-routing" hidden>
+        <div class="copy">
+          <h3 class="display-sm">Parallel or sequential. You decide.</h3>
+          <p class="mt-md">Every recipient gets their own recipient-tethered link, their own 6-digit email code, and their own entry on the audit certificate.</p>
+          <ul>
+            <li><strong>Parallel:</strong> everyone receives their link at once and signs in any order</li>
+            <li><strong>Sequential:</strong> only the active signer has a live link; the next is invited automatically</li>
+            <li>Up to 20 recipients per envelope</li>
+          </ul>
+        </div>
+        <div class="mockup-frame card-ochre">
+          <div class="product-mockup-card">
+            <div class="mock-toolbar"><div class="left">New envelope · Step 2 of 2</div><span class="chip">Multi signature</span></div>
+            <div class="tabs" style="margin-bottom:14px"><span class="tab">Parallel</span><span class="tab" aria-selected="true">Sequential 1 → 2 → 3</span></div>
+            <div class="grid" style="gap:8px">
+              <div class="file-row"><span class="node" style="width:26px;height:26px;border-radius:50%;background:#1a3a3a;color:#fff;display:grid;place-items:center;font-weight:700;font-size:12px">1</span><div><div class="name">Priya Shah</div><div class="meta">priya@client.com.au · Signed 09:42</div></div><span class="tag chip chip-ok">OTP verified</span></div>
+              <div class="file-row"><span class="node" style="width:26px;height:26px;border-radius:50%;background:#ff4d8b;color:#fff;display:grid;place-items:center;font-weight:700;font-size:12px">2</span><div><div class="name">Tom Nguyen</div><div class="meta">tom@client.com.au · Link active</div></div><span class="tag chip chip-wait">Awaiting</span></div>
+              <div class="file-row"><span class="node" style="width:26px;height:26px;border-radius:50%;background:#f5f0e0;display:grid;place-items:center;font-weight:700;font-size:12px">3</span><div><div class="name">Alex Morgan</div><div class="meta">Internal approver · Queued</div></div><span class="tag chip">Next</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="showcase-panel" role="tabpanel" id="panel-mobile" aria-labelledby="tab-mobile" hidden>
+        <div class="copy">
+          <h3 class="display-sm">Send from your pocket.</h3>
+          <p class="mt-md">The full web part runs inside the SharePoint Mobile App for iOS and Android — no separate app to install. Clients get a touch-friendly portal with automatic dark mode.</p>
+          <ul>
+            <li>Browse libraries and launch the 2-step New Envelope wizard</li>
+            <li>Track status, read audit timelines, remind or revoke on the go</li>
+            <li>Zoomable PDF viewer and high-DPI signature pad for signers</li>
+          </ul>
+          <a class="arrow-link mt-md" href="onthego.html">Read the on-the-go story</a>
+        </div>
+        <div class="mockup-frame card-cream">
+          <div class="phone">
+            <div class="phone-screen">
+              <div class="phone-notch"></div>
+              <div class="title-sm">Sign &amp; confirm</div>
+              <div class="ui-sub" style="margin-bottom:10px">Step 3 of 3 · Supply_Agreement.pdf</div>
+              <div style="background:#fff;border:1px dashed #9a9a9a;border-radius:12px;height:120px;display:grid;place-items:center"><span class="sig-script">Jane Doe</span></div>
+              <div class="chip-row" style="margin:10px 0"><span class="chip">Draw</span><span class="chip" style="background:#0a0a0a;color:#fff">Type</span><span class="chip">Upload</span></div>
+              <label style="display:flex;gap:8px;font-size:11px;align-items:flex-start;margin-bottom:12px"><span style="width:14px;height:14px;border-radius:4px;background:#0a0a0a;flex:none;margin-top:1px"></span>I agree to use electronic records and an electronic signature for this document.</label>
+              <div class="mock-btn" style="text-align:center;padding:12px">Sign and complete document</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="showcase-panel" role="tabpanel" id="panel-cert" aria-labelledby="tab-cert" hidden>
+        <div class="copy">
+          <h3 class="display-sm">Evidence that travels with the document.</h3>
+          <p class="mt-md">Every signed PDF carries an A4 Certificate of Electronic Signature &amp; Audit Trail, and the full event history is exportable as a verifiable JSON evidence pack.</p>
+          <ul>
+            <li>SHA-256 fingerprints of the original and the signed PDF</li>
+            <li>RFC 8785 hash-chained event timeline — any change breaks the chain</li>
+            <li>Signer identity bound to the OTP-verified recipient</li>
+          </ul>
+        </div>
+        <div class="mockup-frame card-pink">
+          <div class="cert">
+            <div class="cert-head">
+              <div><div class="title-sm">Certificate of Electronic Signature</div><div class="ui-sub">&amp; Audit Trail · Envelope 7F3A…C21</div></div>
+              <div class="cert-seal">VERI-<br>FIED</div>
+            </div>
+            <dl>
+              <dt>Document</dt><dd>Supply_Agreement.pdf</dd>
+              <dt>Original SHA-256</dt><dd class="hash">9c1e4b…a7f2d0e8</dd>
+              <dt>Signed SHA-256</dt><dd class="hash">41d0ff…6b93c5a1</dd>
+              <dt>Signer</dt><dd>Jane Doe · email OTP verified</dd>
+            </dl>
+            <ol class="timeline">
+              <li><time>09:31:04 AEST</time>Sent by Sam Lee</li>
+              <li><time>09:40:12 AEST</time>Opened · OTP verified</li>
+              <li><time>09:41:55 AEST</time>Consent recorded</li>
+              <li><time>09:42:08 AEST</time>Signed · intent confirmed</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPARISON -->
+  <section class="section" style="padding-top:0" aria-labelledby="why-title">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Why teams switch</p>
+        <h2 id="why-title" class="display-lg">Built for how Microsoft 365 teams actually work.</h2>
+      </div>
+      <div class="compare">
+        <div class="compare-label"><span>Legacy e-sign tools</span><span>Send &amp; Sign</span></div>
+        <div class="compare-row reveal">
+          <div class="before"><h3>Documents leave SharePoint</h3><p>Contracts are copied into a third-party cloud, then downloaded and re-uploaded by hand.</p></div>
+          <div class="after"><h3>Documents stay in your tenant</h3><p>The signed copy returns automatically to the exact folder it came from, next to the untouched original.</p></div>
+        </div>
+        <div class="compare-row reveal">
+          <div class="before"><h3>Clients fight guest logins</h3><p>Microsoft B2B guest invitations and password resets create drop-off and support tickets.</p></div>
+          <div class="after"><h3>Clients just sign</h3><p>A single-use cryptographic link plus a 6-digit email code. No account, no install.</p></div>
+        </div>
+        <div class="compare-row reveal">
+          <div class="before"><h3>Multi-party sign-offs stall</h3><p>Approvals bounce around email threads and need desktop-only admin tools.</p></div>
+          <div class="after"><h3>Routing that runs itself</h3><p>Parallel or sequential routing for up to 20 signers — from desktop or the SharePoint Mobile App.</p></div>
+        </div>
+        <div class="compare-row reveal">
+          <div class="before"><h3>A stamp with no evidence</h3><p>Basic "stamp" tools leave no trail to rely on if a signature is ever questioned.</p></div>
+          <div class="after"><h3>Tamper-evident by default</h3><p>SHA-256 fingerprints, a hash-chained audit trail, an A4 certificate and an exportable JSON evidence pack.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECURITY TEASER -->
+  <section class="section" style="padding-top:0">
+    <div class="container grid grid-2">
+      <article class="feature-card card-teal reveal">
+        <p class="eyebrow" style="color:var(--on-dark-soft)">Security</p>
+        <h3 class="display-sm">Encrypted, time-limited, then gone.</h3>
+        <p>While a document is out for signature it's held encrypted with AES-256-GCM and automatically deleted after a fixed retention period. Your permanent record lives in your own SharePoint.</p>
+        <a class="arrow-link" href="security.html">How the signing bridge works</a>
+      </article>
+      <article class="feature-card card-peach reveal">
+        <p class="eyebrow" style="color:var(--body-strong)">For IT admins</p>
+        <h3 class="display-sm">Least privilege, $0 in API fees.</h3>
+        <p>Four delegated permissions, a read-only Graph site scope, no server-side code and no PowerShell. Rename the .sppkg to .zip and inspect every file yourself.</p>
+        <a class="arrow-link" href="security.html#permissions">Review every permission</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" style="padding-top:0" aria-labelledby="faq-title">
+    <div class="container split-5-7" style="align-items:start">
+      <div>
+        <p class="eyebrow">FAQ</p>
+        <h2 id="faq-title" class="display-md">Questions we hear from IT, legal and sales.</h2>
+      </div>
+      <div class="faq">
+        <details>
+          <summary>Do my clients need a Microsoft account?</summary>
+          <p>No. External signers open a single-use link, verify a 6-digit code sent to their email, and sign in a standalone portal. They never see a Microsoft login screen and never receive any access to your SharePoint.</p>
+        </details>
+        <details>
+          <summary>Where do signed documents end up?</summary>
+          <p>Back in SharePoint, in the exact folder the original came from, saved as <code>{OriginalName}_Signed.pdf</code>. The original file is never modified.</p>
+        </details>
+        <details>
+          <summary>What kinds of documents can we send?</summary>
+          <p>Simple contracts and everyday agreements — quotes, proposals, NDAs, service agreements, HR agreements and multi-party commercial sign-offs — under the <em>Electronic Transactions Act 1999</em> (Cth) s 10. Send &amp; Sign is not intended for deeds, witnessed instruments, wills or statutory declarations.</p>
+        </details>
+        <details>
+          <summary>Which file types are supported?</summary>
+          <p>PDF plus Word, Excel, PowerPoint, RTF and OpenDocument files, which are converted to PDF automatically. Macro-enabled files such as .docm are blocked.</p>
+        </details>
+        <details>
+          <summary>How long does installation take?</summary>
+          <p>Most SharePoint administrators finish in 5–10 minutes: upload the .sppkg, approve four delegated permissions, add the web part to a page. Tracking lists and the archive folder are created automatically on first launch.</p>
+        </details>
+        <details>
+          <summary>What happens if we uninstall it?</summary>
+          <p>The web part stops running immediately, and every original, signed copy, tracking list and audit archive stays in your SharePoint tenant.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!--CTA-START-->
+  <section class="container" aria-labelledby="cta-title">
+    <div class="cta-band reveal">
+      <div>
+        <h2 id="cta-title" class="display-md">Stop downloading, re-uploading and chasing signatures.</h2>
+        <p>See Send &amp; Sign running inside your own SharePoint — from document pick to signed copy back in the same folder — in a 20-minute demo.</p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="contact.html">Book a demo</a>
+          <a class="btn btn-secondary" href="pricing.html#install">Read the 5-step install guide</a>
+        </div>
+      </div>
+      <img src="assets/cta-mascot.svg" alt="" width="380" height="342" loading="lazy">
+    </div>
+  </section>
+  <!--CTA-END-->
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="index.html"><img src="assets/logo.svg" alt="" width="32" height="32"> Send &amp; Sign</a>
+        <p class="mt-md" style="max-width:320px">SharePoint-native electronic signatures for Australian organisations on Microsoft 365.</p>
+        <p class="fine mt-md" style="max-width:340px"><strong>General information only — not legal advice.</strong> Send &amp; Sign supports simple contracts under the <em>Electronic Transactions Act 1999</em> (Cth) s 10. It is not intended for deeds, witnessed instruments, wills or statutory declarations.</p>
+      </div>
+      <div>
+        <h4>Product</h4>
+        <ul>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="features.html#multi-sign">Multi-signature routing</a></li>
+          <li><a href="onthego.html">On the go (mobile)</a></li>
+          <li><a href="features.html#dashboard">Dashboard &amp; audit trail</a></li>
+          <li><a href="pricing.html#roadmap">Roadmap</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Trust</h4>
+        <ul>
+          <li><a href="compliance.html">Australian compliance</a></li>
+          <li><a href="security.html">Security &amp; architecture</a></li>
+          <li><a href="security.html#permissions">API permissions</a></li>
+          <li><a href="security.html#package">Inside the .sppkg</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>For IT admins</h4>
+        <ul>
+          <li><a href="pricing.html#install">Install in 5 steps</a></li>
+          <li><a href="security.html#checklist">IT verification checklist</a></li>
+          <li><a href="pricing.html#hosting">Hosting options</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="contact.html">Book a demo</a></li>
+          <li><a href="contact.html?intent=pilot">Start a pilot</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-legal">
+      <span>© <span id="year">2026</span> Send &amp; Sign. Microsoft 365, SharePoint and Microsoft Entra are trademarks of the Microsoft group of companies.</span>
+      <span>Made for Australian teams</span>
+    </div>
+  </div>
+  <img class="footer-mountains" src="assets/mountains.svg" alt="" width="1440" height="240" loading="lazy">
+</footer>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
