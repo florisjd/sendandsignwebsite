@@ -185,9 +185,10 @@
         </div>
         <div class="tabs" role="tablist" aria-label="Product tour">
           <button class="tab" role="tab" id="tab-dashboard" aria-controls="panel-dashboard" aria-selected="true">Dashboard</button>
-          <button class="tab" role="tab" id="tab-routing" aria-controls="panel-routing" aria-selected="false" tabindex="-1">Multi-sign routing</button>
-          <button class="tab" role="tab" id="tab-mobile" aria-controls="panel-mobile" aria-selected="false" tabindex="-1">SharePoint Mobile</button>
-          <button class="tab" role="tab" id="tab-cert" aria-controls="panel-cert" aria-selected="false" tabindex="-1">Audit certificate</button>
+          <button class="tab" role="tab" id="tab-routing" aria-controls="panel-routing" aria-selected="false" tabindex="-1">Send &amp; route</button>
+          <button class="tab" role="tab" id="tab-teams" aria-controls="panel-teams" aria-selected="false" tabindex="-1">Microsoft Teams</button>
+          <button class="tab" role="tab" id="tab-mobile" aria-controls="panel-mobile" aria-selected="false" tabindex="-1">Mobile</button>
+          <button class="tab" role="tab" id="tab-cert" aria-controls="panel-cert" aria-selected="false" tabindex="-1">Audit trail</button>
         </div>
       </div>
 
@@ -201,24 +202,8 @@
             <li>Active and Archived views, with admin-only tamper-evident archiving</li>
           </ul>
         </div>
-        <div class="mockup-frame card-peach">
-          <div class="product-mockup-card">
-            <div class="mock-toolbar"><div class="left"><img src="assets/logo.svg" alt="" width="22" height="22"> Send &amp; Sign</div><span class="mock-btn">+ New envelope</span></div>
-            <div class="kpi-grid">
-              <div class="kpi"><b>12</b><span>Awaiting signature</span></div>
-              <div class="kpi"><b>48</b><span>Signed</span></div>
-              <div class="kpi"><b>3</b><span>Reminder sent</span></div>
-              <div class="kpi"><b>2</b><span>Declined, revoked or expired</span></div>
-            </div>
-            <table class="table-ui">
-              <thead><tr><th>Document</th><th>Recipients</th><th>Status</th></tr></thead>
-              <tbody>
-                <tr><td>Supply_Agreement.pdf</td><td>Jane Doe +2 more</td><td><span class="chip chip-wait">Awaiting</span></td></tr>
-                <tr><td>Offer_Letter_KTan.docx</td><td>Kim Tan</td><td><span class="chip chip-ok">Signed</span></td></tr>
-                <tr><td>Quote_Q-1043.pdf</td><td>Ops Team</td><td><span class="chip chip-wait">Reminder sent</span></td></tr>
-              </tbody>
-            </table>
-          </div>
+        <div class="mockup-frame has-shot card-peach">
+          <img class="screenshot-shot" src="assets/sas-hub.png" alt="Send &amp; Sign SharePoint hub dashboard showing KPI cards for awaiting signature, signed, reminder sent, and declined/revoked envelopes with Active and Archived tabs." width="1897" height="862" loading="lazy">
         </div>
       </div>
 
@@ -227,45 +212,49 @@
           <h3 class="display-sm">Parallel or sequential. You decide.</h3>
           <p class="mt-md">Every recipient gets their own recipient-tethered link, their own 6-digit email code, and their own entry on the audit certificate.</p>
           <ul>
-            <li><strong>Parallel:</strong> everyone receives their link at once and signs in any order</li>
-            <li><strong>Sequential:</strong> only the active signer has a live link; the next is invited automatically</li>
-            <li>Up to 20 recipients per envelope</li>
+            <li><strong>Single or multi-signature:</strong> up to 20 recipients in parallel or sequential order</li>
+            <li><strong>Supporting attachments:</strong> upload from your computer or attach directly from SharePoint</li>
+            <li>Sent from your own Microsoft 365 mailbox with your usual email signature</li>
           </ul>
         </div>
-        <div class="mockup-frame card-ochre">
-          <div class="product-mockup-card">
-            <div class="mock-toolbar"><div class="left">New envelope · Step 2 of 2</div><span class="chip">Multi signature</span></div>
-            <div class="tabs" style="margin-bottom:14px"><span class="tab">Parallel</span><span class="tab" aria-selected="true">Sequential 1 → 2 → 3</span></div>
-            <div class="grid" style="gap:8px">
-              <div class="file-row"><span class="node" style="width:26px;height:26px;border-radius:50%;background:#1a3a3a;color:#fff;display:grid;place-items:center;font-weight:700;font-size:12px">1</span><div><div class="name">Priya Shah</div><div class="meta">priya@client.com.au · Signed 09:42</div></div><span class="tag chip chip-ok">OTP verified</span></div>
-              <div class="file-row"><span class="node" style="width:26px;height:26px;border-radius:50%;background:#ff4d8b;color:#fff;display:grid;place-items:center;font-weight:700;font-size:12px">2</span><div><div class="name">Tom Nguyen</div><div class="meta">tom@client.com.au · Link active</div></div><span class="tag chip chip-wait">Awaiting</span></div>
-              <div class="file-row"><span class="node" style="width:26px;height:26px;border-radius:50%;background:#f5f0e0;display:grid;place-items:center;font-weight:700;font-size:12px">3</span><div><div class="name">Alex Morgan</div><div class="meta">Internal approver · Queued</div></div><span class="tag chip">Next</span></div>
-            </div>
-          </div>
+        <div class="mockup-frame has-shot card-ochre">
+          <img class="screenshot-shot" src="assets/sasenv2.png" alt="Step 2 of the Send &amp; Sign New Envelope wizard showing agreement title, single or multiple signature options, recipient details, and SharePoint attachment buttons." width="826" height="822" loading="lazy">
+        </div>
+      </div>
+
+      <div class="showcase-panel" role="tabpanel" id="panel-teams" aria-labelledby="tab-teams" hidden>
+        <div class="copy">
+          <h3 class="display-sm">Pinned right inside Microsoft Teams.</h3>
+          <p class="mt-md">Your team can send envelopes, track live <em>Viewed by signer</em> updates, inspect audit trails and open SharePoint folders without leaving Teams.</p>
+          <ul>
+            <li>Runs natively as a Microsoft Teams personal app on desktop and mobile</li>
+            <li>Shares the exact same SharePoint hub, permissions and tracking lists</li>
+            <li>One-click <em>Remind</em>, <em>Audit trail</em> and <em>Open folder</em> actions</li>
+          </ul>
+        </div>
+        <div class="mockup-frame has-shot card-lavender">
+          <img class="screenshot-shot" src="assets/sasteamspc.png" alt="Send &amp; Sign running as a personal app inside Microsoft Teams desktop with live KPI cards, Viewed by signer, Revoked, and Signed rows." width="1910" height="877" loading="lazy">
         </div>
       </div>
 
       <div class="showcase-panel" role="tabpanel" id="panel-mobile" aria-labelledby="tab-mobile" hidden>
         <div class="copy">
           <h3 class="display-sm">Send from your pocket.</h3>
-          <p class="mt-md">The full web part runs inside the SharePoint Mobile App for iOS and Android — no separate app to install. Clients get a touch-friendly portal with automatic dark mode.</p>
+          <p class="mt-md">The full web part runs inside the SharePoint Mobile App and Microsoft Teams on iOS and Android — no separate app to install. Clients get a touch-friendly portal with automatic dark mode.</p>
           <ul>
             <li>Browse libraries and launch the 2-step New Envelope wizard</li>
             <li>Track status, read audit timelines, remind or revoke on the go</li>
-            <li>Zoomable PDF viewer and high-DPI signature pad for signers</li>
+            <li>6-digit email OTP verification and high-DPI signature pad for signers</li>
           </ul>
           <a class="arrow-link mt-md" href="onthego.html">Read the on-the-go story</a>
         </div>
-        <div class="mockup-frame card-cream">
-          <div class="phone">
-            <div class="phone-screen">
-              <div class="phone-notch"></div>
-              <div class="title-sm">Sign &amp; confirm</div>
-              <div class="ui-sub" style="margin-bottom:10px">Step 3 of 3 · Supply_Agreement.pdf</div>
-              <div style="background:#fff;border:1px dashed #9a9a9a;border-radius:12px;height:120px;display:grid;place-items:center"><span class="sig-script">Jane Doe</span></div>
-              <div class="chip-row" style="margin:10px 0"><span class="chip">Draw</span><span class="chip" style="background:#0a0a0a;color:#fff">Type</span><span class="chip">Upload</span></div>
-              <label style="display:flex;gap:8px;font-size:11px;align-items:flex-start;margin-bottom:12px"><span style="width:14px;height:14px;border-radius:4px;background:#0a0a0a;flex:none;margin-top:1px"></span>I agree to use electronic records and an electronic signature for this document.</label>
-              <div class="mock-btn" style="text-align:center;padding:12px">Sign and complete document</div>
+        <div class="mockup-frame has-shot card-cream">
+          <div class="phone-pair">
+            <div class="phone-shot compact">
+              <img src="assets/sassphub.png" alt="Send &amp; Sign dashboard inside the SharePoint Mobile App." width="1075" height="2393" loading="lazy">
+            </div>
+            <div class="phone-shot compact">
+              <img src="assets/mobile_screen_otp.png" alt="Client mobile signing portal showing 6-digit email OTP verification in dark mode." width="1075" height="2393" loading="lazy">
             </div>
           </div>
         </div>
@@ -274,32 +263,15 @@
       <div class="showcase-panel" role="tabpanel" id="panel-cert" aria-labelledby="tab-cert" hidden>
         <div class="copy">
           <h3 class="display-sm">Evidence that travels with the document.</h3>
-          <p class="mt-md">Every signed PDF carries an A4 Certificate of Electronic Signature &amp; Audit Trail, and the full event history is exportable as a verifiable JSON evidence pack.</p>
+          <p class="mt-md">Every signed PDF carries an A4 Certificate of Electronic Signature &amp; Audit Trail, and you can inspect the full SHA-256 provenance right inside SharePoint.</p>
           <ul>
-            <li>SHA-256 fingerprints of the original and the signed PDF</li>
-            <li>RFC 8785 hash-chained event timeline — any change breaks the chain</li>
-            <li>Signer identity bound to the OTP-verified recipient</li>
+            <li>One-click copy for both Original SHA-256 and Signed SHA-256 fingerprints</li>
+            <li>Timestamped activity timeline from dispatch to open to completion</li>
+            <li>Exportable RFC 8785 hash-chained JSON evidence pack</li>
           </ul>
         </div>
-        <div class="mockup-frame card-pink">
-          <div class="cert">
-            <div class="cert-head">
-              <div><div class="title-sm">Certificate of Electronic Signature</div><div class="ui-sub">&amp; Audit Trail · Envelope 7F3A…C21</div></div>
-              <div class="cert-seal">VERI-<br>FIED</div>
-            </div>
-            <dl>
-              <dt>Document</dt><dd>Supply_Agreement.pdf</dd>
-              <dt>Original SHA-256</dt><dd class="hash">9c1e4b…a7f2d0e8</dd>
-              <dt>Signed SHA-256</dt><dd class="hash">41d0ff…6b93c5a1</dd>
-              <dt>Signer</dt><dd>Jane Doe · email OTP verified</dd>
-            </dl>
-            <ol class="timeline">
-              <li><time>09:31:04 AEST</time>Sent by Sam Lee</li>
-              <li><time>09:40:12 AEST</time>Opened · OTP verified</li>
-              <li><time>09:41:55 AEST</time>Consent recorded</li>
-              <li><time>09:42:08 AEST</time>Signed · intent confirmed</li>
-            </ol>
-          </div>
+        <div class="mockup-frame has-shot card-pink">
+          <img class="screenshot-shot" src="assets/sastrail1.png" alt="Send &amp; Sign audit trail drawer in SharePoint showing origin folder, signed copy, Original and Signed SHA-256 hashes with Copy buttons, and timestamped Activity timeline." width="1911" height="871" loading="lazy">
         </div>
       </div>
     </div>

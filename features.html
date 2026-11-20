@@ -85,15 +85,18 @@
           <li><span><strong>Sent from your own mailbox.</strong> Invitations come from the sender's Microsoft 365 account with their native email signature, so clients recognise and trust them.</span></li>
         </ul>
       </div>
-      <div class="mockup-frame card-cream reveal">
-        <div class="product-mockup-card">
-          <div class="mock-toolbar"><div class="left">New envelope · Step 1 of 2</div><span class="chip">Choose document</span></div>
-          <div class="ui-sub" style="margin-bottom:8px">Sales › Shared Documents › Clients › <strong style="color:var(--ink)">Acme Pty Ltd</strong></div>
-          <div class="file-row"><span class="ico" style="background:#e8b94a;color:#0a0a0a">DIR</span><div><div class="name">Archive</div><div class="meta">Folder</div></div></div>
-          <div class="file-row" style="border-color:#0a0a0a"><span class="ico doc">DOCX</span><div><div class="name">Master_Services_Agreement.docx</div><div class="meta">412 KB · 18 Nov 2026</div></div><span class="tag chip chip-ok">Selected</span></div>
-          <div class="file-row"><span class="ico">PDF</span><div><div class="name">Quote_Q-1043.pdf</div><div class="meta">96 KB · 12 Nov 2026</div></div></div>
-          <div class="file-row"><span class="ico" style="background:#1f7a3d">XLSX</span><div><div class="name">Pricing_Schedule.xlsx</div><div class="meta">38 KB · 10 Nov 2026</div></div></div>
-          <div style="display:flex;justify-content:flex-end;margin-top:14px"><span class="mock-btn">Next</span></div>
+      <div class="mockup-frame has-shot card-cream reveal">
+        <div class="shot-tabs">
+          <div class="tabs" role="tablist" aria-label="New envelope wizard steps">
+            <button class="tab" role="tab" id="tab-wiz-1" aria-controls="panel-wiz-1" aria-selected="true">1 · Choose document</button>
+            <button class="tab" role="tab" id="tab-wiz-2" aria-controls="panel-wiz-2" aria-selected="false" tabindex="-1">2 · Recipients &amp; send</button>
+          </div>
+        </div>
+        <div class="shot-panel active" role="tabpanel" id="panel-wiz-1" aria-labelledby="tab-wiz-1">
+          <img class="screenshot-shot" src="assets/sasenv1.png" alt="Step 1 of the New Envelope wizard showing document source options, SharePoint site and document library selectors, and folder search." width="822" height="760" loading="lazy">
+        </div>
+        <div class="shot-panel" role="tabpanel" id="panel-wiz-2" aria-labelledby="tab-wiz-2" hidden>
+          <img class="screenshot-shot" src="assets/sasenv2.png" alt="Step 2 of the New Envelope wizard showing agreement title, single or multiple signatures, recipient fields, optional message, and supporting attachment buttons." width="826" height="822" loading="lazy">
         </div>
       </div>
     </div>
@@ -193,20 +196,8 @@
             </ul>
             <a class="btn btn-on-color mt-lg" href="onthego.html">See Send &amp; Sign on the go</a>
           </div>
-          <div class="phone">
-            <div class="phone-screen">
-              <div class="phone-notch"></div>
-              <div class="title-sm">Send &amp; Sign</div>
-              <div class="ui-sub" style="margin-bottom:12px">Sales hub</div>
-              <div class="kpi-grid" style="grid-template-columns:1fr 1fr">
-                <div class="kpi"><b>12</b><span>Awaiting</span></div>
-                <div class="kpi"><b>48</b><span>Signed</span></div>
-              </div>
-              <div class="file-row"><div><div class="name">Supply_Agreement.pdf</div><div class="meta">Jane Doe +2 more</div></div><span class="tag chip chip-wait">2/3</span></div>
-              <div class="file-row"><div><div class="name">NDA_Acme.pdf</div><div class="meta">Tom Nguyen</div></div><span class="tag chip chip-ok">Signed</span></div>
-              <div class="file-row"><div><div class="name">Quote_Q-1043.pdf</div><div class="meta">Ops Team</div></div><span class="tag chip">Remind</span></div>
-              <div class="mock-btn" style="text-align:center;padding:12px;margin-top:14px">+ New envelope</div>
-            </div>
+          <div class="phone-shot">
+            <img src="assets/sassphub.png" alt="Send &amp; Sign dashboard running in the SharePoint Mobile App with KPI cards and active envelopes." width="1075" height="2393" loading="lazy">
           </div>
         </div>
       </div>
@@ -228,18 +219,22 @@
           <li>Revoke any unused link with a clear confirmation step</li>
         </ul>
       </div>
-      <div class="mockup-frame card-peach reveal">
-        <div class="product-mockup-card">
-          <div class="mock-toolbar"><div class="left">Audit trail · Supply_Agreement.pdf</div><span class="chip chip-ok">Chain intact</span></div>
-          <ol class="timeline" style="border-top:0;margin-top:0;padding-top:0">
-            <li><time>20 Nov 09:31</time>Sent to 3 recipients (sequential)</li>
-            <li><time>20 Nov 09:40</time>Priya Shah opened · OTP verified</li>
-            <li><time>20 Nov 09:42</time>Priya Shah signed</li>
-            <li><time>20 Nov 09:42</time>Tom Nguyen invited automatically</li>
-            <li><time>21 Nov 08:15</time>Reminder sent · fresh link issued</li>
-          </ol>
-          <div class="mt-md ui-sub">Original SHA-256</div>
-          <div class="hash">9c1e4b07d2…5e31a7f2d0e8 <span class="chip" style="margin-left:6px">Copy</span></div>
+      <div class="mockup-frame has-shot card-peach reveal">
+        <div class="shot-tabs">
+          <div class="tabs" role="tablist" aria-label="Dashboard and audit views">
+            <button class="tab" role="tab" id="tab-dash-trail" aria-controls="panel-dash-trail" aria-selected="true">Audit trail</button>
+            <button class="tab" role="tab" id="tab-dash-sp" aria-controls="panel-dash-sp" aria-selected="false" tabindex="-1">SharePoint</button>
+            <button class="tab" role="tab" id="tab-dash-teams" aria-controls="panel-dash-teams" aria-selected="false" tabindex="-1">Teams</button>
+          </div>
+        </div>
+        <div class="shot-panel active" role="tabpanel" id="panel-dash-trail" aria-labelledby="tab-dash-trail">
+          <img class="screenshot-shot" src="assets/sastrail1.png" alt="Send &amp; Sign audit trail panel in SharePoint showing origin folder, signed copy, Original and Signed SHA-256 hashes, and timestamped activity events." width="1911" height="871" loading="lazy">
+        </div>
+        <div class="shot-panel" role="tabpanel" id="panel-dash-sp" aria-labelledby="tab-dash-sp" hidden>
+          <img class="screenshot-shot" src="assets/sas-hub.png" alt="Send &amp; Sign hub dashboard inside SharePoint Online showing live KPI tiles and active agreements." width="1897" height="862" loading="lazy">
+        </div>
+        <div class="shot-panel" role="tabpanel" id="panel-dash-teams" aria-labelledby="tab-dash-teams" hidden>
+          <img class="screenshot-shot" src="assets/sasteamspc.png" alt="Send &amp; Sign personal app inside Microsoft Teams desktop showing live status badges and one-click actions." width="1910" height="877" loading="lazy">
         </div>
       </div>
     </div>

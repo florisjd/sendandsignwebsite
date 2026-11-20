@@ -860,3 +860,76 @@ textarea.text-input { min-height: 120px; resize: vertical; }
   .chapter-time::before { content: ""; position: absolute; left: -27px; top: 50%; width: 12px; height: 12px; margin-top: -6px; border-radius: 50%; background: var(--ink); }
   .chapter-body { grid-template-columns: 1fr; padding: var(--s-lg); }
 }
+
+/* =========================================================
+   Real product screenshots (desktop & mobile device frames)
+   ========================================================= */
+.mockup-frame.has-shot {
+  padding: var(--s-lg);
+}
+.screenshot-shot {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--r-md);
+  border: 1px solid rgba(10, 10, 10, 0.12);
+  background: #fff;
+  box-shadow: 0 22px 44px -22px rgba(10, 10, 10, 0.45);
+}
+.phone-shot {
+  width: 100%;
+  max-width: 268px;
+  margin: 0 auto;
+  background: var(--primary);
+  border-radius: 34px;
+  padding: 10px;
+  box-shadow: 0 24px 44px -18px rgba(10, 10, 10, 0.5);
+}
+.phone-shot.compact {
+  max-width: 228px;
+  border-radius: 30px;
+  padding: 8px;
+}
+.phone-shot img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 25px;
+}
+.phone-shot.compact img {
+  border-radius: 22px;
+}
+.phone-pair {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 224px));
+  justify-content: center;
+  gap: var(--s-md);
+  align-items: start;
+}
+.shot-tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: var(--s-md);
+}
+.shot-panel {
+  display: none;
+}
+.shot-panel.active {
+  display: block;
+}
+.shot-caption {
+  margin: 12px 0 0;
+  font-size: 13px;
+  font-weight: 500;
+  text-align: center;
+  color: var(--body-strong);
+}
+.card-teal .shot-caption,
+.card-pink .shot-caption {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+@media (max-width: 767px) {
+  .mockup-frame.has-shot { padding: var(--s-sm); }
+  .phone-pair { grid-template-columns: minmax(0, 240px); }
+}
