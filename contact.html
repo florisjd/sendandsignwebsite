@@ -78,7 +78,22 @@
           <div class="field"><label for="f-company">Company</label><input class="text-input" id="f-company" name="company" autocomplete="organization" required></div>
           <div class="form-row">
             <div class="field">
-              <label for="f-size">Microsoft 365 tenant size</label>
+              <label for="f-country">Country</label>
+              <select class="text-input" id="f-country" name="country" autocomplete="country-name" required>
+                <option value="Australia" selected>Australia</option>
+                <option value="New Zealand">New Zealand</option>
+                <option value="United States">United States</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="f-state">State or territory</label>
+              <input class="text-input" id="f-state" name="state" placeholder="e.g. WA, NSW, VIC" autocomplete="address-level1" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label for="f-size">Microsoft 365 user count</label>
               <select class="text-input" id="f-size" name="tenant_size" required>
                 <option value="">Select…</option>
                 <option>1–50 users</option>
@@ -89,24 +104,36 @@
               </select>
             </div>
             <div class="field">
-              <label for="f-state">State or territory</label>
-              <select class="text-input" id="f-state" name="state" required>
+              <label for="f-volume">Documents per month</label>
+              <select class="text-input" id="f-volume" name="monthly_volume" required>
                 <option value="">Select…</option>
-                <option>ACT</option><option>NSW</option><option>NT</option><option>QLD</option>
-                <option>SA</option><option>TAS</option><option>VIC</option><option>WA</option>
-                <option>Outside Australia</option>
+                <option>Under 25</option>
+                <option>25–100</option>
+                <option>100–500</option>
+                <option>500+</option>
               </select>
             </div>
           </div>
-          <div class="field">
-            <label for="f-intent">I'm interested in</label>
-            <select class="text-input" id="f-intent" name="intent">
-              <option value="demo">A demo</option>
-              <option value="pilot">Starting a pilot</option>
-              <option value="dedicated">Dedicated / government hosting</option>
-              <option value="enterprise">The Enterprise roadmap</option>
-              <option value="v2">Early access to v2.0 proposals</option>
-            </select>
+          <div class="form-row">
+            <div class="field">
+              <label for="f-claude">Interested in Claude Studio?</label>
+              <select class="text-input" id="f-claude" name="claude_studio" required>
+                <option value="">Select…</option>
+                <option value="yes">Yes — interactive proposals</option>
+                <option value="no">No — PDF signing only</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="f-intent">I'm interested in</label>
+              <select class="text-input" id="f-intent" name="intent">
+                <option value="demo">A demo</option>
+                <option value="pilot">Starting a 14-day pilot</option>
+                <option value="claude">Tier 3 (Transform with Claude)</option>
+                <option value="custom">Custom branding / volume</option>
+                <option value="dedicated">Private Azure deployment</option>
+                <option value="enterprise">Enterprise roadmap</option>
+              </select>
+            </div>
           </div>
           <div class="field"><label for="f-msg">Anything we should know? <span class="muted" style="font-weight:400">(optional)</span></label><textarea class="text-input" id="f-msg" name="message" placeholder="e.g. We send ~200 NDAs and quotes a month from our Sales hub."></textarea></div>
           <button class="btn btn-primary" type="submit">Book my demo</button>

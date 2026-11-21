@@ -79,9 +79,9 @@
         <h2 class="display-md">A 2-step New Envelope wizard.</h2>
         <p class="lead mt-md">Pick the document, add recipients, send. That's it.</p>
         <ul class="check-list mt-lg">
-          <li><span><strong>Step 1 — Choose document.</strong> Browse any permitted site, library or folder with breadcrumb navigation, file type, size and modified date.</span></li>
-          <li><span><strong>Step 2 — Recipients &amp; attachments.</strong> Single or multi-signature, plus optional supporting files from SharePoint or your computer, sent as ordinary email attachments alongside the signing link.</span></li>
-          <li><span><strong>Native Office-to-PDF.</strong> Word, Excel, PowerPoint, RTF and OpenDocument convert automatically. Macro-enabled files are blocked.</span></li>
+          <li><span><strong>Step 1 — Choose document.</strong> Browse any permitted site, library or folder with breadcrumb navigation, file type, size and modified date. Supports PDFs and interactive HTML proposals (Office files appear with a "save as PDF first" hint).</span></li>
+          <li><span><strong>Step 2 — Recipients &amp; attachments.</strong> Single or multi-signature (up to 20 signers), plus optional supporting files from SharePoint or your computer with a live size indicator.</span></li>
+          <li><span><strong>One central hub across sites &amp; Teams.</strong> Connect multiple SharePoint sites and Microsoft Teams (personal app or channel tab) to one master tracking list via the Admin menu.</span></li>
           <li><span><strong>Sent from your own mailbox.</strong> Invitations come from the sender's Microsoft 365 account with their native email signature, so clients recognise and trust them.</span></li>
         </ul>
       </div>
@@ -168,12 +168,12 @@
         <h2 class="display-md">Click to place. Sign your way.</h2>
         <p class="lead mt-md">Signers see the real document, then put their signature exactly where it belongs.</p>
         <ul class="check-list mt-lg">
+          <li>Nothing is shown before the 6-digit email code — and signing unlocks only after the document opens on the signer's device</li>
           <li>Zoom from 50% to 300% and click anywhere on the page to place the signature box</li>
           <li>Keyboard-accessible: a <em>Place box</em> button and arrow-key nudging</li>
           <li>Draw on a high-DPI pad, type, or upload an image of a signature</li>
-          <li>Clear 3-step progress: verify identity → position signature → sign &amp; confirm</li>
-          <li>Electronic consent notice with an option to sign on paper instead</li>
-          <li>Automatic light and dark mode, branded with your logo and colours</li>
+          <li>Electronic consent notice with an option to sign on paper instead, plus decline with a reason</li>
+          <li>Automatic light and dark mode, with custom logo and brand colours available on Custom plans</li>
         </ul>
       </div>
     </div>
@@ -248,32 +248,44 @@
         <h2 class="display-md">Small things that save hours.</h2>
       </div>
       <div class="grid grid-3">
-        <div class="content-card reveal"><h3 class="title-md">Same-folder write-back</h3><p><code>{OriginalName}_Signed.pdf</code> lands right next to the original, which is never touched. Optional major-version overwrite mode.</p></div>
-        <div class="content-card reveal"><h3 class="title-md">Zero-PowerShell setup</h3><p>Tracking lists and the archive folder are provisioned automatically the first time a site owner opens the page.</p></div>
+        <div class="content-card reveal"><h3 class="title-md">Same-folder save-back</h3><p><code>{OriginalName}_Signed.pdf</code> (or <code>_Signed.html</code>) lands next to the untouched original, verified against its SHA-256 fingerprint before being marked saved.</p></div>
+        <div class="content-card reveal"><h3 class="title-md">Zero-PowerShell setup</h3><p>Tracking and settings lists and the archive folder are provisioned automatically the first time a site owner opens the page.</p></div>
         <div class="content-card reveal"><h3 class="title-md">Decline with a reason</h3><p>Signers can decline and explain why. The reason is recorded in the audit trail and the link is retired.</p></div>
-        <div class="content-card reveal"><h3 class="title-md">White-label portal</h3><p>Your logo and brand colours, with automatic WCAG-friendly contrast for text and system dark-mode support.</p></div>
-        <div class="content-card reveal"><h3 class="title-md">Completion emails for everyone</h3><p>Every party receives a completion email with a secure download link to the signed PDF.</p></div>
-        <div class="content-card reveal"><h3 class="title-md">Admin-only audit archive</h3><p>SharePoint admins archive completed batches into a SHA-256 sealed JSON ledger stored in one central folder.</p></div>
+        <div class="content-card reveal"><h3 class="title-md">Custom branding (Custom tier)</h3><p>Add your logo and brand colours to the signing portal and emails, with automatic WCAG-friendly contrast and dark mode.</p></div>
+        <div class="content-card reveal"><h3 class="title-md">A copy for every party</h3><p>Every party receives a completion email with the signed PDF attached (up to 10 MB) — no login required to keep a copy.</p></div>
+        <div class="content-card reveal"><h3 class="title-md">Admin-only audit archive</h3><p>SharePoint admins archive completed batches into a SHA-256 fingerprinted JSON audit ledger stored in one central folder.</p></div>
       </div>
     </div>
   </section>
 
-  <!-- Coming next -->
-  <section class="section anchor-offset" style="padding-top:0">
+  <!-- Interactive Proposals & Transform with Claude (LIVE) -->
+  <section class="section anchor-offset" id="proposals" style="padding-top:0">
     <div class="container">
       <div class="feature-card card-ochre reveal" style="padding:48px">
         <div class="split" style="align-items:start">
           <div>
-            <span class="badge-pill badge-roadmap">Coming soon</span>
-            <h2 class="display-md mt-md">Interactive proposals, drafted with Claude.</h2>
-            <p class="mt-md">Our next release adds interactive HTML proposals: clients tick options and choose pricing tiers before signing, with AUD totals and GST recalculated on our server. Drafts can be prepared by Claude through a Microsoft 365-authenticated connector, and a person always reviews and sends from SharePoint.</p>
+            <span class="badge-pill badge-live"><span class="dot"></span> Live now</span>
+            <h2 class="display-md mt-md">Interactive proposals &amp; Transform with Claude.</h2>
+            <p class="mt-md">Turn static PDF quotes into interactive, mobile-friendly HTML proposals where clients tick add-ons, choose pricing tiers and fill in fields before signing. AUD totals and 10% GST are recalculated on our server and locked into the signed copy.</p>
+            <p class="body-sm mt-md"><strong>Optional AI studio:</strong> <em>Transform with Claude</em> is turned on per organisation and includes a text-fidelity check against the source PDF before sending. When used, the chosen document is sent to Anthropic for processing (listed as a sub-processor).</p>
           </div>
           <ul class="check-list" style="margin-top:8px">
-            <li>Checkboxes, radio tiers and text inputs, locked into the signed copy</li>
-            <li>Scripts stripped and rendered in a sandbox — nothing executable runs</li>
-            <li>Self-contained signed HTML with an embedded evidence pack you can verify in SharePoint</li>
+            <li>Checkboxes, radio pricing tiers and text inputs locked into <code>_Signed.html</code></li>
+            <li>All scripts and active content stripped and rendered in a strict sandbox</li>
+            <li>Refine drafts with plain-English instructions, then review and send from SharePoint</li>
+            <li>One-click <strong>Verify HTML integrity</strong> checks the embedded evidence pack right in SharePoint</li>
           </ul>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Clear scope / What Send & Sign is not for -->
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="callout">
+        <span class="ico" aria-hidden="true">!</span>
+        <p><strong>Simple contracts only · PDF &amp; interactive HTML proposals.</strong> Send &amp; Sign is built for everyday agreements under the <em>Electronic Transactions Act 1999</em> (Cth) s 10. It is not intended for deeds, witnessed instruments, wills, powers of attorney, statutory declarations, affidavits or land-registry documents. Word, Excel and PowerPoint files must be saved as PDF first. <a class="text-link" href="compliance.html#scope">Read full scope &amp; exclusions</a>.</p>
       </div>
     </div>
   </section>
