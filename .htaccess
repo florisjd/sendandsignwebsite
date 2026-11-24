@@ -1,0 +1,43 @@
+RewriteEngine On
+
+# 1. Force HTTPS and non-www
+RewriteCond %{HTTPS} !=on [OR]
+RewriteCond %{HTTP_HOST} ^www\.sendandsign\.online$ [NC]
+RewriteRule ^(.*)$ https://sendandsign.online/$1 [R=301,L]
+
+# 2. Serve WebP automatically if browser accepts it and a .webp copy exists
+RewriteCond %{HTTP_ACCEPT} image/webp
+RewriteCond %{REQUEST_FILENAME} (.+)\.(jpe?g|png)$ [NC]
+RewriteCond %1.webp -f
+RewriteRule ^(.+)\.(jpe?g|png)$ $1.webp [T=image/webp,E=REQUEST_image,L]
+
+# 3. Redirect /index.html to root /
+RewriteCond %{THE_REQUEST} \s/+index\.html[\s?] [NC]
+RewriteRule ^index\.html$ / [R=301,L]
+
+# 4. Redirect explicit .html requests to clean URLs (e.g., /features.html -> /features)
+RewriteCond %{THE_REQUEST} \s/+(.+?)\.html[\s?] [NC]
+RewriteRule ^ /%1 [R=301,L]
+
+# 5. Serve .html files internally for clean URLs
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.+?)/?$ $1.html [L]
+
+# 6. Vary header & MIME type for WebP negotiation
+<IfModule mod_headers.c>
+  Header append Vary Accept env=REQUEST_image
+</IfModule>
+
+AddType image/webp .webp
+
+# 7. Browser caching for static assets
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+</IfModule>
