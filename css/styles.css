@@ -962,6 +962,18 @@ textarea.text-input { min-height: 120px; resize: vertical; }
   color: var(--muted);
   margin: var(--s-md) 0 var(--s-xl);
 }
+.article-hero-media {
+  margin: 0 0 var(--s-xl);
+  border-radius: var(--r-xl);
+  overflow: hidden;
+  background: var(--surface-soft);
+  box-shadow: 0 22px 44px -26px rgba(10, 10, 10, 0.45);
+}
+.article-hero-media img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 .article-body {
   font-size: 17px;
   line-height: 1.72;
