@@ -936,3 +936,86 @@ textarea.text-input { min-height: 120px; resize: vertical; }
   .mockup-frame.has-shot { padding: var(--s-sm); }
   .phone-pair { grid-template-columns: minmax(0, 240px); }
 }
+
+/* =========================================================
+   Blog & long-form articles
+   ========================================================= */
+.article-shell {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 40px var(--s-lg) var(--s-section);
+}
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--muted);
+  margin-bottom: var(--s-lg);
+}
+.breadcrumbs a { color: var(--muted); text-decoration: none; }
+.breadcrumbs a:hover { color: var(--ink); text-decoration: underline; }
+.article-meta {
+  font-size: 14px;
+  color: var(--muted);
+  margin: var(--s-md) 0 var(--s-xl);
+}
+.article-body {
+  font-size: 17px;
+  line-height: 1.72;
+  color: var(--body-strong);
+}
+.article-body h2 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.15;
+  letter-spacing: -0.5px;
+  color: var(--ink);
+  margin: 44px 0 14px;
+}
+.article-body h3 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--ink);
+  margin: 28px 0 10px;
+}
+.article-body p { margin: 0 0 18px; }
+.article-body ul, .article-body ol {
+  margin: 0 0 20px;
+  padding-left: 22px;
+  display: grid;
+  gap: 8px;
+}
+.article-body .callout { margin: 28px 0; }
+.article-body .data-table-wrap { margin: 28px 0; }
+.article-cta {
+  margin-top: 48px;
+  padding: var(--s-xl);
+  border-radius: var(--r-xl);
+  background: var(--surface-card);
+}
+.article-cta h2 { margin-top: 0; }
+.blog-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-md);
+  background: var(--canvas);
+  border: 1px solid var(--hairline);
+  border-radius: var(--r-xl);
+  padding: var(--s-xl);
+  text-decoration: none;
+  color: inherit;
+  transition: border-color .2s ease, transform .2s ease;
+}
+.blog-card:hover { border-color: var(--ink); transform: translateY(-2px); }
+.blog-card p { margin: 0; color: var(--body); }
+.blog-card .arrow-link { margin-top: auto; }
+
+@media (max-width: 767px) {
+  .article-shell { padding: 28px var(--s-md) 64px; }
+  .article-body h2 { font-size: 26px; }
+}
