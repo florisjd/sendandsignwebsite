@@ -13,8 +13,8 @@ import path from 'node:path';
 
 const ROOT = process.cwd();
 const BASE_URL = 'https://sendandsign.online';
-const CSS_VER = '20261124c';
-const JS_VER = '20261121';
+const CSS_VER = '20261126c';
+const JS_VER = '20261126c';
 
 function esc(str = '') {
   return String(str)
@@ -26,7 +26,8 @@ function esc(str = '') {
 
 function replaceBlock(html, startMarker, endMarker, inner) {
   const re = new RegExp(`(${startMarker})[\\s\\S]*?(${endMarker})`, 'g');
-  return html.replace(re, `$1\n${inner}\n  $2`);
+  // Function replacer: CMS text like "$120" must not be read as a $1/$12 backreference.
+  return html.replace(re, (_m, start, end) => `${start}\n${inner}\n  ${end}`);
 }
 
 function parseFrontmatter(raw) {
@@ -660,12 +661,15 @@ function main() {
   const pricingPath = path.join(ROOT, 'pricing.html');
   let pricingHtml = fs.readFileSync(pricingPath, 'utf8');
   const pr = site.pricing;
-  pricingHtml = replaceBlock(pricingHtml, '<!--CMS:TIER1-START-->', '<!--CMS:TIER1-END-->',
-    `          <h2 class="title-lg">${esc(pr.tier1_name)}</h2>\n          <div class="price">${esc(pr.tier1_price)} <span style="font-size:15px;font-weight:500;opacity:.75">${esc(pr.tier1_period)}</span></div>\n          <p class="muted">${esc(pr.tier1_summary)}</p>`);
-  pricingHtml = replaceBlock(pricingHtml, '<!--CMS:TIER2-START-->', '<!--CMS:TIER2-END-->',
-    `          <h2 class="title-lg">${esc(pr.tier2_name)}</h2>\n          <div class="price">${esc(pr.tier2_price)} <span style="font-size:15px;font-weight:500;opacity:.75">${esc(pr.tier2_period)}</span></div>\n          <p class="muted">${esc(pr.tier2_summary)}</p>`);
-  pricingHtml = replaceBlock(pricingHtml, '<!--CMS:TIER3-START-->', '<!--CMS:TIER3-END-->',
-    `          <h2 class="title-lg">${esc(pr.tier3_name)}</h2>\n          <div class="price">${esc(pr.tier3_price)} <span style="font-size:15px;font-weight:500;opacity:.8">${esc(pr.tier3_period)}</span></div>\n          <p>${esc(pr.tier3_summary)}</p>`);
+  // The ids (price-tierN / sub-tierN) and .price-cycle span are required by the
+  // monthly/annual toggle script in pricing.html — keep them in sync with it.
+  const tierBlock = (n, opacity, pClass) =>
+    `          <h2 class="title-lg">${esc(pr[`tier${n}_name`])}</h2>\n` +
+    `          <div class="price" id="price-tier${n}">${esc(pr[`tier${n}_price`])} <span class="price-cycle" style="font-size:15px;font-weight:500;opacity:${opacity}">${esc(pr[`tier${n}_period`])}</span></div>\n` +
+    `          <p${pClass ? ` class="${pClass}"` : ''} id="sub-tier${n}">${esc(pr[`tier${n}_summary`])}</p>`;
+  pricingHtml = replaceBlock(pricingHtml, '<!--CMS:TIER1-START-->', '<!--CMS:TIER1-END-->', tierBlock(1, '.75', 'muted'));
+  pricingHtml = replaceBlock(pricingHtml, '<!--CMS:TIER2-START-->', '<!--CMS:TIER2-END-->', tierBlock(2, '.75', 'muted'));
+  pricingHtml = replaceBlock(pricingHtml, '<!--CMS:TIER3-START-->', '<!--CMS:TIER3-END-->', tierBlock(3, '.8', ''));
   pricingHtml = replaceBlock(pricingHtml, '<!--CMS:CUSTOM-START-->', '<!--CMS:CUSTOM-END-->',
     `          <h2 class="title-lg">${esc(pr.custom_name)}</h2>\n          <div class="price">${esc(pr.custom_price)}</div>\n          <p class="muted">${esc(pr.custom_summary)}</p>`);
   fs.writeFileSync(pricingPath, pricingHtml, 'utf8');

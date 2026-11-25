@@ -21,7 +21,7 @@
   <link rel="icon" href="assets/favicon-48.png" type="image/png" sizes="48x48">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" sizes="180x180">
   <link rel="manifest" href="site.webmanifest">
-  <link rel="stylesheet" href="css/styles.css?v=20261125">
+  <link rel="stylesheet" href="css/styles.css?v=20261126c">
 </head>
 
 <body>
@@ -96,7 +96,6 @@
           <div class="price" id="price-tier1">$30 <span class="price-cycle" style="font-size:15px;font-weight:500;opacity:.75">/ month</span></div>
           <p class="muted" id="sub-tier1">Core SharePoint &amp; Teams e-signing for everyday agreements.</p>
   <!--CMS:TIER1-END-->
-          <!--CMS:TIER1-END-->
           <ul class="check-list">
             <li><strong>Unlimited, unmetered envelopes</strong> for your whole team (subject only to standard Microsoft 365 Outlook sending limits)</li>
             <li>Send and sign PDF documents</li>
@@ -117,7 +116,6 @@
           <div class="price" id="price-tier2">$60 <span class="price-cycle" style="font-size:15px;font-weight:500;opacity:.75">/ month</span></div>
           <p class="muted" id="sub-tier2">Multi-party routing for commercial &amp; internal approvals.</p>
   <!--CMS:TIER2-END-->
-          <!--CMS:TIER2-END-->
           <ul class="check-list">
             <li>Everything in Tier 1 (including unlimited envelopes)</li>
             <li>Up to 20 signers per envelope</li>
@@ -133,7 +131,7 @@
           <h2 class="title-lg">Tier 3</h2>
           <div class="price" id="price-tier3">$120 <span class="price-cycle" style="font-size:15px;font-weight:500;opacity:.8">/ month</span></div>
           <p id="sub-tier3">Adds optional Transform with Claude Document Studio.</p>
-          <!--CMS:TIER3-END-->
+  <!--CMS:TIER3-END-->
           <ul class="check-list">
             <li>Everything in Tier 2 (unlimited envelopes)</li>
             <li><strong>Transform with Claude:</strong> up to 100 PDF-to-HTML proposal transforms per month</li>
@@ -151,7 +149,6 @@
           <div class="price">Contact us</div>
           <p class="muted">White-label branding and custom Claude Studio capacity.</p>
   <!--CMS:CUSTOM-END-->
-          <!--CMS:CUSTOM-END-->
           <ul class="check-list">
             <li>Everything in Tier 3 (unlimited envelopes)</li>
             <li>Custom branding: your logo &amp; colours in the signing portal and emails</li>
@@ -163,7 +160,8 @@
       <p class="center muted body-sm mt-lg container">All plans include unlimited, unmetered envelopes — bounded only by
         your standard Microsoft 365 Outlook sending limits. The only plan allowance is 100 <em>Transform with Claude</em>
         PDF-to-HTML transforms per month on Tier 3 (custom allowances available on Custom plans). When optional
-        <em>Transform with Claude</em> is enabled, the chosen document is sent to Anthropic for processing. Self-serve
+        <em>Transform with Claude</em> is enabled, the PDF is not sent to Claude and never leaves SharePoint — Send &amp; Sign
+        makes API calls to Claude, which directs the functions that perform the transformation. Self-serve
         online billing is on the roadmap.</p>
     </section>
 
@@ -367,7 +365,7 @@
     <img class="footer-mountains" src="assets/mountains.svg" alt="" width="1440" height="240" loading="lazy">
   </footer>
 
-  <script src="js/main.js?v=20261121" defer></script>
+  <script src="js/main.js?v=20261126c" defer></script>
   <script>
     (function() {
       var currentInterval = 'month';
@@ -376,6 +374,7 @@
       var p1 = document.getElementById('price-tier1');
       var p2 = document.getElementById('price-tier2');
       var p3 = document.getElementById('price-tier3');
+      var m1 = p1 ? p1.innerHTML : '', m2 = p2 ? p2.innerHTML : '', m3 = p3 ? p3.innerHTML : '';
 
       function updateCycle(interval) {
         currentInterval = interval;
@@ -398,10 +397,18 @@
           annualBtn.style.color = 'var(--body)';
           annualBtn.style.fontWeight = '500';
 
-          if (p1) p1.innerHTML = '$30 <span class="price-cycle" style="font-size:15px;font-weight:500;opacity:.75">/ month</span>';
-          if (p2) p2.innerHTML = '$60 <span class="price-cycle" style="font-size:15px;font-weight:500;opacity:.75">/ month</span>';
-          if (p3) p3.innerHTML = '$120 <span class="price-cycle" style="font-size:15px;font-weight:500;opacity:.8">/ month</span>';
+          // Restore the CMS-rendered monthly markup captured on load
+          if (p1) p1.innerHTML = m1;
+          if (p2) p2.innerHTML = m2;
+          if (p3) p3.innerHTML = m3;
         }
+        // Replay the price-swap animation (styles.css)
+        [p1, p2, p3].forEach(function(el) {
+          if (!el) return;
+          el.classList.remove('price-swap');
+          void el.offsetWidth;
+          el.classList.add('price-swap');
+        });
       }
 
       if (monthlyBtn && annualBtn) {

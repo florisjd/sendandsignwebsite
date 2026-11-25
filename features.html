@@ -10,7 +10,7 @@
   <meta property="og:type" content="website">
   <link rel="canonical" href="https://sendandsign.online/features">
   <meta property="og:url" content="https://sendandsign.online/features">
-  <meta property="og:image" content="https://sendandsign.online/assets/sas-hub.png">
+  <meta property="og:image" content="https://sendandsign.online/assets/screens/hub-desktop.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="theme-color" content="#fffaf0">
   <link rel="icon" href="assets/favicon-16.png" type="image/png" sizes="16x16">
@@ -18,7 +18,7 @@
   <link rel="icon" href="assets/favicon-48.png" type="image/png" sizes="48x48">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" sizes="180x180">
   <link rel="manifest" href="site.webmanifest">
-  <link rel="stylesheet" href="css/styles.css?v=20261125">
+  <link rel="stylesheet" href="css/styles.css?v=20261126c">
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -101,10 +101,10 @@
           </div>
         </div>
         <div class="shot-panel active" role="tabpanel" id="panel-wiz-1" aria-labelledby="tab-wiz-1">
-          <picture><source type="image/webp" srcset="assets/sasenv1.webp"><img class="screenshot-shot" src="assets/sasenv1.png" alt="Step 1 of the New Envelope wizard showing document source options, SharePoint site and document library selectors, and folder search." width="822" height="760" loading="lazy"></picture>
+          <picture><source type="image/webp" srcset="assets/screens/env-step1.webp"><img class="screenshot-shot" src="assets/screens/env-step1.png" alt="Step 1 of the New Envelope wizard in SharePoint: simple-contract notice, e-signature legal framework selector, SharePoint site and document library pickers, folder search and the Transform with Claude button." width="1907" height="872" loading="lazy"></picture>
         </div>
         <div class="shot-panel" role="tabpanel" id="panel-wiz-2" aria-labelledby="tab-wiz-2" hidden>
-          <picture><source type="image/webp" srcset="assets/sasenv2.webp"><img class="screenshot-shot" src="assets/sasenv2.png" alt="Step 2 of the New Envelope wizard showing agreement title, single or multiple signatures, recipient fields, optional message, and supporting attachment buttons." width="826" height="822" loading="lazy"></picture>
+          <picture><source type="image/webp" srcset="assets/screens/env-step2.webp"><img class="screenshot-shot" src="assets/screens/env-step2.png" alt="Step 2 of the New Envelope wizard: selected document, agreement title, single or multiple signatures, recipient name and email, optional message and supporting attachments." width="1917" height="882" loading="lazy"></picture>
         </div>
       </div>
     </div>
@@ -151,24 +151,18 @@
   <!-- Signing experience -->
   <section class="section" style="padding-top:0">
     <div class="container split">
-      <div class="mockup-frame card-sage reveal">
-        <div class="product-mockup-card" style="padding:0;overflow:hidden">
-          <div style="background:#1a2a2a;color:#fff;padding:10px 14px;display:flex;justify-content:space-between;align-items:center;font-size:12px">
-            <span>Supply_Agreement.pdf · page 3 / 4</span><span>− 125% +</span>
+      <div class="mockup-frame has-shot card-sage reveal">
+        <div class="shot-tabs">
+          <div class="tabs" role="tablist" aria-label="Client signing portal steps">
+            <button class="tab" role="tab" id="tab-portal-verify" aria-controls="panel-portal-verify" aria-selected="true">1 · Verify identity</button>
+            <button class="tab" role="tab" id="tab-portal-sign" aria-controls="panel-portal-sign" aria-selected="false" tabindex="-1">2 · Review &amp; sign</button>
           </div>
-          <div style="padding:22px;background:#f0ece2">
-            <div style="background:#fff;border-radius:6px;padding:20px;box-shadow:0 8px 20px -14px rgba(0,0,0,.4)">
-              <div style="height:8px;width:60%;background:#E3E0D6;border-radius:4px;margin-bottom:8px"></div>
-              <div style="height:8px;width:90%;background:#ECE9DF;border-radius:4px;margin-bottom:8px"></div>
-              <div style="height:8px;width:84%;background:#ECE9DF;border-radius:4px;margin-bottom:8px"></div>
-              <div style="height:8px;width:70%;background:#ECE9DF;border-radius:4px;margin-bottom:22px"></div>
-              <div style="border:2px dashed #D9774B;border-radius:8px;padding:10px 14px;display:inline-block;background:#fff5f9">
-                <span class="sig-script">Jane Doe</span>
-                <div class="ui-sub">Jane Doe · 20 Nov 2026</div>
-              </div>
-            </div>
-          </div>
-          <div style="padding:12px 14px;display:flex;gap:8px;flex-wrap:wrap"><span class="chip">Place box</span><span class="chip">← ↑ → ↓ nudge</span><span class="chip chip-ok">Position saved</span></div>
+        </div>
+        <div class="shot-panel active" role="tabpanel" id="panel-portal-verify" aria-labelledby="tab-portal-verify">
+          <picture><source type="image/webp" srcset="assets/screens/portal-verify.webp"><img class="screenshot-shot" src="assets/screens/portal-verify.png" alt="Client signing portal in dark mode: three-step progress bar, Send 6-Digit Code button, six code boxes, document provenance and APP 5 privacy notice, with the document locked until verification." width="1917" height="872" loading="lazy"></picture>
+        </div>
+        <div class="shot-panel" role="tabpanel" id="panel-portal-sign" aria-labelledby="tab-portal-sign" hidden>
+          <picture><source type="image/webp" srcset="assets/screens/portal-sign.webp"><img class="screenshot-shot" src="assets/screens/portal-sign.png" alt="Client signing portal after verification: interactive HTML proposal preview with selectable options, plus the sign panel with full legal name, draw, type or upload signature, and the electronic signature consent notice." width="1920" height="1781" loading="lazy"></picture>
         </div>
       </div>
       <div class="reveal">
@@ -205,7 +199,7 @@
             <a class="btn btn-on-color mt-lg" href="/onthego">See Send &amp; Sign on the go</a>
           </div>
           <div class="phone-shot">
-            <picture><source type="image/webp" srcset="assets/sassphub.webp"><img src="assets/sassphub.png" alt="Send &amp; Sign dashboard running in the SharePoint Mobile App with KPI cards and active envelopes." width="1075" height="2393" loading="lazy"></picture>
+            <picture><source type="image/webp" srcset="assets/screens/mobile-sp-hub.webp"><img src="assets/screens/mobile-sp-hub.png" alt="Send &amp; Sign dashboard in the SharePoint Mobile App with New envelope button, KPI cards and a signed envelope card." width="1075" height="2393" loading="lazy"></picture>
           </div>
         </div>
       </div>
@@ -239,7 +233,7 @@
           <picture><source type="image/webp" srcset="assets/sastrail1.webp"><img class="screenshot-shot" src="assets/sastrail1.png" alt="Send &amp; Sign audit trail panel in SharePoint showing origin folder, signed copy, Original and Signed SHA-256 hashes, and timestamped activity events." width="1911" height="871" loading="lazy"></picture>
         </div>
         <div class="shot-panel" role="tabpanel" id="panel-dash-sp" aria-labelledby="tab-dash-sp" hidden>
-          <picture><source type="image/webp" srcset="assets/sas-hub.webp"><img class="screenshot-shot" src="assets/sas-hub.png" alt="Send &amp; Sign hub dashboard inside SharePoint Online showing live KPI tiles and active agreements." width="1897" height="862" loading="lazy"></picture>
+          <picture><source type="image/webp" srcset="assets/screens/hub-desktop.webp"><img class="screenshot-shot" src="assets/screens/hub-desktop.png" alt="Send &amp; Sign hub dashboard inside SharePoint Online with KPI cards for awaiting, signed, reminder sent and declined envelopes, plus active agreements with Open folder actions." width="1912" height="867" loading="lazy"></picture>
         </div>
         <div class="shot-panel" role="tabpanel" id="panel-dash-teams" aria-labelledby="tab-dash-teams" hidden>
           <picture><source type="image/webp" srcset="assets/sasteamspc.webp"><img class="screenshot-shot" src="assets/sasteamspc.png" alt="Send &amp; Sign personal app inside Microsoft Teams desktop showing live status badges and one-click actions." width="1910" height="877" loading="lazy"></picture>
@@ -275,7 +269,7 @@
             <span class="badge-pill badge-live"><span class="dot"></span> Live now</span>
             <h2 class="display-md mt-md">Interactive proposals &amp; Transform with Claude.</h2>
             <p class="mt-md">Turn static PDF quotes into interactive, mobile-friendly HTML proposals where clients tick add-ons, choose pricing tiers and fill in fields before signing. AUD totals and 10% GST are recalculated on our server and locked into the signed copy.</p>
-            <p class="body-sm mt-md"><strong>Optional AI studio:</strong> <em>Transform with Claude</em> is turned on per organisation and includes a text-fidelity check against the source PDF before sending. When used, the chosen document is sent to Anthropic for processing (listed as a sub-processor).</p>
+            <p class="body-sm mt-md"><strong>Optional AI studio:</strong> <em>Transform with Claude</em> is turned on per organisation and includes a text-fidelity check against the source PDF before sending. Your PDF is never sent to Claude and never leaves SharePoint: Send &amp; Sign makes API calls to Claude, which directs the functions that carry out the transformation.</p>
           </div>
           <ul class="check-list" style="margin-top:8px">
             <li>Checkboxes, radio pricing tiers and text inputs locked into <code>_Signed.html</code></li>
@@ -283,6 +277,20 @@
             <li>Refine drafts with plain-English instructions, then review and send from SharePoint</li>
             <li>One-click <strong>Verify HTML integrity</strong> checks the embedded evidence pack right in SharePoint</li>
           </ul>
+        </div>
+        <div class="mockup-frame has-shot card-cream mt-xl">
+          <div class="shot-tabs">
+            <div class="tabs" role="tablist" aria-label="Transform with Claude steps">
+              <button class="tab" role="tab" id="tab-claude-1" aria-controls="panel-claude-1" aria-selected="true">1 · Prompt Claude</button>
+              <button class="tab" role="tab" id="tab-claude-2" aria-controls="panel-claude-2" aria-selected="false" tabindex="-1">2 · Preview, edit &amp; approve</button>
+            </div>
+          </div>
+          <div class="shot-panel active" role="tabpanel" id="panel-claude-1" aria-labelledby="tab-claude-1">
+            <picture><source type="image/webp" srcset="assets/screens/claude-step1.webp"><img class="screenshot-shot" src="assets/screens/claude-step1.png" alt="Transform with Claude step 1 in SharePoint: selected document, four layout styles such as Modern Interactive Proposal and SOW with collapsible terms, and an editable prompt for Claude." width="1916" height="877" loading="lazy"></picture>
+          </div>
+          <div class="shot-panel" role="tabpanel" id="panel-claude-2" aria-labelledby="tab-claude-2" hidden>
+            <picture><source type="image/webp" srcset="assets/screens/claude-step2.webp"><img class="screenshot-shot" src="assets/screens/claude-step2.png" alt="Transform with Claude step 2: live preview of the interactive HTML document with desktop, tablet and mobile views, a text-match review banner, suggested edits, revision log and an approval checkbox before sending." width="1917" height="870" loading="lazy"></picture>
+          </div>
         </div>
       </div>
     </div>
@@ -397,6 +405,6 @@
   <img class="footer-mountains" src="assets/mountains.svg" alt="" width="1440" height="240" loading="lazy">
 </footer>
 
-<script src="js/main.js?v=20261121" defer></script>
+<script src="js/main.js?v=20261126c" defer></script>
 </body>
 </html>

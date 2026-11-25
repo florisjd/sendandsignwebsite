@@ -18,7 +18,7 @@
   <link rel="icon" href="assets/favicon-48.png" type="image/png" sizes="48x48">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" sizes="180x180">
   <link rel="manifest" href="site.webmanifest">
-  <link rel="stylesheet" href="css/styles.css?v=20261125">
+  <link rel="stylesheet" href="css/styles.css?v=20261126c">
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -78,7 +78,10 @@
         <img src="assets/cta-mascot.svg" alt="" width="320" height="288" class="mt-xl" style="max-width:300px">
       </div>
       <div class="feature-card card-cream">
-        <form id="demo-form" class="form" novalidate>
+        <form id="demo-form" class="form" action="/contact-submit.php" method="post" novalidate>
+          <!-- spam traps: hidden from people, filled by bots -->
+          <div class="hp-field" aria-hidden="true"><label for="f-website">Website</label><input id="f-website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+          <input type="hidden" name="started" id="f-started" value="">
           <div class="form-row">
             <div class="field"><label for="f-name">Name</label><input class="text-input" id="f-name" name="name" autocomplete="name" required></div>
             <div class="field"><label for="f-email">Work email</label><input class="text-input" id="f-email" name="email" type="email" autocomplete="email" required></div>
@@ -144,6 +147,7 @@
             </div>
           </div>
           <div class="field"><label for="f-msg">Anything we should know? <span class="muted" style="font-weight:400">(optional)</span></label><textarea class="text-input" id="f-msg" name="message" placeholder="e.g. We send ~200 NDAs and quotes a month from our Sales hub."></textarea></div>
+          <p id="form-error" class="form-error" role="alert" hidden></p>
           <button class="btn btn-primary" type="submit">Book my demo</button>
           <p class="form-note">We'll only use these details to arrange your demo.</p>
         </form>
@@ -247,6 +251,6 @@
   <img class="footer-mountains" src="assets/mountains.svg" alt="" width="1440" height="240" loading="lazy">
 </footer>
 
-<script src="js/main.js?v=20261121" defer></script>
+<script src="js/main.js?v=20261126c" defer></script>
 </body>
 </html>
