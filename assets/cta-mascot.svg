@@ -2,10 +2,10 @@
   <title id="t">Clay envelope character waving, with a signed document</title>
   <defs>
     <radialGradient id="cCoral" cx="32%" cy="22%" r="85%">
-      <stop offset="0" stop-color="#ff9f8f"/><stop offset=".5" stop-color="#ff6b5a"/><stop offset="1" stop-color="#dc4636"/>
+      <stop offset="0" stop-color="#D9774B"/><stop offset=".5" stop-color="#D9774B"/><stop offset="1" stop-color="#B04A24"/>
     </radialGradient>
     <radialGradient id="cLav" cx="35%" cy="10%" r="100%">
-      <stop offset="0" stop-color="#ddd1fb"/><stop offset=".55" stop-color="#b8a4ed"/><stop offset="1" stop-color="#8f78d4"/>
+      <stop offset="0" stop-color="#5E8C6A"/><stop offset=".55" stop-color="#5E8C6A"/><stop offset="1" stop-color="#3F6B4C"/>
     </radialGradient>
     <radialGradient id="cTeal" cx="32%" cy="25%" r="85%">
       <stop offset="0" stop-color="#4f7d7a"/><stop offset=".55" stop-color="#1a3a3a"/><stop offset="1" stop-color="#0c2222"/>
@@ -17,7 +17,7 @@
       <stop offset="0" stop-color="#ffe39a"/><stop offset=".55" stop-color="#e8b94a"/><stop offset="1" stop-color="#c9952a"/>
     </radialGradient>
     <radialGradient id="cPink" cx="32%" cy="25%" r="85%">
-      <stop offset="0" stop-color="#ff9cc0"/><stop offset=".55" stop-color="#ff4d8b"/><stop offset="1" stop-color="#d92b68"/>
+      <stop offset="0" stop-color="#D9774B"/><stop offset=".55" stop-color="#D9774B"/><stop offset="1" stop-color="#B04A24"/>
     </radialGradient>
     <filter id="cDrop" x="-30%" y="-30%" width="160%" height="170%">
       <feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#6b3b22" flood-opacity=".22"/>
@@ -42,7 +42,7 @@
     <rect x="254" y="130" width="86" height="6" rx="3" fill="#d9cfb9"/>
     <rect x="254" y="144" width="78" height="6" rx="3" fill="#d9cfb9"/>
     <rect x="254" y="158" width="86" height="6" rx="3" fill="#d9cfb9"/>
-    <path d="M256 204 C 270 184, 278 212, 290 194 C 298 184, 304 204, 316 192 C 322 186, 330 198, 340 190" fill="none" stroke="#ff4d8b" stroke-width="4" stroke-linecap="round"/>
+    <path d="M256 204 C 270 184, 278 212, 290 194 C 298 184, 304 204, 316 192 C 322 186, 330 198, 340 190" fill="none" stroke="#D9774B" stroke-width="4" stroke-linecap="round"/>
     <circle cx="334" cy="114" r="16" fill="url(#cTeal)"/>
     <path d="M326 114 L332 120 L343 108" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
   </g>
@@ -52,7 +52,7 @@
   <!-- mascot -->
   <g filter="url(#cDrop)">
     <!-- waving arm -->
-    <path d="M70 230 C 46 214, 40 184, 52 160" fill="none" stroke="#dc4636" stroke-width="16" stroke-linecap="round"/>
+    <path d="M70 230 C 46 214, 40 184, 52 160" fill="none" stroke="#B04A24" stroke-width="16" stroke-linecap="round"/>
     <circle cx="54" cy="156" r="12" fill="url(#cCoral)"/>
     <rect x="66" y="186" width="186" height="128" rx="32" fill="url(#cCoral)"/>
     <path d="M82 200 L159 256 L236 200" fill="none" stroke="#c63a2b" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" opacity=".7"/>
@@ -60,15 +60,15 @@
     <ellipse cx="118" cy="318" rx="20" ry="10" fill="#c63a2b"/>
     <ellipse cx="200" cy="318" rx="20" ry="10" fill="#c63a2b"/>
     <!-- right arm to doc -->
-    <path d="M248 262 C 262 256, 268 244, 266 232" fill="none" stroke="#dc4636" stroke-width="15" stroke-linecap="round"/>
+    <path d="M248 262 C 262 256, 268 244, 266 232" fill="none" stroke="#B04A24" stroke-width="15" stroke-linecap="round"/>
   </g>
   <ellipse cx="132" cy="266" rx="13" ry="15" fill="#fff"/>
   <ellipse cx="188" cy="266" rx="13" ry="15" fill="#fff"/>
-  <circle cx="135" cy="269" r="7" fill="#0a0a0a"/>
-  <circle cx="191" cy="269" r="7" fill="#0a0a0a"/>
+  <circle cx="135" cy="269" r="7" fill="#1A3A3A"/>
+  <circle cx="191" cy="269" r="7" fill="#1A3A3A"/>
   <circle cx="138" cy="265" r="2.4" fill="#fff"/>
   <circle cx="194" cy="265" r="2.4" fill="#fff"/>
-  <ellipse cx="110" cy="288" rx="9" ry="5.5" fill="#ff4d8b" opacity=".55"/>
-  <ellipse cx="212" cy="288" rx="9" ry="5.5" fill="#ff4d8b" opacity=".55"/>
-  <path d="M146 286 Q 160 302 174 286" fill="#7a1d14" stroke="#0a0a0a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <ellipse cx="110" cy="288" rx="9" ry="5.5" fill="#D9774B" opacity=".55"/>
+  <ellipse cx="212" cy="288" rx="9" ry="5.5" fill="#D9774B" opacity=".55"/>
+  <path d="M146 286 Q 160 302 174 286" fill="#7a1d14" stroke="#1A3A3A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>

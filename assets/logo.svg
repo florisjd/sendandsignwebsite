@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-hidden="true">
-  <defs>
-    <radialGradient id="lg" cx="30%" cy="22%" r="90%"><stop offset="0" stop-color="#3b3b3b"/><stop offset=".6" stop-color="#121212"/><stop offset="1" stop-color="#000"/></radialGradient>
-    <radialGradient id="lp" cx="32%" cy="25%" r="85%"><stop offset="0" stop-color="#ff9cc0"/><stop offset=".55" stop-color="#ff4d8b"/><stop offset="1" stop-color="#d92b68"/></radialGradient>
-  </defs>
-  <rect x="2" y="2" width="60" height="60" rx="18" fill="url(#lg)"/>
-  <path d="M14 40 C 20 26, 24 44, 30 32 C 34 24, 37 42, 43 33 C 46 29, 49 35, 52 31" fill="none" stroke="#fffaf0" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
-  <circle cx="48" cy="18" r="6" fill="url(#lp)"/>
+  <path d="M6 30L56 8L42 54L29 40L21 48V34L6 30Z"
+        fill="none" stroke="#1A3A3A" stroke-width="5.76"
+        stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M21 34L56 8L29 40L21 34Z" fill="#D9774B"/>
+  <path d="M29 40L42 54L56 8L29 40Z"
+        fill="none" stroke="#1A3A3A" stroke-width="5.76"
+        stroke-linecap="round" stroke-linejoin="round"/>
 </svg>

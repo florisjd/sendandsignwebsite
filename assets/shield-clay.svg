@@ -8,19 +8,19 @@
       <stop offset="0" stop-color="#5b8a86"/><stop offset=".5" stop-color="#1a3a3a"/><stop offset="1" stop-color="#0a1f1f"/>
     </radialGradient>
     <radialGradient id="sMint" cx="35%" cy="20%" r="90%">
-      <stop offset="0" stop-color="#d8f3ea"/><stop offset=".55" stop-color="#a4d4c5"/><stop offset="1" stop-color="#6fa894"/>
+      <stop offset="0" stop-color="#d8f3ea"/><stop offset=".55" stop-color="#5E8C6A"/><stop offset="1" stop-color="#6fa894"/>
     </radialGradient>
     <radialGradient id="sPeach" cx="30%" cy="10%" r="100%">
-      <stop offset="0" stop-color="#ffd2b5"/><stop offset=".55" stop-color="#ffb084"/><stop offset="1" stop-color="#ea8a5c"/>
+      <stop offset="0" stop-color="#E8B94A"/><stop offset=".55" stop-color="#E8B94A"/><stop offset="1" stop-color="#B04A24"/>
     </radialGradient>
     <radialGradient id="sOchre" cx="32%" cy="25%" r="85%">
       <stop offset="0" stop-color="#ffe39a"/><stop offset=".55" stop-color="#e8b94a"/><stop offset="1" stop-color="#b98a22"/>
     </radialGradient>
     <radialGradient id="sLav" cx="35%" cy="20%" r="90%">
-      <stop offset="0" stop-color="#ddd1fb"/><stop offset=".55" stop-color="#b8a4ed"/><stop offset="1" stop-color="#8f78d4"/>
+      <stop offset="0" stop-color="#5E8C6A"/><stop offset=".55" stop-color="#5E8C6A"/><stop offset="1" stop-color="#3F6B4C"/>
     </radialGradient>
     <radialGradient id="sPink" cx="32%" cy="25%" r="85%">
-      <stop offset="0" stop-color="#ff9cc0"/><stop offset=".55" stop-color="#ff4d8b"/><stop offset="1" stop-color="#d92b68"/>
+      <stop offset="0" stop-color="#D9774B"/><stop offset=".55" stop-color="#D9774B"/><stop offset="1" stop-color="#B04A24"/>
     </radialGradient>
     <filter id="sDrop" x="-30%" y="-30%" width="160%" height="170%">
       <feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#3b2a4a" flood-opacity=".24"/>
@@ -59,12 +59,12 @@
   <!-- face -->
   <ellipse cx="260" cy="250" rx="15" ry="18" fill="#fff"/>
   <ellipse cx="320" cy="250" rx="15" ry="18" fill="#fff"/>
-  <circle cx="263" cy="254" r="8" fill="#0a0a0a"/>
-  <circle cx="323" cy="254" r="8" fill="#0a0a0a"/>
+  <circle cx="263" cy="254" r="8" fill="#1A3A3A"/>
+  <circle cx="323" cy="254" r="8" fill="#1A3A3A"/>
   <circle cx="266" cy="249" r="2.8" fill="#fff"/>
   <circle cx="326" cy="249" r="2.8" fill="#fff"/>
-  <ellipse cx="236" cy="278" rx="10" ry="6" fill="#ff4d8b" opacity=".6"/>
-  <ellipse cx="344" cy="278" rx="10" ry="6" fill="#ff4d8b" opacity=".6"/>
+  <ellipse cx="236" cy="278" rx="10" ry="6" fill="#D9774B" opacity=".6"/>
+  <ellipse cx="344" cy="278" rx="10" ry="6" fill="#D9774B" opacity=".6"/>
   <path d="M276 282 Q 290 296 304 282" fill="none" stroke="#fff" stroke-width="4.5" stroke-linecap="round"/>
 
   <!-- padlock held -->

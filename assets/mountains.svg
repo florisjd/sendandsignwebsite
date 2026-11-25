@@ -1,16 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 240" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
   <defs>
     <radialGradient id="mLav" cx="30%" cy="10%" r="100%">
-      <stop offset="0" stop-color="#ddd1fb"/><stop offset=".55" stop-color="#b8a4ed"/><stop offset="1" stop-color="#8f78d4"/>
+      <stop offset="0" stop-color="#5E8C6A"/><stop offset=".55" stop-color="#5E8C6A"/><stop offset="1" stop-color="#3F6B4C"/>
     </radialGradient>
     <radialGradient id="mPeach" cx="60%" cy="0%" r="100%">
-      <stop offset="0" stop-color="#ffd2b5"/><stop offset=".55" stop-color="#ffb084"/><stop offset="1" stop-color="#ea8a5c"/>
+      <stop offset="0" stop-color="#E8B94A"/><stop offset=".55" stop-color="#E8B94A"/><stop offset="1" stop-color="#B04A24"/>
     </radialGradient>
     <radialGradient id="mOchre" cx="20%" cy="0%" r="100%">
       <stop offset="0" stop-color="#ffe39a"/><stop offset=".55" stop-color="#e8b94a"/><stop offset="1" stop-color="#c9952a"/>
     </radialGradient>
     <radialGradient id="mMint" cx="50%" cy="0%" r="110%">
-      <stop offset="0" stop-color="#cdeee3"/><stop offset=".5" stop-color="#a4d4c5"/><stop offset="1" stop-color="#78b3a1"/>
+      <stop offset="0" stop-color="#cdeee3"/><stop offset=".5" stop-color="#5E8C6A"/><stop offset="1" stop-color="#78b3a1"/>
     </radialGradient>
     <radialGradient id="mSnow" cx="35%" cy="25%" r="80%">
       <stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#efe7d6"/>
