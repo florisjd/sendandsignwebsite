@@ -1031,3 +1031,91 @@ textarea.text-input { min-height: 120px; resize: vertical; }
   .article-shell { padding: 28px var(--s-md) 64px; }
   .article-body h2 { font-size: 26px; }
 }
+
+/* =========================================================
+   Bold highlight card: Unlimited, unmetered envelopes
+   ========================================================= */
+.unmetered-section {
+  margin-bottom: var(--s-xxl);
+}
+.unmetered-band {
+  background: var(--brand-teal);
+  color: var(--on-dark);
+  border-radius: var(--r-xl);
+  padding: 48px 56px;
+  display: grid;
+  grid-template-columns: 7fr 5fr;
+  gap: var(--s-xl);
+  align-items: center;
+  box-shadow: 0 24px 48px -28px rgba(10, 26, 26, 0.55);
+}
+.unmetered-band h2 {
+  color: #fff;
+  margin: var(--s-md) 0 0;
+}
+.unmetered-band p {
+  color: rgba(255, 255, 255, 0.9);
+  margin: var(--s-md) 0 0;
+}
+.unmetered-band .unmetered-fine {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.72);
+  margin-top: var(--s-sm);
+}
+.unmetered-stat {
+  background: var(--canvas);
+  color: var(--ink);
+  border-radius: var(--r-xl);
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-md);
+}
+.unmetered-stat-top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--s-md);
+  border-bottom: 1px solid var(--hairline);
+  padding-bottom: var(--s-md);
+}
+.unmetered-infinity {
+  font-family: var(--font-display);
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 0.9;
+  letter-spacing: -2px;
+  color: var(--brand-pink);
+}
+.unmetered-zero {
+  text-align: right;
+}
+.unmetered-zero strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--ink);
+}
+.unmetered-zero span {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+}
+.unmetered-stat .btn {
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  .unmetered-band {
+    grid-template-columns: 1fr;
+    padding: 36px 28px;
+  }
+}
+@media (max-width: 767px) {
+  .unmetered-band { padding: 28px 20px; }
+  .unmetered-infinity { font-size: 46px; }
+}

@@ -20,7 +20,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css?v=20261124b">
+  <link rel="stylesheet" href="css/styles.css?v=20261124cc">
 </head>
 
 <body>
@@ -83,10 +83,14 @@
       <div class="container grid grid-4">
         <article class="pricing-tier standard reveal">
           <span class="badge-pill badge-live"><span class="dot"></span> 14-day free trial</span>
+          <!--CMS:TIER1-START-->
           <h2 class="title-lg">Tier 1</h2>
           <div class="price">$30 <span style="font-size:15px;font-weight:500;opacity:.75">/ month</span></div>
           <p class="muted">Core SharePoint &amp; Teams e-signing for everyday agreements.</p>
+  <!--CMS:TIER1-END-->
+          <!--CMS:TIER1-END-->
           <ul class="check-list">
+            <li><strong>Unlimited, unmetered envelopes</strong> for your whole team (subject only to standard Microsoft 365 Outlook sending limits)</li>
             <li>Send and sign PDF documents</li>
             <li>6-digit email verification &amp; multi-page certificate</li>
             <li>Same-folder save-back &amp; live dashboard</li>
@@ -99,11 +103,14 @@
 
         <article class="pricing-tier standard reveal">
           <span class="badge-pill badge-live"><span class="dot"></span> 14-day free trial</span>
+          <!--CMS:TIER2-START-->
           <h2 class="title-lg">Tier 2</h2>
           <div class="price">$60 <span style="font-size:15px;font-weight:500;opacity:.75">/ month</span></div>
           <p class="muted">Multi-party routing for commercial &amp; internal approvals.</p>
+  <!--CMS:TIER2-END-->
+          <!--CMS:TIER2-END-->
           <ul class="check-list">
-            <li>Everything in Tier 1</li>
+            <li>Everything in Tier 1 (including unlimited envelopes)</li>
             <li>Up to 20 signers per envelope</li>
             <li>Parallel or strict sequential (1 → 2 → 3) order</li>
           </ul>
@@ -112,12 +119,15 @@
 
         <article class="pricing-tier featured reveal">
           <span class="badge-pill badge-on-dark"><span class="dot"></span> Most complete</span>
+          <!--CMS:TIER3-START-->
           <h2 class="title-lg">Tier 3</h2>
-          <div class="price">$120 <span style="font-size:15px;font-weight:500;opacity:.8">/ month</span></div>
+          <div class="price"><!--CMS:TIER3-START-->20 <span style="font-size:15px;font-weight:500;opacity:.8">/ month</span></div>
           <p>Adds optional Transform with Claude Document Studio.</p>
+  <!--CMS:TIER3-END-->
+          <!--CMS:TIER3-END-->
           <ul class="check-list">
-            <li>Everything in Tier 2</li>
-            <li><strong>Transform with Claude</strong> (up to 100 documents/month)</li>
+            <li>Everything in Tier 2 (unlimited envelopes)</li>
+            <li><strong>Transform with Claude:</strong> up to 100 PDF-to-HTML proposal transforms per month</li>
             <li>Turn PDFs into interactive, priced HTML proposals</li>
             <li>Built-in text-fidelity check before sending</li>
           </ul>
@@ -126,19 +136,25 @@
 
         <article class="pricing-tier standard reveal" style="background:var(--surface-card);border-color:transparent">
           <span class="badge-pill" style="background:var(--canvas)">Tailored</span>
+          <!--CMS:CUSTOM-START-->
           <h2 class="title-lg">Custom</h2>
           <div class="price">Contact us</div>
           <p class="muted">White-label branding and custom Claude Studio capacity.</p>
+  <!--CMS:CUSTOM-END-->
+          <!--CMS:CUSTOM-END-->
           <ul class="check-list">
-            <li>Everything in Tier 3</li>
+            <li>Everything in Tier 3 (unlimited envelopes)</li>
             <li>Custom branding: your logo &amp; colours in the signing portal and emails</li>
             <li>Custom monthly Claude allowance set per agreement</li>
           </ul>
           <a class="btn btn-secondary" href="/contact?intent=custom">Talk to us</a>
         </article>
       </div>
-      <p class="center muted body-sm mt-lg container">When optional <em>Transform with Claude</em> is enabled, the
-        chosen document is sent to Anthropic for processing. Self-serve online billing is on the roadmap.</p>
+      <p class="center muted body-sm mt-lg container">All plans include unlimited, unmetered envelopes — bounded only by
+        your standard Microsoft 365 Outlook sending limits. The only plan allowance is 100 <em>Transform with Claude</em>
+        PDF-to-HTML transforms per month on Tier 3 (custom allowances available on Custom plans). When optional
+        <em>Transform with Claude</em> is enabled, the chosen document is sent to Anthropic for processing. Self-serve
+        online billing is on the roadmap.</p>
     </section>
 
     <section class="section anchor-offset" id="roadmap" style="padding-top:0" aria-labelledby="roadmap-title">
@@ -237,22 +253,49 @@
       </div>
     </section>
 
-    <!--CTA-START-->
-    <section class="container" aria-labelledby="cta-title">
-      <div class="cta-band reveal">
-        <div>
-          <h2 id="cta-title" class="display-md">Stop downloading, re-uploading and chasing signatures.</h2>
-          <p>See Send &amp; Sign running inside your own SharePoint — from document pick to signed copy back in the same
-            folder — in a 20-minute demo.</p>
-          <div class="btn-row">
-            <a class="btn btn-primary" href="/contact">Book a demo</a>
-            <a class="btn btn-secondary" href="/pricing#install">Read the 5-step install guide</a>
+    <!--UNMETERED-START-->
+  <section class="container unmetered-section" aria-labelledby="unmetered-title">
+    <div class="unmetered-band reveal">
+      <div>
+        <span class="badge-pill badge-on-dark"><span class="dot"></span> Included on every plan</span>
+        <h2 id="unmetered-title" class="display-md">Unlimited, unmetered envelopes for every user.</h2>
+        <p>No per-envelope fees, no surprise overage bills, and no per-seat metering. Every team member can send as many agreements as they need — bounded only by your standard Microsoft 365 Outlook sending limits.</p>
+        <p class="unmetered-fine">The only monthly allowance is 100 Transform with Claude PDF-to-HTML proposal transforms on Tier 3 (custom allowances available on Custom plans).</p>
+      </div>
+      <div class="unmetered-stat">
+        <div class="unmetered-stat-top">
+          <span class="unmetered-infinity" aria-hidden="true">&infin;</span>
+          <div class="unmetered-zero">
+            <strong>$0</strong>
+            <span>per envelope</span>
           </div>
         </div>
-        <img src="assets/cta-mascot.svg" alt="" width="380" height="342" loading="lazy">
+        <div class="chip-row">
+          <span class="chip chip-ok">Flat org pricing</span>
+          <span class="chip chip-ok">No seat fees</span>
+          <span class="chip chip-ok">Every tier</span>
+        </div>
+        <a class="btn btn-primary" href="/pricing">See flat-rate pricing</a>
       </div>
-    </section>
-    <!--CTA-END-->
+    </div>
+  </section>
+  <!--UNMETERED-END-->
+
+  <!--CTA-START-->
+  <section class="container" aria-labelledby="cta-title">
+    <div class="cta-band reveal">
+      <div>
+        <h2 id="cta-title" class="display-md">Stop downloading, re-uploading and chasing signatures.</h2>
+        <p>See Send &amp; Sign running inside your own SharePoint — from document pick to signed copy back in the same folder — in a 20-minute demo.</p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="/contact">Book a demo</a>
+          <a class="btn btn-secondary" href="/pricing#install">Read the 5-step install guide</a>
+        </div>
+      </div>
+      <img src="assets/cta-mascot.svg" alt="" width="380" height="342" loading="lazy">
+    </div>
+  </section>
+  <!--CTA-END-->
   </main>
 
   <footer class="footer">

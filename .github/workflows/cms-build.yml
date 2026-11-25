@@ -1,0 +1,55 @@
+name: CMS Build & WebP Optimize
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'content/**'
+      - 'assets/uploads/**'
+      - 'scripts/build-cms.mjs'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Convert new CMS uploads to WebP
+        run: |
+          if [ -d assets/uploads ]; then
+            sudo apt-get update -qq && sudo apt-get install -y -qq webp
+            find assets/uploads -type f \( -iname "*.png" -o -iname "*.jpg" -o -iname "*.jpeg" \) | while read -r img; do
+              out="${img%.*}.webp"
+              if [ ! -f "$out" ]; then
+                cwebp -q 82 -m 6 "$img" -o "$out"
+              fi
+            done
+          fi
+
+      - name: Run CMS static build
+        run: node scripts/build-cms.mjs
+
+      - name: Commit generated HTML, WebP, and sitemap
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if ! git diff --cached --quiet; then
+            git commit -m "Build CMS updates [skip ci]"
+            git push
+          else
+            echo "No generated changes to commit."
+          fi

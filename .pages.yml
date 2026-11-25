@@ -1,0 +1,121 @@
+media:
+  input: assets/uploads
+  output: /assets/uploads
+  extensions: [png, jpg, jpeg, webp, svg]
+
+content:
+  - name: blog
+    label: Blog Posts
+    type: collection
+    path: content/blog
+    filename: "{primary}.md"
+    view:
+      fields: [title, date, category, published]
+      primary: title
+      sort: [date, title]
+      default:
+        sort: date
+        order: desc
+    fields:
+      - name: title
+        label: Article Headline
+        type: string
+        required: true
+      - name: seo_title
+        label: SEO Title (50–60 chars)
+        type: string
+      - name: description
+        label: SEO Meta Description (140–155 chars)
+        type: text
+        required: true
+      - name: excerpt
+        label: Short Card Summary (shown on /blog)
+        type: text
+        required: true
+      - name: date
+        label: Publish Date
+        type: date
+        required: true
+      - name: category
+        label: Category
+        type: string
+        default: "Australian Compliance"
+      - name: read_time
+        label: Reading Time
+        type: string
+        default: "5 min read"
+      - name: cover_image
+        label: Header Image
+        type: image
+      - name: cover_alt
+        label: Header Image Alt Text
+        type: string
+      - name: legal_notice
+        label: Top Callout Notice (optional)
+        type: text
+        default: "General information only — not legal advice. Always consult a qualified lawyer for deeds, high-value transactions, or jurisdiction-specific requirements."
+      - name: published
+        label: Published
+        type: boolean
+        default: true
+      - name: body
+        label: Article Body (Markdown)
+        type: rich-text
+
+  - name: site_copy
+    label: Site Copy & Pricing
+    type: file
+    path: content/site.json
+    fields:
+      - name: home_hero
+        label: Homepage Hero
+        type: object
+        fields:
+          - { name: badge, label: Status Pill, type: string }
+          - { name: headline, label: Headline (H1), type: string }
+          - { name: lead, label: Lead Paragraph, type: text }
+          - { name: primary_cta_label, label: Primary Button Text, type: string }
+          - { name: primary_cta_url, label: Primary Button URL, type: string }
+          - { name: secondary_cta_label, label: Secondary Button Text, type: string }
+          - { name: secondary_cta_url, label: Secondary Button URL, type: string }
+      - name: unmetered_banner
+        label: Unmetered Envelopes Banner (All Pages)
+        type: object
+        fields:
+          - { name: badge, label: Pill Badge, type: string }
+          - { name: headline, label: Headline, type: string }
+          - { name: body, label: Description, type: text }
+          - { name: fine_print, label: Footnote, type: text }
+          - { name: stat_value, label: Big Stat (e.g. $0), type: string }
+          - { name: stat_label, label: Stat Label, type: string }
+          - { name: cta_label, label: Button Text, type: string }
+          - { name: cta_url, label: Button URL, type: string }
+      - name: pricing
+        label: Pricing Tiers (/pricing)
+        type: object
+        fields:
+          - { name: tier1_name, label: Tier 1 Name, type: string }
+          - { name: tier1_price, label: Tier 1 Price, type: string }
+          - { name: tier1_period, label: Tier 1 Period, type: string }
+          - { name: tier1_summary, label: Tier 1 Summary, type: string }
+          - { name: tier2_name, label: Tier 2 Name, type: string }
+          - { name: tier2_price, label: Tier 2 Price, type: string }
+          - { name: tier2_period, label: Tier 2 Period, type: string }
+          - { name: tier2_summary, label: Tier 2 Summary, type: string }
+          - { name: tier3_name, label: Tier 3 Name, type: string }
+          - { name: tier3_price, label: Tier 3 Price, type: string }
+          - { name: tier3_period, label: Tier 3 Period, type: string }
+          - { name: tier3_summary, label: Tier 3 Summary, type: string }
+          - { name: custom_name, label: Custom Tier Name, type: string }
+          - { name: custom_price, label: Custom Tier Price, type: string }
+          - { name: custom_summary, label: Custom Tier Summary, type: string }
+      - name: cta_band
+        label: Bottom CTA Banner (All Pages)
+        type: object
+        fields:
+          - { name: headline, label: Headline, type: string }
+          - { name: body, label: Description, type: text }
+          - { name: primary_label, label: Primary Button Text, type: string }
+          - { name: primary_url, label: Primary Button URL, type: string }
+          - { name: secondary_label, label: Secondary Button Text, type: string }
+          - { name: secondary_url, label: Secondary Button URL, type: string }
