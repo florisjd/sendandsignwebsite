@@ -316,10 +316,43 @@
                 <li>A clear 3-step progress bar, so nobody gets lost</li>
               </ul>
             </div>
-            <div class="phone-shot">
-              <picture><source type="image/webp" srcset="assets/screens/mobile-otp.webp"><img src="assets/screens/mobile-otp.png"
-                alt="Mobile signing portal at sign.sendandsign.online in dark mode showing the 3-step progress bar, 6-digit email verification code boxes, and APP 5 privacy notice."
-                width="1075" height="2393" loading="lazy"></picture>
+            <div>
+              <div class="shot-tabs">
+                <div class="tabs" role="tablist" aria-label="Signing on a phone, step by step">
+                  <button class="tab" role="tab" id="tab-m-verify" aria-controls="panel-m-verify" aria-selected="true">1 · Verify</button>
+                  <button class="tab" role="tab" id="tab-m-place" aria-controls="panel-m-place" aria-selected="false" tabindex="-1">2 · Place</button>
+                  <button class="tab" role="tab" id="tab-m-sign" aria-controls="panel-m-sign" aria-selected="false" tabindex="-1">3 · Sign</button>
+                  <button class="tab" role="tab" id="tab-m-done" aria-controls="panel-m-done" aria-selected="false" tabindex="-1">4 · Done</button>
+                </div>
+              </div>
+              <div class="shot-panel active" role="tabpanel" id="panel-m-verify" aria-labelledby="tab-m-verify">
+                <div class="phone-shot">
+                  <picture><source type="image/webp" srcset="assets/screens/mobile-verify.webp"><img src="assets/screens/mobile-verify.png"
+                    alt="Mobile signing portal in dark mode showing the 3-step progress bar, Send 6-Digit Code button, six code boxes and the APP 5 privacy notice."
+                    width="898" height="2000" loading="lazy"></picture>
+                </div>
+              </div>
+              <div class="shot-panel" role="tabpanel" id="panel-m-place" aria-labelledby="tab-m-place" hidden>
+                <div class="phone-shot">
+                  <picture><source type="image/webp" srcset="assets/screens/mobile-place.webp"><img src="assets/screens/mobile-place.png"
+                    alt="Mobile signing portal after verification, with a page viewer, zoom controls and a Place box button to tap where the signature goes."
+                    width="898" height="2000" loading="lazy"></picture>
+                </div>
+              </div>
+              <div class="shot-panel" role="tabpanel" id="panel-m-sign" aria-labelledby="tab-m-sign" hidden>
+                <div class="phone-shot">
+                  <picture><source type="image/webp" srcset="assets/screens/mobile-sign.webp"><img src="assets/screens/mobile-sign.png"
+                    alt="Mobile signature pad with a drawn signature, the electronic signature disclosure, a ticked consent box and the Sign and Complete Document button."
+                    width="898" height="2000" loading="lazy"></picture>
+                </div>
+              </div>
+              <div class="shot-panel" role="tabpanel" id="panel-m-done" aria-labelledby="tab-m-done" hidden>
+                <div class="phone-shot">
+                  <picture><source type="image/webp" srcset="assets/screens/mobile-sealed.webp"><img src="assets/screens/mobile-sealed.png"
+                    alt="Mobile confirmation screen: Document Signed &amp; Sealed, with the signed file name, sealed SHA-256 fingerprint, Download Signed PDF and Download Evidence Pack buttons."
+                    width="898" height="2000" loading="lazy"></picture>
+                </div>
+              </div>
             </div>
           </div>
         </div>
