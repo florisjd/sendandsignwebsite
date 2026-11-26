@@ -270,6 +270,15 @@ function renderBlogPostPage(post, site) {
   return `<!DOCTYPE html>
 <html lang="en-AU">
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WEELHQXFCT"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-WEELHQXFCT');
+  </script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>${esc(seoTitle)}</title>
@@ -461,6 +470,15 @@ function renderBlogIndex(posts, site) {
   return `<!DOCTYPE html>
 <html lang="en-AU">
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WEELHQXFCT"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-WEELHQXFCT');
+  </script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Blog — SharePoint E-Signatures &amp; Australian Compliance | Send &amp; Sign</title>
