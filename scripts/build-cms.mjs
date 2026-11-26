@@ -13,7 +13,7 @@ import path from 'node:path';
 
 const ROOT = process.cwd();
 const BASE_URL = 'https://sendandsign.online';
-const CSS_VER = '20261126h';
+const CSS_VER = '20261126j';
 const JS_VER = '20261126c';
 
 function esc(str = '') {
@@ -321,7 +321,7 @@ ${jsonLd}
         <li><a data-page="security" href="/security">Security</a></li>
         <li><a data-page="pricing" href="/pricing">Pricing</a></li>
         <li><a data-page="compare" href="/compare">Compare</a></li>
-        <li><a data-page="install" href="/pricing#install">Install guide</a></li>
+        <li><a data-page="install" href="/install">Install guide</a></li>
       </ul>
     </nav>
     <div class="nav-cta">
@@ -339,6 +339,7 @@ ${jsonLd}
       <li><a href="/security">Security</a></li>
       <li><a href="/pricing">Pricing &amp; deployment</a></li>
       <li><a href="/compare">Compare</a></li>
+      <li><a href="/install">Install guide</a></li>
       <li><a href="/blog">Blog</a></li>
       <li><a href="/contact?intent=pilot">Start a pilot</a></li>
     </ul>
@@ -413,7 +414,7 @@ ${renderUnmeteredSection(site.unmetered_banner, true)}
       <div>
         <h4>For IT admins</h4>
         <ul>
-          <li><a href="/pricing#install">Install in 5 steps</a></li>
+          <li><a href="/install">Install guide</a></li>
           <li><a href="/security#checklist">IT verification checklist</a></li>
           <li><a href="/pricing#hosting">Hosting options</a></li>
         </ul>
@@ -521,7 +522,7 @@ function renderBlogIndex(posts, site) {
         <li><a data-page="security" href="/security">Security</a></li>
         <li><a data-page="pricing" href="/pricing">Pricing</a></li>
         <li><a data-page="compare" href="/compare">Compare</a></li>
-        <li><a data-page="install" href="/pricing#install">Install guide</a></li>
+        <li><a data-page="install" href="/install">Install guide</a></li>
       </ul>
     </nav>
     <div class="nav-cta">
@@ -539,6 +540,7 @@ function renderBlogIndex(posts, site) {
       <li><a href="/security">Security</a></li>
       <li><a href="/pricing">Pricing &amp; deployment</a></li>
       <li><a href="/compare">Compare</a></li>
+      <li><a href="/install">Install guide</a></li>
       <li><a href="/blog">Blog</a></li>
       <li><a href="/contact?intent=pilot">Start a pilot</a></li>
     </ul>
@@ -615,7 +617,7 @@ ${renderCtaSection(site.cta_band, '/')}
       <div>
         <h4>For IT admins</h4>
         <ul>
-          <li><a href="/pricing#install">Install in 5 steps</a></li>
+          <li><a href="/install">Install guide</a></li>
           <li><a href="/security#checklist">IT verification checklist</a></li>
           <li><a href="/pricing#hosting">Hosting options</a></li>
         </ul>
@@ -716,6 +718,7 @@ function main() {
     ['/', '1.0'],
     ['/features', '0.9'],
     ['/pricing', '0.9'],
+    ['/install', '0.8'],
     ['/compare', '0.8'],
     ['/security', '0.8'],
     ['/compliance', '0.8'],

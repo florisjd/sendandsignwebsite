@@ -40,7 +40,7 @@
     "body": "See Send & Sign running inside your own SharePoint — from document pick to signed copy back in the same folder — in a 20-minute demo.",
     "primary_label": "Book a demo",
     "primary_url": "/contact",
-    "secondary_label": "Read the 5-step install guide",
-    "secondary_url": "/pricing#install"
+    "secondary_label": "Read the install guide",
+    "secondary_url": "/install"
   }
 }
