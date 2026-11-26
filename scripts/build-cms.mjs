@@ -248,7 +248,7 @@ function renderBlogPostPage(post, site) {
         publisher: {
           '@type': 'Organization',
           name: 'Send & Sign',
-          logo: { '@type': 'ImageObject', url: `${BASE_URL}/assets/logo.svg` },
+          logo: { '@type': 'ImageObject', url: `${BASE_URL}/assets/sendandsign-logo-primary.png` },
         },
         mainEntityOfPage: { '@type': 'WebPage', '@id': url },
       },
@@ -293,10 +293,11 @@ function renderBlogPostPage(post, site) {
   <meta name="twitter:image" content="${esc(ogImg)}">
 
   <meta name="theme-color" content="#fffaf0">
-  <link rel="icon" href="/assets/logo.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="/assets/favicon-16.png" type="image/png" sizes="16x16">
+  <link rel="icon" href="/assets/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="/assets/favicon-48.png" type="image/png" sizes="48x48">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" sizes="180x180">
+  <link rel="manifest" href="/site.webmanifest">
   <link rel="stylesheet" href="/css/styles.css?v=${CSS_VER}">
 
   <script type="application/ld+json">
@@ -309,7 +310,7 @@ ${jsonLd}
 <header class="top-nav">
   <div class="container">
     <a class="brand" href="/" aria-label="Send &amp; Sign home">
-      <img src="/assets/logo.svg" alt="" width="32" height="32">
+      <img src="/assets/sendandsign-mark.png" alt="" width="32" height="32">
       Send &amp; Sign
     </a>
     <nav aria-label="Primary">
@@ -384,7 +385,7 @@ ${renderUnmeteredSection(site.unmetered_banner, true)}
   <div class="container">
     <div class="footer-grid">
       <div>
-        <a class="brand" href="/"><img src="/assets/logo.svg" alt="" width="32" height="32"> Send &amp; Sign</a>
+        <a class="brand" href="/"><img src="/assets/sendandsign-mark.png" alt="" width="32" height="32"> Send &amp; Sign</a>
         <p class="mt-md" style="max-width:320px">SharePoint-native electronic signatures for Australian organisations on Microsoft 365.</p>
         <p class="fine mt-md" style="max-width:340px"><strong>General information only — not legal advice.</strong> Send &amp; Sign supports simple contracts under the <em>Electronic Transactions Act 1999</em> (Cth) s 10. It is not intended for deeds, witnessed instruments, wills or statutory declarations.</p>
       </div>
@@ -479,10 +480,11 @@ function renderBlogIndex(posts, site) {
   <meta name="twitter:image" content="https://sendandsign.online/assets/hero/home-1920.jpg">
 
   <meta name="theme-color" content="#fffaf0">
-  <link rel="icon" href="/assets/logo.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="/assets/favicon-16.png" type="image/png" sizes="16x16">
+  <link rel="icon" href="/assets/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="/assets/favicon-48.png" type="image/png" sizes="48x48">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" sizes="180x180">
+  <link rel="manifest" href="/site.webmanifest">
   <link rel="stylesheet" href="/css/styles.css?v=${CSS_VER}">
 
   <script type="application/ld+json">
@@ -507,7 +509,7 @@ function renderBlogIndex(posts, site) {
 <header class="top-nav">
   <div class="container">
     <a class="brand" href="/" aria-label="Send &amp; Sign home">
-      <img src="/assets/logo.svg" alt="" width="32" height="32">
+      <img src="/assets/sendandsign-mark.png" alt="" width="32" height="32">
       Send &amp; Sign
     </a>
     <nav aria-label="Primary">
@@ -584,7 +586,7 @@ ${renderCtaSection(site.cta_band, '/')}
   <div class="container">
     <div class="footer-grid">
       <div>
-        <a class="brand" href="/"><img src="/assets/logo.svg" alt="" width="32" height="32"> Send &amp; Sign</a>
+        <a class="brand" href="/"><img src="/assets/sendandsign-mark.png" alt="" width="32" height="32"> Send &amp; Sign</a>
         <p class="mt-md" style="max-width:320px">SharePoint-native electronic signatures for Australian organisations on Microsoft 365.</p>
         <p class="fine mt-md" style="max-width:340px"><strong>General information only — not legal advice.</strong> Send &amp; Sign supports simple contracts under the <em>Electronic Transactions Act 1999</em> (Cth) s 10. It is not intended for deeds, witnessed instruments, wills or statutory declarations.</p>
       </div>
