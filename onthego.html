@@ -31,6 +31,57 @@
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" sizes="180x180">
   <link rel="manifest" href="site.webmanifest">
   <link rel="stylesheet" href="css/styles.css?v=20261126j">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://sendandsign.online/" },
+          { "@type": "ListItem", "position": 2, "name": "On the go", "item": "https://sendandsign.online/onthego" }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Do I need to install a separate app?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Send & Sign runs inside the Microsoft SharePoint app and Microsoft Teams for iOS and Android that your team may already use. Open the SharePoint page where your admin added the web part and it's there."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does my IT team need to do anything extra for mobile?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No extra setup. Once Send & Sign is installed and added to a SharePoint page, it works on desktop and in the SharePoint Mobile App with the same sign-in and permissions."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I see only what I'm allowed to see?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. On your phone, Send & Sign runs as you — you can only browse the sites and folders you already have access to in SharePoint."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do my clients need the SharePoint app?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Clients sign in any mobile or desktop browser with a single-use link and a 6-digit email code. They never need a Microsoft account."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
   <script>
     (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
