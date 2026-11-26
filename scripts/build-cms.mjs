@@ -13,7 +13,7 @@ import path from 'node:path';
 
 const ROOT = process.cwd();
 const BASE_URL = 'https://sendandsign.online';
-const CSS_VER = '20261126c';
+const CSS_VER = '20261126e';
 const JS_VER = '20261126c';
 
 function esc(str = '') {

@@ -27,7 +27,7 @@
   <link rel="icon" href="assets/favicon-48.png" type="image/png" sizes="48x48">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" sizes="180x180">
   <link rel="manifest" href="site.webmanifest">
-  <link rel="stylesheet" href="css/styles.css?v=20261126c">
+  <link rel="stylesheet" href="css/styles.css?v=20261126e">
 
   <script type="application/ld+json">
   {
@@ -141,8 +141,8 @@
     <div class="container">
       <div class="hero-panel">
         <p class="eyebrow">SharePoint E-Signature Comparison &middot; Australia</p>
-        <h1 class="display-xl">Why Send &amp; Sign is the cleanest SharePoint-native app.</h1>
-        <p class="lead">Most e-signature tools bolt on an external portal, demand tenant-wide permissions, or require Power Automate flows. Send &amp; Sign lives natively inside SharePoint, Teams, and SharePoint Mobile.</p>
+        <h1 class="display-xl">The cleanest SharePoint&#8209;native e&#8209;signature app.</h1>
+        <p class="lead">No external portal, no tenant-wide permissions, no Power Automate flows — just SharePoint, Teams and mobile.</p>
         <div class="btn-row">
           <a class="btn btn-primary" href="/contact">Book a 20-minute demo</a>
           <a class="btn btn-secondary" href="/contact?intent=pilot">Start a pilot</a>
@@ -158,12 +158,18 @@
         <p class="eyebrow">Side-by-side matrix</p>
         <h2 id="matrix-heading" class="display-lg">Compare SharePoint e&#8209;signature options for Australian M365 teams.</h2>
       </div>
+      <ul class="matrix-legend" aria-label="Key">
+        <li><span class="mark m-y-dot" aria-hidden="true"></span> Meets the need</li>
+        <li><span class="mark m-p-dot" aria-hidden="true"></span> Partly, or with extra cost or setup</li>
+        <li><span class="mark m-n-dot" aria-hidden="true"></span> Gap, or needs extra tools</li>
+        <li><span class="win-tag">Only Send &amp; Sign</span> Where Send &amp; Sign stands apart</li>
+      </ul>
       <div class="data-table-wrap reveal">
         <table class="data-table compare-matrix">
           <thead>
             <tr>
               <th scope="col">Capability</th>
-              <th scope="col" class="col-sas">Send &amp; Sign</th>
+              <th scope="col" class="col-sas"><span class="sas-head"><img src="assets/sendandsign-mark.png" alt="" width="20" height="20"> Send &amp; Sign</span></th>
               <th scope="col">Microsoft 365 eSignature</th>
               <th scope="col">FuseSign (AU)</th>
               <th scope="col">Annature (AU)</th>
@@ -173,75 +179,75 @@
           <tbody>
             <tr>
               <td>Where your staff work</td>
-              <td class="col-sas"><strong>100% inside SharePoint, Teams &amp; SharePoint Mobile</strong> (native SPFx web part)</td>
-              <td>SharePoint &amp; Word desktop</td>
-              <td>External FuseSign web app (with SharePoint file picker)</td>
-              <td>External Annature web portal</td>
-              <td>External SaaS portal or ribbon add-in</td>
+              <td class="col-sas"><span class="mark m-win" aria-hidden="true"></span><span class="win-tag">Only Send &amp; Sign</span><strong>100% inside SharePoint, Teams &amp; SharePoint Mobile</strong> (native SPFx web part)</td>
+              <td class="m-p"><span class="mark" aria-hidden="true"></span><span class="vh">Partly: </span>SharePoint &amp; Word desktop</td>
+              <td class="m-n"><span class="mark" aria-hidden="true"></span><span class="vh">No: </span>External FuseSign web app (with SharePoint file picker)</td>
+              <td class="m-n"><span class="mark" aria-hidden="true"></span><span class="vh">No: </span>External Annature web portal</td>
+              <td class="m-n"><span class="mark" aria-hidden="true"></span><span class="vh">No: </span>External SaaS portal or ribbon add-in</td>
             </tr>
             <tr>
               <td>Auto-saves signed copy to original folder</td>
-              <td class="col-sas"><strong>Yes, built in</strong> — saved as <code>{Name}_Signed.pdf</code> next to untouched original</td>
-              <td>Yes, built in</td>
-              <td>Yes, via Entra background app connector</td>
-              <td>Requires building &amp; maintaining Power Automate cloud flows</td>
-              <td>Requires connector setup / paid integration tier</td>
+              <td class="col-sas"><span class="mark m-win" aria-hidden="true"></span><strong>Yes, built in</strong> — saved as <code>{Name}_Signed.pdf</code> next to untouched original</td>
+              <td class="m-y"><span class="mark" aria-hidden="true"></span><span class="vh">Yes: </span>Yes, built in</td>
+              <td class="m-p"><span class="mark" aria-hidden="true"></span><span class="vh">Partly: </span>Yes, via Entra background app connector</td>
+              <td class="m-n"><span class="mark" aria-hidden="true"></span><span class="vh">No: </span>Requires building &amp; maintaining Power Automate cloud flows</td>
+              <td class="m-p"><span class="mark" aria-hidden="true"></span><span class="vh">Partly: </span>Requires connector setup / paid integration tier</td>
             </tr>
             <tr>
               <td>SharePoint / Graph permissions required</td>
-              <td class="col-sas"><strong>Least privilege:</strong> 4 delegated permissions; signing service holds zero SharePoint/Graph permissions</td>
-              <td>Native M365 tenant service</td>
-              <td>Requires tenant-wide <code>Sites.ReadWrite.All</code> Application permission</td>
-              <td>API keys + Power Automate connector credentials</td>
-              <td>External SaaS connector permissions</td>
+              <td class="col-sas"><span class="mark m-win" aria-hidden="true"></span><strong>Least privilege:</strong> 4 delegated permissions; signing service holds zero SharePoint/Graph permissions</td>
+              <td class="m-y"><span class="mark" aria-hidden="true"></span><span class="vh">Yes: </span>Native M365 tenant service</td>
+              <td class="m-n"><span class="mark" aria-hidden="true"></span><span class="vh">No: </span>Requires tenant-wide <code>Sites.ReadWrite.All</code> Application permission</td>
+              <td class="m-p"><span class="mark" aria-hidden="true"></span><span class="vh">Partly: </span>API keys + Power Automate connector credentials</td>
+              <td class="m-p"><span class="mark" aria-hidden="true"></span><span class="vh">Partly: </span>External SaaS connector permissions</td>
             </tr>
             <tr>
               <td>Azure PAYG or Power Automate required?</td>
-              <td class="col-sas"><strong>No</strong> — zero Azure billing, zero Power Automate, zero PowerShell</td>
-              <td>Yes — requires Azure Pay-As-You-Go subscription (metered per request)</td>
-              <td>No (external SaaS subscription)</td>
-              <td>Yes — Power Automate licence required for SharePoint sync</td>
-              <td>No (per-seat / envelope-capped SaaS plans)</td>
+              <td class="col-sas"><span class="mark m-win" aria-hidden="true"></span><strong>No</strong> — zero Azure billing, zero Power Automate, zero PowerShell</td>
+              <td class="m-n"><span class="mark" aria-hidden="true"></span><span class="vh">No: </span>Yes — requires Azure Pay-As-You-Go subscription (metered per request)</td>
+              <td class="m-y"><span class="mark" aria-hidden="true"></span><span class="vh">Yes: </span>No (external SaaS subscription)</td>
+              <td class="m-n"><span class="mark" aria-hidden="true"></span><span class="vh">No: </span>Yes — Power Automate licence required for SharePoint sync</td>
+              <td class="m-y"><span class="mark" aria-hidden="true"></span><span class="vh">Yes: </span>No (per-seat / envelope-capped SaaS plans)</td>
             </tr>
             <tr>
               <td>External signer experience</td>
-              <td class="col-sas"><strong>Zero login:</strong> single-use link + 6-digit email OTP, mobile dark mode</td>
-              <td>External email link (M365 signing portal)</td>
-              <td>No login (SMS / email verification code)</td>
-              <td>No login (email / SMS verification)</td>
-              <td>No login (email link; frequent account upsells)</td>
+              <td class="col-sas"><span class="mark m-win" aria-hidden="true"></span><strong>Zero login:</strong> single-use link + 6-digit email OTP, mobile dark mode</td>
+              <td class="m-y"><span class="mark" aria-hidden="true"></span><span class="vh">Yes: </span>External email link (M365 signing portal)</td>
+              <td class="m-y"><span class="mark" aria-hidden="true"></span><span class="vh">Yes: </span>No login (SMS / email verification code)</td>
+              <td class="m-y"><span class="mark" aria-hidden="true"></span><span class="vh">Yes: </span>No login (email / SMS verification)</td>
+              <td class="m-p"><span class="mark" aria-hidden="true"></span><span class="vh">Partly: </span>No login (email link; frequent account upsells)</td>
             </tr>
             <tr>
               <td>Multi-party routing</td>
-              <td class="col-sas"><strong>Up to 20 signers</strong> in parallel or sequential order</td>
-              <td>Standard multi-recipient requests</td>
-              <td>Multi-recipient bundles</td>
-              <td>Multi-recipient sequential / parallel</td>
-              <td>Supported (often gated to higher plans)</td>
+              <td class="col-sas"><span class="mark m-win" aria-hidden="true"></span><strong>Up to 20 signers</strong> in parallel or sequential order</td>
+              <td class="m-p"><span class="mark" aria-hidden="true"></span><span class="vh">Partly: </span>Standard multi-recipient requests</td>
+              <td class="m-p"><span class="mark" aria-hidden="true"></span><span class="vh">Partly: </span>Multi-recipient bundles</td>
+              <td class="m-y"><span class="mark" aria-hidden="true"></span><span class="vh">Yes: </span>Multi-recipient sequential / parallel</td>
+              <td class="m-p"><span class="mark" aria-hidden="true"></span><span class="vh">Partly: </span>Supported (often gated to higher plans)</td>
             </tr>
             <tr>
               <td>Interactive AUD &amp; GST proposals</td>
-              <td class="col-sas"><strong>Built in:</strong> clients tick options &amp; tiers with server-verified 10% GST + optional Transform with Claude</td>
-              <td>No (static PDF / Word only)</td>
-              <td>No (static PDF bundles)</td>
-              <td>No (static documents)</td>
-              <td>Separate CPQ / proposal add-on</td>
+              <td class="col-sas"><span class="mark m-win" aria-hidden="true"></span><span class="win-tag">Only Send &amp; Sign</span><strong>Built in:</strong> clients tick options &amp; tiers with server-verified 10% GST + optional Transform with Claude</td>
+              <td class="m-n"><span class="mark" aria-hidden="true"></span><span class="vh">No: </span>No (static PDF / Word only)</td>
+              <td class="m-n"><span class="mark" aria-hidden="true"></span><span class="vh">No: </span>No (static PDF bundles)</td>
+              <td class="m-n"><span class="mark" aria-hidden="true"></span><span class="vh">No: </span>No (static documents)</td>
+              <td class="m-p"><span class="mark" aria-hidden="true"></span><span class="vh">Partly: </span>Separate CPQ / proposal add-on</td>
             </tr>
             <tr>
               <td>Audit trail &amp; cryptographic proof</td>
-              <td class="col-sas"><strong>Multi-page certificate + Original &amp; Signed SHA-256</strong> + exportable RFC 8785 JSON evidence pack</td>
-              <td>Standard PDF audit log</td>
-              <td>PDF signing certificate</td>
-              <td>PDF audit certificate</td>
-              <td>Certificate of Completion</td>
+              <td class="col-sas"><span class="mark m-win" aria-hidden="true"></span><span class="win-tag">Stronger evidence</span><strong>Multi-page certificate + Original &amp; Signed SHA-256</strong> + exportable RFC 8785 JSON evidence pack</td>
+              <td class="m-y"><span class="mark" aria-hidden="true"></span><span class="vh">Yes: </span>Standard PDF audit log</td>
+              <td class="m-y"><span class="mark" aria-hidden="true"></span><span class="vh">Yes: </span>PDF signing certificate</td>
+              <td class="m-y"><span class="mark" aria-hidden="true"></span><span class="vh">Yes: </span>PDF audit certificate</td>
+              <td class="m-y"><span class="mark" aria-hidden="true"></span><span class="vh">Yes: </span>Certificate of Completion</td>
             </tr>
             <tr>
               <td>Setup time for IT admins</td>
-              <td class="col-sas"><strong>5–10 minutes:</strong> upload <code>.sppkg</code>, approve 4 delegated permissions, inspectable zip</td>
-              <td>Enable Syntex PAYG &amp; link Azure billing</td>
-              <td>Entra admin consent + FuseSign workspace setup</td>
-              <td>Create API keys + build 2 Power Automate flows</td>
-              <td>Enterprise tenant setup &amp; user provisioning</td>
+              <td class="col-sas"><span class="mark m-win" aria-hidden="true"></span><span class="win-tag">Fastest setup</span><strong>5–10 minutes:</strong> upload <code>.sppkg</code>, approve 4 delegated permissions, inspectable zip</td>
+              <td class="m-p"><span class="mark" aria-hidden="true"></span><span class="vh">Partly: </span>Enable Syntex PAYG &amp; link Azure billing</td>
+              <td class="m-p"><span class="mark" aria-hidden="true"></span><span class="vh">Partly: </span>Entra admin consent + FuseSign workspace setup</td>
+              <td class="m-n"><span class="mark" aria-hidden="true"></span><span class="vh">No: </span>Create API keys + build 2 Power Automate flows</td>
+              <td class="m-p"><span class="mark" aria-hidden="true"></span><span class="vh">Partly: </span>Enterprise tenant setup &amp; user provisioning</td>
             </tr>
           </tbody>
         </table>
