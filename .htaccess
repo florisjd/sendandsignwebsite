@@ -37,6 +37,8 @@
 # WebP MIME Type & Proxy/CDN Cache Header
 # ==============================================================================
 AddType image/webp .webp
+AddType video/mp4 .mp4
+AddType text/vtt .vtt
 
 <IfModule mod_headers.c>
   # Ensures CDNs and proxies cache WebP and PNG/JPG versions separately
@@ -67,4 +69,6 @@ AddType image/webp .webp
   ExpiresByType text/css "access plus 1 month"
   ExpiresByType application/javascript "access plus 1 month"
   ExpiresByType font/woff2 "access plus 1 year"
+  ExpiresByType video/mp4 "access plus 1 month"
+  ExpiresByType text/vtt "access plus 1 day"
 </IfModule>

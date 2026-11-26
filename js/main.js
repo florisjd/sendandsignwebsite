@@ -231,7 +231,20 @@
     });
   }
 
+  // Product tour: chapter buttons seek the video and start playback.
+  var tour = document.getElementById("productTour");
+  if (tour) {
+    document.querySelectorAll("[data-seek]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var t = parseFloat(btn.getAttribute("data-seek")) || 0;
+        var go = function () { try { tour.currentTime = t; } catch (e) {} var p = tour.play(); if (p && p.catch) p.catch(function () {}); };
+        if (tour.readyState >= 1) go();
+        else { tour.preload = "metadata"; tour.addEventListener("loadedmetadata", go, { once: true }); tour.load(); }
+      });
+    });
+  }
+
   // Footer year
-  var y = document.getElementById("year");
+  var y =document.getElementById("year");
   if (y) y.textContent = String(new Date().getFullYear());
 })();
