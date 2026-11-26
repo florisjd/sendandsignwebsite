@@ -73,7 +73,7 @@
             "name": "Does Send & Sign require tenant-wide SharePoint application permissions like other connectors?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "No. External e-signature connectors often require tenant-wide Sites.ReadWrite.All application permissions so their cloud servers can write signed files back. Send & Sign uses four delegated permissions and a read-only Graph site scope, and the signing service holds zero SharePoint or Graph permissions."
+              "text": "No. External e-signature connectors often require tenant-wide Sites.ReadWrite.All application permissions so their cloud servers can write signed files back. Send & Sign uses five delegated permissions and a read-only Graph site scope, and the signing service holds zero SharePoint or Graph permissions."
             }
           },
           {
@@ -197,7 +197,7 @@
             </tr>
             <tr>
               <td>SharePoint / Graph permissions required</td>
-              <td class="col-sas"><span class="mark m-win" aria-hidden="true"></span><strong>Least privilege:</strong> 4 delegated permissions; signing service holds zero SharePoint/Graph permissions</td>
+              <td class="col-sas"><span class="mark m-win" aria-hidden="true"></span><strong>Least privilege:</strong> 5 delegated permissions; signing service holds zero SharePoint/Graph permissions</td>
               <td class="m-y"><span class="mark" aria-hidden="true"></span><span class="vh">Yes: </span>Native M365 tenant service</td>
               <td class="m-n"><span class="mark" aria-hidden="true"></span><span class="vh">No: </span>Requires tenant-wide <code>Sites.ReadWrite.All</code> Application permission</td>
               <td class="m-p"><span class="mark" aria-hidden="true"></span><span class="vh">Partly: </span>API keys + Power Automate connector credentials</td>
@@ -245,7 +245,7 @@
             </tr>
             <tr>
               <td>Setup time for IT admins</td>
-              <td class="col-sas"><span class="mark m-win" aria-hidden="true"></span><span class="win-tag">Fastest setup</span><strong>5–10 minutes:</strong> upload <code>.sppkg</code>, approve 4 delegated permissions, inspectable zip</td>
+              <td class="col-sas"><span class="mark m-win" aria-hidden="true"></span><span class="win-tag">Fastest setup</span><strong>5–10 minutes:</strong> upload <code>.sppkg</code>, approve 5 delegated permissions, inspectable zip</td>
               <td class="m-p"><span class="mark" aria-hidden="true"></span><span class="vh">Partly: </span>Enable Syntex PAYG &amp; link Azure billing</td>
               <td class="m-p"><span class="mark" aria-hidden="true"></span><span class="vh">Partly: </span>Entra admin consent + FuseSign workspace setup</td>
               <td class="m-n"><span class="mark" aria-hidden="true"></span><span class="vh">No: </span>Create API keys + build 2 Power Automate flows</td>
