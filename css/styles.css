@@ -874,6 +874,15 @@ textarea.text-input { min-height: 120px; resize: vertical; }
 }
 .photo-hero .container { position: relative; display: flex; }
 .photo-hero.panel-right .container { justify-content: flex-end; }
+/* Banner: height follows a ~21:9 image so it isn't zoomed in (pricing) */
+.photo-hero.is-banner {
+  min-height: clamp(460px, min(calc((100vw - 32px) / 2.333), calc(100vh - 88px)), 800px);
+  min-height: clamp(460px, min(calc((100vw - 32px) / 2.333), calc(100svh - 88px)), 800px);
+}
+/* Panel hugs the hero edge instead of the content column, freeing more art */
+.photo-hero.panel-edge .container { max-width: none; padding: 0 clamp(16px, 3vw, 48px); }
+.photo-hero.panel-edge .hero-panel { width: min(100%, 560px); }
+.photo-hero.panel-edge .hero-panel h1 { font-size: clamp(34px, min(3.2vw, 6.6vh), 46px); }
 /* Wider, shorter panel: headline sized to land on 2–3 balanced lines,
    lead capped near 60ch so more of the illustration stays visible. */
 .hero-panel {

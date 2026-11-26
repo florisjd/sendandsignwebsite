@@ -13,7 +13,7 @@ import path from 'node:path';
 
 const ROOT = process.cwd();
 const BASE_URL = 'https://sendandsign.online';
-const CSS_VER = '20261126g';
+const CSS_VER = '20261126h';
 const JS_VER = '20261126c';
 
 function esc(str = '') {
@@ -230,7 +230,7 @@ function renderCoverPicture(coverImage, coverAlt) {
 
 function renderBlogPostPage(post, site) {
   const url = `${BASE_URL}/blog/${post.slug}`;
-  const ogImg = post.cover_image ? `${BASE_URL}${post.cover_image}` : `${BASE_URL}/assets/hero/home-1920.jpg`;
+  const ogImg = post.cover_image ? `${BASE_URL}${post.cover_image}` : `${BASE_URL}/assets/hero/home-v2-1920.jpg`;
   const isoPub = `${post.date}T09:00:00+08:00`;
   const seoTitle = post.seo_title || `${post.title} | Send & Sign`;
   const jsonLd = JSON.stringify({
@@ -473,12 +473,12 @@ function renderBlogIndex(posts, site) {
   <meta property="og:title" content="Blog — SharePoint E-Signatures &amp; Australian Compliance | Send &amp; Sign">
   <meta property="og:description" content="Practical guides on SharePoint electronic signatures, the Electronic Transactions Act 1999 (Cth), and Microsoft 365 governance.">
   <meta property="og:url" content="https://sendandsign.online/blog">
-  <meta property="og:image" content="https://sendandsign.online/assets/hero/home-1920.jpg">
+  <meta property="og:image" content="https://sendandsign.online/assets/hero/home-v2-1920.jpg">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Blog — Send &amp; Sign">
   <meta name="twitter:description" content="Practical guides on SharePoint e-signatures and Australian compliance for Microsoft 365 teams.">
-  <meta name="twitter:image" content="https://sendandsign.online/assets/hero/home-1920.jpg">
+  <meta name="twitter:image" content="https://sendandsign.online/assets/hero/home-v2-1920.jpg">
 
   <meta name="theme-color" content="#fffaf0">
   <link rel="icon" href="/assets/favicon-16.png" type="image/png" sizes="16x16">
