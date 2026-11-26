@@ -13,7 +13,7 @@ import path from 'node:path';
 
 const ROOT = process.cwd();
 const BASE_URL = 'https://sendandsign.online';
-const CSS_VER = '20261126e';
+const CSS_VER = '20261126g';
 const JS_VER = '20261126c';
 
 function esc(str = '') {
@@ -321,6 +321,7 @@ ${jsonLd}
         <li><a data-page="security" href="/security">Security</a></li>
         <li><a data-page="pricing" href="/pricing">Pricing</a></li>
         <li><a data-page="compare" href="/compare">Compare</a></li>
+        <li><a data-page="install" href="/pricing#install">Install guide</a></li>
       </ul>
     </nav>
     <div class="nav-cta">
@@ -520,6 +521,7 @@ function renderBlogIndex(posts, site) {
         <li><a data-page="security" href="/security">Security</a></li>
         <li><a data-page="pricing" href="/pricing">Pricing</a></li>
         <li><a data-page="compare" href="/compare">Compare</a></li>
+        <li><a data-page="install" href="/pricing#install">Install guide</a></li>
       </ul>
     </nav>
     <div class="nav-cta">

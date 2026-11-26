@@ -857,10 +857,13 @@ textarea.text-input { min-height: 120px; resize: vertical; }
   margin: 8px var(--s-md) 0;
   border-radius: var(--r-xl);
   overflow: hidden;
-  min-height: clamp(560px, 52vw, 800px);
+  /* Fit the visible window (minus the 64px nav + 8px gap + a peek of what's next),
+     so the panel never drops below the fold; centre the panel vertically. */
+  min-height: clamp(460px, min(52vw, calc(100vh - 88px)), 800px);
+  min-height: clamp(460px, min(52vw, calc(100svh - 88px)), 800px);
   display: flex;
-  align-items: flex-end;
-  padding: 40px 0;
+  align-items: center;
+  padding: 24px 0;
   background: var(--surface-strong);
 }
 .photo-hero-img {
@@ -883,7 +886,8 @@ textarea.text-input { min-height: 120px; resize: vertical; }
   box-shadow: 0 30px 60px -30px rgba(10, 10, 10, 0.55);
 }
 .hero-panel h1 {
-  font-size: clamp(40px, 3.6vw, 54px); line-height: 1.06; letter-spacing: -0.03em;
+  /* scales with width, and with height on short/zoomed windows */
+  font-size: clamp(34px, min(3.6vw, 6.6vh), 54px); line-height: 1.06; letter-spacing: -0.03em;
   margin: 14px 0 16px; text-wrap: balance;
 }
 .hero-panel .lead { font-size: 17px; line-height: 1.55; max-width: 52ch; text-wrap: pretty; }
@@ -905,7 +909,7 @@ textarea.text-input { min-height: 120px; resize: vertical; }
   .photo-hero.is-dark { background: none; }
   .hero-panel.dark .btn-on-color { background: var(--primary); color: var(--on-primary); }
   .photo-hero { display: block; min-height: 0; padding: 0; background: none; border-radius: 0; margin: 0; overflow: visible; }
-  .photo-hero-img { position: static; display: block; width: calc(100% - 2 * var(--s-md)); margin: 8px var(--s-md) 0; height: auto; aspect-ratio: 16 / 10; border-radius: var(--r-xl); }
+  .photo-hero-img { position: static; display: block; width: calc(100% - 2 * var(--s-md)); margin: 8px var(--s-md) 0; height: auto; aspect-ratio: 16 / 10; border-radius: var(--r-xl); object-position: var(--focus-mobile, var(--focus, center)); }
   .photo-hero .container { display: block; }
   .hero-panel, .hero-panel.dark {
     max-width: none; padding: 32px 0 8px; border-radius: 0;
