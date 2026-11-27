@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Send &amp; Sign Blog</title>
+    <link>https://sendandsign.online/blog</link>
+    <atom:link href="https://sendandsign.online/blog/feed.xml" rel="self" type="application/rss+xml"/>
+    <description>Practical guides on SharePoint e-signatures and Australian compliance for Microsoft 365 teams.</description>
+    <language>en-au</language>
+    <lastBuildDate>Fri, 27 Nov 2026 01:00:00 GMT</lastBuildDate>
+    <item>
+      <title>The Digital Wardrobe Dilemma: 6 Powerful Microsoft 365 Takeaways Most Businesses Miss</title>
+      <link>https://sendandsign.online/blog/microsoft-365-features-businesses-miss</link>
+      <guid isPermaLink="true">https://sendandsign.online/blog/microsoft-365-features-businesses-miss</guid>
+      <pubDate>Fri, 27 Nov 2026 01:00:00 GMT</pubDate>
+      <category>Microsoft 365</category>
+      <category>Microsoft 365 licensing</category>
+      <category>Power Automate</category>
+      <category>SharePoint</category>
+      <category>Microsoft Teams</category>
+      <category>Microsoft Lists</category>
+      <category>Viva Insights</category>
+      <category>Microsoft Stream</category>
+
+      <description>Most organisations pay for far more of Microsoft 365 than they use. Six practical takeaways to uncover hidden tools, avoid licensing traps and get full value from your subscription.</description>
+    </item>
+    <item>
+      <title>Electronic Signatures in Australia: What the Electronic Transactions Act 1999 Actually Requires</title>
+      <link>https://sendandsign.online/blog/electronic-signature-laws-australia</link>
+      <guid isPermaLink="true">https://sendandsign.online/blog/electronic-signature-laws-australia</guid>
+      <pubDate>Tue, 24 Nov 2026 01:00:00 GMT</pubDate>
+      <category>Australian Compliance</category>
+      <category>Electronic signatures</category>
+      <category>ETA 1999</category>
+      <category>Australian law</category>
+      <category>Audit trails</category>
+      <category>Deeds</category>
+      <category>SharePoint</category>
+
+      <description>A practical breakdown of section 10 of the Electronic Transactions Act 1999 (Cth): identification, reliability, consent, simple contracts vs. excluded deeds, and why audit trails matter.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,10 +1,12 @@
 ---
 title: "Electronic Signatures in Australia: What the Electronic Transactions Act 1999 Actually Requires"
-seo_title: "Electronic Signatures in Australia: ETA 1999 Guide | Send & Sign"
-description: "Plain-English guide to the Electronic Transactions Act 1999 (Cth) s 10 for Australian businesses: identification, reliability, consent, deeds, and audit trails."
+seo_title: "Electronic Signatures in Australia: ETA Guide | Send & Sign"
+description: "Are electronic signatures legal in Australia? A plain-English guide to ETA 1999 s 10: identification, reliability, consent, deeds and audit trails."
 excerpt: "A practical breakdown of section 10 of the Electronic Transactions Act 1999 (Cth): identification, reliability, consent, simple contracts vs. excluded deeds, and why audit trails matter."
 date: 2026-11-24
+focus_keyword: "electronic signatures australia"
 category: "Australian Compliance"
+tags: "Electronic signatures, ETA 1999, Australian law, Audit trails, Deeds, SharePoint"
 read_time: "6 min read"
 cover_image: "/assets/blog/eta-1999-1920.jpg"
 cover_alt: "A clay-animated Australian user reviews an electronically signed document on a tablet in front of a laptop running Send & Sign in SharePoint, beside a clay koala figurine."
@@ -14,11 +16,11 @@ published: true
 
 If your team sends quotes, service agreements, NDAs, or employment contracts from Microsoft 365, you have probably been asked by a client—or your own legal counsel—whether an electronic signature actually holds up in Australia.
 
-The short answer is **yes**. Australia's legal framework is deliberately technology-neutral. You do not need a specific brand of e-signature software, and you do not need wet ink for everyday commercial contracts. What matters is whether your signing process satisfies the legal test in **section 10 of the *Electronic Transactions Act 1999* (Cth)** (ETA) and its mirror Acts in every Australian state and territory.
+The short answer is **yes**. Australia's legal framework is deliberately technology-neutral. You do not need a specific brand of e-signature software, and you do not need wet ink for everyday commercial contracts. What matters is whether your signing process satisfies the legal test in **section 10 of the [*Electronic Transactions Act 1999*](https://www.legislation.gov.au/C2004A00553/latest/text) (Cth)** (ETA) and its mirror Acts in every Australian state and territory.
 
 ## The Three Limbs of Section 10
 
-Where an Australian law requires a document to be signed, section 10 of the ETA says an electronic signature satisfies that requirement when three conditions are met together:
+Where an Australian law requires a document to be signed, [section 10 of the ETA](/compliance-eta) says an electronic signature satisfies that requirement when three conditions are met together:
 
 ### 1. Identification and Intention
 
@@ -36,7 +38,7 @@ Reliability is proportional to risk. A typed name at the bottom of an email migh
 - Do you have a timestamped record of when it was sent, opened, verified, and completed?
 - Can you match the signed file back to the exact original version?
 
-Cryptographic **SHA-256 fingerprints** for both the original and signed PDFs, paired with an audit certificate, turn reliability from an argument into verifiable proof.
+Cryptographic **[SHA-256 fingerprints](/security)** for both the original and signed PDFs, paired with an audit certificate, turn reliability from an argument into verifiable proof.
 
 ### 3. Consent
 
@@ -72,4 +74,4 @@ If a client later claims they never saw the final page, or disputes which versio
 
 Compliance does not end when the client clicks *Sign*. Under Australian business record-keeping obligations, you also need to retain the signed document and its audit evidence in a reliable, accessible form.
 
-With third-party e-signature SaaS platforms, signed contracts sit in an external vendor's cloud until someone remembers to download and re-file them. Keeping your signing workflow inside Microsoft 365—where the signed PDF and its audit certificate land automatically back in the original SharePoint folder next to the untouched original—eliminates manual filing gaps and keeps your client records inside your own Microsoft 365 SharePoint tenant.
+With third-party e-signature SaaS platforms, signed contracts sit in an external vendor's cloud until someone remembers to download and re-file them. Keeping your signing workflow [inside Microsoft 365](/features)—where the signed PDF and its audit certificate land automatically back in the original SharePoint folder next to the untouched original—eliminates manual filing gaps and keeps your client records inside your own Microsoft 365 SharePoint tenant.

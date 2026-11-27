@@ -40,15 +40,29 @@ content:
         label: Category
         type: string
         default: "Australian Compliance"
-      - name: read_time
-        label: Reading Time
+      - name: focus_keyword
+        label: Focus keyword (SEO only, not shown; the phrase readers search for)
         type: string
-        default: "5 min read"
+      - name: tags
+        label: Tags (comma-separated, 3–8 topics, e.g. "Power Automate, SharePoint")
+        type: string
+      - name: updated
+        label: Last Updated (optional, shown when a post is revised)
+        type: date
+      - name: author
+        label: Author (optional, defaults to "Send & Sign Team")
+        type: string
+      - name: read_time
+        label: Reading Time (optional, auto-calculated if empty)
+        type: string
       - name: cover_image
         label: Header Image
         type: image
       - name: cover_alt
         label: Header Image Alt Text
+        type: string
+      - name: cover_caption
+        label: Header Image Caption (optional)
         type: string
       - name: legal_notice
         label: Top Callout Notice (optional)
