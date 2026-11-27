@@ -16,7 +16,7 @@ published: true
 
 If your team sends quotes, service agreements, NDAs, or employment contracts from Microsoft 365, you have probably been asked by a client—or your own legal counsel—whether an electronic signature actually holds up in Australia.
 
-The short answer is **yes**. Australia's legal framework is deliberately technology-neutral. You do not need a specific brand of e-signature software, and you do not need wet ink for everyday commercial contracts. What matters is whether your signing process satisfies the legal test in **section 10 of the [*Electronic Transactions Act 1999*](https://www.legislation.gov.au/C2004A00553/latest/text) (Cth)** (ETA) and its mirror Acts in every Australian state and territory.
+The short answer is **yes**. Australia's legal framework is deliberately technology-neutral. You do not need a specific brand of e-signature software, and you do not need wet ink for everyday commercial contracts. What matters is whether your signing process satisfies the legal test in **section 10 of the [*Electronic Transactions Act 1999*](https://www.legislation.gov.au/C2004A00553/latest/text) (Cth)** (ETA) and its mirror Acts in every Australian state and territory. If you also sign with US counterparts, our [US ESIGN and UETA guide](/compliance-us) covers the American rules.
 
 ## The Three Limbs of Section 10
 
@@ -26,7 +26,7 @@ Where an Australian law requires a document to be signed, [section 10 of the ETA
 
 The method must **identify the person** signing and **indicate their intention** in respect of the information in the document.
 
-In practice, this means you need a clear link between the signer and the act of signing—not just an unverified image pasted onto a PDF. A single-use signing link sent to a known email address, combined with a 6-digit email verification code (OTP) and an explicit action to place a signature and submit, directly demonstrates both who signed and that they meant to be bound.
+In practice, this means you need a clear link between the signer and the act of signing—not just an unverified image pasted onto a PDF. A single-use signing link sent to a known email address, combined with a 6-digit email verification code (OTP) and an explicit action to place a signature and submit, directly demonstrates both who signed and that they meant to be bound. Signers can complete the process on a phone or tablet too; see [how on-the-go signing works](/onthego).
 
 ### 2. Reliability
 

@@ -67,10 +67,23 @@ Google rewards pages that show experience, expertise, authority and trust.
 
 ## 5. Links
 
+- **Find the link spots with the script first.**
+  `scripts/link-suggest.py content/blog/<slug>.md` lists every site page and
+  other post, and whether the text already mentions it (`FOUND`), mentions it
+  only generically (`WEAK`), or doesn't (`NONE`). Work through the list.
 - **Internal: at least 3** links to relevant site pages or posts, with
   descriptive anchor text ("our ETA 1999 compliance guide", not "click here" or
   a bare URL). Spread them through the body, not all in one paragraph.
-- **Link back from older posts.** When a new post is published, add a link to it
+- **Where to put them:** a link belongs where the reader is most likely to want
+  the next step: after a claim they might doubt (link to the security or
+  compliance page), after a problem they face (link to the feature that solves
+  it), or in a sentence that promises more detail. Not in headings, table headers,
+  the opening sentence, or a list of links.
+- **Writing a link sentence where none exists:** one short clause that fits the
+  argument, e.g. "Both points are covered in our [security overview](/security)."
+  It must add something the reader can use. Don't change the argument to make
+  room for a link.
+- **Link to the new post from older posts.** When a new post is published, add a link to it
   from 1–2 existing related posts where the text already discusses the topic.
   Leave their `updated` date alone for a link-only change, and report the links added.
 - **External: 1–3** authoritative sources. The renderer opens them in a new tab.

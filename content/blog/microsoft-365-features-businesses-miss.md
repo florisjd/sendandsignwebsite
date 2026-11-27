@@ -34,7 +34,7 @@ When evaluating licence tiers, business owners frequently compare **Microsoft 36
 
 ![A frustrated worker in a high-vis vest waits on a loading browser with broken Wi-Fi, while a relaxed colleague works offline on desktop apps; a scale tips her way.](/assets/blog/microsoft-365-features-businesses-miss-figure-1.jpg "Business Basic runs in the browser; Business Standard adds desktop apps that work offline.")
 
-Because Business Basic does not permit local desktop application installs, every tool must run inside a web browser tab. This makes an uninterrupted internet connection mandatory, creating severe operational bottlenecks for remote staff, field workers or hybrid teams with unstable connections. Furthermore, web-based applications carry strict functional limitations:
+Because Business Basic does not permit local desktop application installs, every tool must run inside a web browser tab. This makes an uninterrupted internet connection mandatory, creating severe operational bottlenecks for remote staff, field workers or hybrid teams with unstable connections. If your field staff sign from their phones, see how [on-the-go signing](/onthego) works. Furthermore, web-based applications carry strict functional limitations:
 
 - Advanced formatting, macro-dependent workflows and complex Excel modelling are restricted or completely unsupported.
 - Core desktop capabilities like mail merge and offline document drafting are unavailable.
@@ -49,7 +49,7 @@ Because Business Basic does not permit local desktop application installs, every
 
 To patch these operational gaps, organisations on Basic often purchase separate third-party subscriptions for scheduling, video hosting or [document management](/compare). This creates **tool proliferation**: a fragmented environment of multiple vendor bills, separate logins, administrative overhead and security risks.
 
-Ultimately, buying cheap licences and patching the functional gaps with external subscriptions costs significantly more than upgrading to Business Standard, which includes locally installed desktop applications capable of working offline.
+Ultimately, buying cheap licences and patching the functional gaps with external subscriptions costs significantly more than upgrading to Business Standard, which includes locally installed desktop applications capable of working offline. Compare the current [plans and pricing](/pricing) before you choose a tier.
 
 ## 3. Zero-code automation: converting messy emails into structured workflows
 
