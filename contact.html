@@ -107,20 +107,20 @@
             <div class="field"><label for="f-email">Work email</label><input class="text-input" id="f-email" name="email" type="email" autocomplete="email" required></div>
           </div>
           <div class="field"><label for="f-company">Company</label><input class="text-input" id="f-company" name="company" autocomplete="organization" required></div>
-          <div class="form-row">
-            <div class="field">
-              <label for="f-country">Country</label>
-              <select class="text-input" id="f-country" name="country" autocomplete="country-name" required>
-                <option value="Australia" selected>Australia</option>
-                <option value="New Zealand">New Zealand</option>
-                <option value="United States">United States</option>
-                <option value="Other">Other</option>
-              </select>
-            </div>
-            <div class="field">
-              <label for="f-state">State or territory</label>
-              <input class="text-input" id="f-state" name="state" placeholder="e.g. WA, NSW, VIC" autocomplete="address-level1" required>
-            </div>
+          <input type="hidden" name="country" value="Australia">
+          <div class="field">
+            <label for="f-state">State or territory</label>
+            <select class="text-input" id="f-state" name="state" autocomplete="address-level1" required>
+              <option value="">Select…</option>
+                <option>ACT</option>
+                <option>NSW</option>
+                <option>NT</option>
+                <option>QLD</option>
+                <option>SA</option>
+                <option>TAS</option>
+                <option>VIC</option>
+                <option>WA</option>
+            </select>
           </div>
           <div class="form-row">
             <div class="field">

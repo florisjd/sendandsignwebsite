@@ -13,6 +13,9 @@
   RewriteCond %{HTTP_HOST} ^www\.sendandsign\.online$ [NC]
   RewriteRule ^(.*)$ https://sendandsign.online/$1 [R=301,L]
 
+  # Retired page (Australia-only site): send old links to the compliance overview
+  RewriteRule ^compliance-us(\.html)?/?$ /compliance [R=301,L]
+
   # 2. Automatically serve WebP if browser supports it and .webp file exists
   RewriteCond %{HTTP_ACCEPT} image/webp
   RewriteCond %{REQUEST_FILENAME} (.+)\.(jpe?g|png)$ [NC]
