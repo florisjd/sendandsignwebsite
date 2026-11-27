@@ -880,7 +880,7 @@ ${NAV_HTML}
       <div class="hero-panel">
         <p class="eyebrow">Send &amp; Sign Blog</p>
         <h1 class="display-xl">Guides for Australian Microsoft&nbsp;365 teams.</h1>
-        <p class="lead">Plain-English breakdowns of Australian electronic-signature law, SharePoint governance, and keeping signed records inside your own tenant.</p>
+        <p class="lead">Plain-English breakdowns of Australian electronic-signature law, SharePoint governance, and keeping signed records filed in your own SharePoint.</p>
         <p class="blog-hero-meta"><span>${posts.length} article${posts.length === 1 ? '' : 's'}</span> <span class="sep" aria-hidden="true">·</span> <a class="text-link" href="/blog/feed.xml">RSS feed</a></p>
       </div>
     </div>

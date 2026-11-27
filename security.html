@@ -85,15 +85,15 @@
 <main id="main">
 
   <section class="photo-hero panel-right is-dark" style="--focus: center">
-    <picture><source type="image/webp" srcset="assets/hero/security-960.webp 960w, assets/hero/security-1920.webp 1920w" sizes="100vw"><img class="photo-hero-img" src="assets/hero/security-1920.jpg" srcset="assets/hero/security-960.jpg 960w, assets/hero/security-1920.jpg 1920w" sizes="100vw" alt="A hooded clay figure at night finds a SharePoint governance page showing documents kept inside Microsoft 365, with third-party storage crossed out." width="1920" height="1072" fetchpriority="high"></picture>
+    <picture><source type="image/webp" srcset="assets/hero/security-960.webp 960w, assets/hero/security-1920.webp 1920w" sizes="100vw"><img class="photo-hero-img" src="assets/hero/security-1920.jpg" srcset="assets/hero/security-960.jpg 960w, assets/hero/security-1920.jpg 1920w" sizes="100vw" alt="A hooded clay figure at night reviews a Send &amp; Sign security, compliance and InfoSec page." width="1920" height="1072" fetchpriority="high"></picture>
     <div class="container">
       <div class="hero-panel dark">
         <p class="eyebrow">Security &amp; architecture</p>
-        <h1 class="display-xl">Your documents stay yours. Your SharePoint stays closed.</h1>
-        <p class="lead">External signers never touch your tenant. A short-lived, encrypted signing bridge verifies them, stamps the document, and hands it back.</p>
+        <h1 class="display-xl">Your team stays in SharePoint. Your signers stay out of it.</h1>
+        <p class="lead">While a document is out for signature, a copy passes through our encrypted signing bridge, so external signers can verify and sign without ever touching your tenant. Then it's deleted on a fixed schedule.</p>
         <div class="btn-row">
-          <a class="btn btn-on-color" href="#permissions">Review the permissions</a>
-          <a class="btn btn-secondary" href="#checklist">IT verification checklist</a>
+          <a class="btn btn-on-color" href="#data-flow">What passes through the bridge</a>
+          <a class="btn btn-secondary" href="#permissions">Review the permissions</a>
         </div>
       </div>
     </div>
@@ -113,17 +113,17 @@
           <ul>
             <li>Staff send and track from the web part</li>
             <li>Tracking lists, hashes and audit logs live here</li>
-            <li>Originals and signed copies are stored here, permanently</li>
+            <li>Originals and signed copies are filed here, permanently</li>
           </ul>
         </div>
         <div class="arch-arrow" aria-hidden="true">⇄</div>
         <div class="arch-node card-teal">
           <p class="eyebrow" style="margin:0;color:var(--on-dark-soft)">Tier 2 · Signing bridge</p>
-          <h3>Encrypted, auto-deleting courier</h3>
+          <h3>Encrypted, temporary courier</h3>
           <ul>
-            <li>AES-256-GCM encrypted while out for signature</li>
+            <li>Holds a copy of the document only while it's out for signature, encrypted with AES-256-GCM</li>
             <li>Holds zero SharePoint or Microsoft Graph permissions</li>
-            <li>Originals deleted on confirmed save-back; signed copies after 7 days; declined/expired within the hour; remaining records after 90 days</li>
+            <li>Deletes it on a fixed schedule (<a href="#data-flow" style="color:#fff;text-decoration:underline">see the timeline</a>)</li>
           </ul>
         </div>
         <div class="arch-arrow" aria-hidden="true">⇄</div>
@@ -136,6 +136,32 @@
             <li>Sees the document only after verification</li>
           </ul>
         </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section anchor-offset" id="data-flow" style="padding-top:0" aria-labelledby="flow-title">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Data flow, stated plainly</p>
+        <h2 id="flow-title" class="display-lg">What passes through the bridge, and when it's deleted.</h2>
+        <p class="lead">Your team works entirely in SharePoint, but a document can't reach an outside signer without leaving your tenant. So while an envelope is out for signature, the signing bridge holds exactly what it needs to verify the signer and stamp the document, for no longer than it needs to.</p>
+      </div>
+      <div class="data-table-wrap reveal">
+        <table class="data-table">
+          <thead><tr><th>What the bridge holds</th><th>Why</th><th>When it's deleted</th></tr></thead>
+          <tbody>
+            <tr><td>The document being signed</td><td>So the signer can read it and the bridge can stamp the signature and certificate onto it.</td><td>As soon as your SharePoint confirms it holds the signed copy, checked against its SHA-256 fingerprint. Declined, cancelled or expired envelopes: within the hour.</td></tr>
+            <tr><td>The signed copy</td><td>Gives signers a short download window in addition to their emailed copy.</td><td>7 days after SharePoint confirms the save-back.</td></tr>
+            <tr><td>Envelope record: signer names and emails, routing, fingerprints and audit events</td><td>Verifies each signer's one-time code, enforces signing order and builds the audit trail.</td><td>After 90 days. Your copy of the audit trail and fingerprints stays in SharePoint for as long as you keep it.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="grid grid-3 mt-lg">
+        <div class="content-card reveal"><h3 class="title-md">Encrypted at rest, always</h3><p>Every document and signer detail on the bridge is encrypted with AES-256-GCM, bound to its envelope, with the key held separately. The bridge refuses to start without encryption.</p></div>
+        <div class="content-card reveal"><h3 class="title-md">No way back into SharePoint</h3><p>The bridge holds zero SharePoint or Microsoft Graph permissions. Signed copies are saved back by the sender's own web part, as the sender, never by our service.</p></div>
+        <div class="content-card reveal"><h3 class="title-md">Want it inside your own cloud?</h3><p>Regulated teams can run the signing bridge in their own Azure subscription. <a href="#dedicated">Ask about dedicated hosting.</a></p></div>
       </div>
     </div>
   </section>
@@ -225,7 +251,7 @@
     </div>
   </section>
 
-  <section class="section" style="padding-top:0">
+  <section class="section anchor-offset" id="dedicated" style="padding-top:0">
     <div class="container">
       <div class="feature-card card-sage reveal" style="padding:48px">
         <div class="split">
