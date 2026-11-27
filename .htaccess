@@ -5,8 +5,8 @@
 <IfModule mod_rewrite.c>
   RewriteEngine On
 
-  # 0. Block direct web access to CMS source, scripts, and dotfiles
-  RewriteRule ^(\.git|\.github|\.pages\.yml|content/|scripts/) - [F,L]
+  # 0. Block direct web access to Git files
+  RewriteRule ^\.git - [F,L]
 
   # 1. Force HTTPS and non-www (canonical domain)
   RewriteCond %{HTTPS} !=on [OR]
