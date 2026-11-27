@@ -16,7 +16,7 @@ const BASE_URL = 'https://sendandsign.online';
 const CSS_VER = '20261127a';
 const JS_VER = '20261126d';
 // Bump BLOG_VER whenever css/blog.css or js/blog.js changes (Hostinger caches assets for 7 days).
-const BLOG_VER = '20261127c';
+const BLOG_VER = '20261127e';
 
 function esc(str = '') {
   return String(str)
@@ -874,15 +874,15 @@ ${rest.map((p) => renderPostCard(p)).join('\n')}
 ${NAV_HTML}
 
 <main id="main">
-  <section class="blog-hero has-art">
-    <div class="blog-hero-art" aria-hidden="true">
-      ${renderPicture('/assets/blog/blog-hero-1920.jpg', '', { sizes: '100vw', eager: true })}
-    </div>
-    <div class="container blog-hero-inner">
-      <p class="eyebrow">Send &amp; Sign Blog</p>
-      <h1 class="blog-hero-title">Guides for Australian Microsoft&nbsp;365 teams.</h1>
-      <p class="lead">Plain-English breakdowns of Australian electronic-signature law, SharePoint governance, and keeping signed records inside your own tenant.</p>
-      <p class="blog-hero-meta"><span>${posts.length} article${posts.length === 1 ? '' : 's'}</span> <span class="sep" aria-hidden="true">·</span> <a class="text-link" href="/blog/feed.xml">RSS feed</a></p>
+  <section class="photo-hero panel-edge is-banner blog-banner" style="--focus: 100% center; --focus-mobile: 70% center">
+    ${renderPicture('/assets/blog/blog-hero-1920.jpg', 'A smiling clay-animated professional reads a tablet in a sunlit Australian reading nook, with a koala figurine, a bookshelf and floating documents.', { sizes: '100vw', eager: true, cls: 'photo-hero-img' })}
+    <div class="container">
+      <div class="hero-panel">
+        <p class="eyebrow">Send &amp; Sign Blog</p>
+        <h1 class="display-xl">Guides for Australian Microsoft&nbsp;365 teams.</h1>
+        <p class="lead">Plain-English breakdowns of Australian electronic-signature law, SharePoint governance, and keeping signed records inside your own tenant.</p>
+        <p class="blog-hero-meta"><span>${posts.length} article${posts.length === 1 ? '' : 's'}</span> <span class="sep" aria-hidden="true">·</span> <a class="text-link" href="/blog/feed.xml">RSS feed</a></p>
+      </div>
     </div>
   </section>
 

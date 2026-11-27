@@ -29,27 +29,9 @@ a.post-kicker:hover { text-decoration: underline; text-underline-offset: 3px; }
 
 /* ---------- index: hero ---------- */
 .blog-hero { padding: 64px 0 32px; }
-/* Hero with scene art: scene sits right, copy sits on the calm left wall */
-.blog-hero.has-art { position: relative; overflow: hidden; padding: 0; min-height: 560px; display: flex; align-items: center; background: var(--canvas); }
-.blog-hero-art { position: absolute; inset: 0; z-index: 0; }
-.blog-hero-art picture { display: block; width: 100%; height: 100%; }
-.blog-hero-art img { width: 100%; height: 100%; object-fit: cover; object-position: 80% 50%; }
-.blog-hero-art::after {
-  content: ""; position: absolute; inset: 0;
-  background: linear-gradient(90deg, var(--canvas) 0%, var(--canvas) 34%, rgba(255, 250, 240, 0) 62%);
-}
-.blog-hero.has-art .blog-hero-inner { position: relative; z-index: 1; padding-top: 72px; padding-bottom: 72px; }
-.blog-hero.has-art .blog-hero-title,
-.blog-hero.has-art .lead { max-width: 30ch; }
-.blog-hero.has-art .lead { max-width: 44ch; }
-.blog-hero-art img { transition: none; }
-@media (max-width: 767px) {
-  .blog-hero.has-art { display: block; min-height: 0; }
-  .blog-hero-art { position: relative; inset: auto; aspect-ratio: 16 / 9; }
-  .blog-hero-art::after { display: none; }
-  .blog-hero-art img { object-position: 70% 50%; }
-  .blog-hero.has-art .blog-hero-inner { padding-top: 28px; padding-bottom: 8px; }
-}
+.blog-hero-meta { margin: var(--s-md) 0 0; font-size: 14px; color: var(--muted); }
+.blog-hero-meta .sep { color: var(--muted-soft); margin: 0 2px; }
+
 .blog-hero .container { max-width: var(--container); }
 .blog-hero-title {
   font-family: var(--font-display); font-weight: 500; color: var(--ink);
@@ -58,6 +40,13 @@ a.post-kicker:hover { text-decoration: underline; text-underline-offset: 3px; }
 }
 .blog-hero .lead { max-width: 60ch; text-wrap: pretty; }
 .blog-hero-meta { margin: var(--s-lg) 0 0; font-size: 14px; color: var(--muted); }
+
+/* Hero card: the character starts about halfway across the art, so the card
+   stays inside the left half at every width where it overlays the image. */
+@media (min-width: 901px) {
+  .photo-hero.panel-edge.blog-banner .hero-panel { width: clamp(340px, 42vw, 560px); padding: 28px clamp(22px, 2.4vw, 36px) 30px; }
+  .photo-hero.panel-edge.blog-banner .hero-panel h1 { font-size: clamp(30px, min(3.2vw, 6.6vh), 46px); }
+}
 
 /* ---------- index: toolbar ---------- */
 .blog-listing { padding-bottom: var(--s-section); }
