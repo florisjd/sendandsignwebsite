@@ -127,7 +127,7 @@
           <tbody>
             <tr>
               <td><strong>s 10(1)(a) — Identification</strong><br><span class="body-sm muted">Who signed</span></td>
-              <td>Each signer receives a unique 256-bit single-use link bound to their email address and must enter a mandatory 6-digit email code before the document unlocks (link-only signing is refused; five wrong codes lock the check). The signer recorded on the certificate is always the code-verified recipient — any differently typed name is stored separately as an adopted signature name.</td>
+              <td>Each signer receives a unique 256-bit single-use link bound to their email address and must enter a mandatory 6-digit email code before the document unlocks (link-only signing is refused; five wrong codes lock the check). Senders can also require an <a class="text-link" href="/signer-verification#access-code">out-of-band access code</a> shared outside email, and returning signers can verify with a <a class="text-link" href="/signer-verification#passkeys">passkey</a>. The signer recorded on the certificate is always the code-verified recipient — any differently typed name is stored separately as an adopted signature name.</td>
             </tr>
             <tr>
               <td><strong>s 10(1)(a) — Intention</strong><br><span class="body-sm muted">They meant to sign</span></td>
@@ -158,6 +158,7 @@
         <h2 class="display-md">The right person, provably.</h2>
         <p class="lead mt-md">In <em>Williams Group Australia Pty Ltd v Crocker</em> [2016] NSWCA 265, the court would not bind a person to an electronic signature that could not be shown to be theirs.</p>
         <p class="mt-md">Send &amp; Sign tethers every signing session to the specific recipient it was issued to with a mandatory 6-digit email code, real client IP and browser capture. The signer's identity on the certificate is always the token-bound, OTP-verified recipient — if someone types a different name, it is recorded separately as an "adopted" signature name.</p>
+        <p class="mt-md">Where email alone isn't enough, such as a personal guarantee, an <a class="text-link" href="/signer-verification">out-of-band access code and device passkeys</a> prove the signer had more than access to an inbox, and each check is recorded on the certificate.</p>
       </div>
       <div class="mockup-frame card-ochre reveal">
         <div class="cert">
@@ -350,6 +351,7 @@
         <ul>
           <li><a href="/compliance">Australian compliance</a></li>
           <li><a href="/security">Security &amp; architecture</a></li>
+          <li><a href="/signer-verification">Signer 2FA &amp; passkeys</a></li>
           <li><a href="/signing-bridge">Signing bridge &amp; data</a></li>
           <li><a href="/security#permissions">API permissions</a></li>
           <li><a href="/security#package">Inside the .sppkg</a></li>

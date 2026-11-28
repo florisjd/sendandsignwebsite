@@ -166,6 +166,8 @@
           <tbody>
             <tr><td>Signing link</td><td>Checked against its stored hash; a secure session cookie lasting 30 minutes is then set</td></tr>
             <tr><td>One-time code</td><td>A 6-digit code is emailed to the signer. The document stays locked until it is verified</td></tr>
+            <tr><td>Access code (if the sender requires one)</td><td>Entered by the signer and checked against a salted <code>scrypt</code> hash. The code itself is never stored (<a class="text-link" href="/signer-verification#access-code">details</a>)</td></tr>
+            <tr><td>Passkey (if the signer saves one)</td><td>A public key and signature counter, keyed by a SHA-256 hash of the signer's email address. No biometric data is received (<a class="text-link" href="/signer-verification#passkeys">details</a>)</td></tr>
             <tr><td>Consent</td><td>Acceptance of electronic signing, with the version and a fingerprint of the exact wording</td></tr>
             <tr><td>Signature and choices</td><td>Drawn, typed or uploaded signature, optional adopted name, signature position, and any proposal options or text entered</td></tr>
             <tr><td>Network evidence</td><td>IP address, browser details, and times in UTC and AWST, captured automatically</td></tr>
@@ -299,6 +301,7 @@
         <ul>
           <li><a href="/compliance">Australian compliance</a></li>
           <li><a href="/security">Security &amp; architecture</a></li>
+          <li><a href="/signer-verification">Signer 2FA &amp; passkeys</a></li>
           <li><a href="/signing-bridge">Signing bridge &amp; data</a></li>
           <li><a href="/security#permissions">API permissions</a></li>
           <li><a href="/security#package">Inside the .sppkg</a></li>

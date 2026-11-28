@@ -133,6 +133,7 @@
           <h3>External signer</h3>
           <ul>
             <li>Single-use link + 6-digit email code</li>
+            <li>Optional out-of-band access code and passkeys (<a href="/signer-verification" style="color:inherit;text-decoration:underline">2FA</a>)</li>
             <li>No Microsoft login, no SharePoint access</li>
             <li>Sees the document only after verification</li>
           </ul>
@@ -177,6 +178,7 @@
         <div class="content-card reveal"><h3 class="title-md">Nothing stored in plaintext</h3><p>Documents and signer details are encrypted with AES-256-GCM, each record bound to its envelope. The key is held on the same server, so this protects backups and disk copies, not a server someone fully controls. <a class="text-link" href="/signing-bridge#protection">Details</a>.</p></div>
         <div class="content-card reveal"><h3 class="title-md">Links that can't be guessed or replayed</h3><p>256-bit single-use links are stored only as SHA-256 hashes — even in your SharePoint lists. After signing, declining or revoking, a link is permanently dead (<code>410 Gone</code>).</p></div>
         <div class="content-card reveal"><h3 class="title-md">Brute-force lockout</h3><p>Five wrong codes lock the challenge, with a 30-second resend cooldown. A forwarded link alone reveals neither the contract nor the other parties.</p></div>
+        <div class="content-card reveal"><h3 class="title-md">Two-factor signing &amp; passkeys</h3><p>Add an access code shared outside email, so a compromised inbox isn't enough. Returning signers can verify with Face ID, Touch ID or Windows Hello. <a class="text-link" href="/signer-verification">How it works</a>.</p></div>
         <div class="content-card reveal"><h3 class="title-md">Tenant-isolated, keyless API</h3><p>Every call from the web part carries the user's Microsoft Entra token. The bridge checks signature, audience, issuer, tenant and scope, accepts only onboarded tenants, and has no shared API keys.</p></div>
         <div class="content-card reveal"><h3 class="title-md">Fail-closed by design</h3><p>If stamping or saving fails, nothing is marked signed. The failure is recorded, surfaced on the dashboard, and retried — and the saved file must match its SHA-256 hash.</p></div>
         <div class="content-card reveal"><h3 class="title-md">Hardened transport &amp; logs</h3><p>HTTPS with HSTS, no-referrer and anti-framing headers, a strict CORS allowlist, and logs that never contain signing links, codes or document contents.</p></div>
@@ -335,6 +337,7 @@
         <ul>
           <li><a href="/compliance">Australian compliance</a></li>
           <li><a href="/security">Security &amp; architecture</a></li>
+          <li><a href="/signer-verification">Signer 2FA &amp; passkeys</a></li>
           <li><a href="/signing-bridge">Signing bridge &amp; data</a></li>
           <li><a href="/security#permissions">API permissions</a></li>
           <li><a href="/security#package">Inside the .sppkg</a></li>
