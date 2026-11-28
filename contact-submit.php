@@ -105,7 +105,7 @@ if ($email === false) {
 $intentLabels = [
     'demo' => 'A demo', 'pilot' => 'Starting a 14-day pilot',
     'claude' => 'Tier 3 (Transform with Claude)', 'custom' => 'Custom branding / volume',
-    'dedicated' => 'Private Azure deployment', 'enterprise' => 'Enterprise roadmap',
+    'dedicated' => 'Custom Implementation (own Azure)', 'enterprise' => 'Enterprise roadmap',
 ];
 $data['Interested in'] = $intentLabels[$data['Interested in']] ?? ($data['Interested in'] ?: 'A demo');
 $data['Interested in Claude'] = $data['Interested in Claude'] === 'yes' ? 'Yes — interactive proposals' : 'No — PDF signing only';

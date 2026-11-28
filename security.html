@@ -160,9 +160,9 @@
         </table>
       </div>
       <div class="grid grid-3 mt-lg">
-        <div class="content-card reveal"><h3 class="title-md">Encrypted at rest, always</h3><p>Every document and signer detail on the bridge is encrypted with AES-256-GCM, bound to its envelope, with the key held separately. The bridge refuses to start without encryption.</p></div>
+        <div class="content-card reveal"><h3 class="title-md">Encrypted at rest, always</h3><p>Every document and signer detail on the bridge is encrypted with AES-256-GCM, bound to its envelope. The bridge refuses to start without encryption.</p></div>
         <div class="content-card reveal"><h3 class="title-md">No way back into SharePoint</h3><p>The bridge holds zero SharePoint or Microsoft Graph permissions. Signed copies are saved back by the sender's own web part, as the sender, never by our service.</p></div>
-        <div class="content-card reveal"><h3 class="title-md">Want it inside your own cloud?</h3><p>Regulated teams can run the signing bridge in their own Azure subscription. <a href="#dedicated">Ask about dedicated hosting.</a></p></div>
+        <div class="content-card reveal"><h3 class="title-md">Want it inside your own cloud?</h3><p>Regulated teams can run the signing bridge in their own Azure subscription. <a href="/custom-implementation">See Custom Implementation.</a></p></div>
       </div>
     </div>
   </section>
@@ -174,7 +174,7 @@
         <h2 class="display-md">Defence in depth, end to end.</h2>
       </div>
       <div class="grid grid-3">
-        <div class="content-card reveal"><h3 class="title-md">Nothing stored in plaintext</h3><p>Documents and signer details are encrypted with AES-256-GCM, each record bound to its envelope. Without the separately held key, the store is unreadable — and the bridge refuses to start unencrypted.</p></div>
+        <div class="content-card reveal"><h3 class="title-md">Nothing stored in plaintext</h3><p>Documents and signer details are encrypted with AES-256-GCM, each record bound to its envelope. The key is held on the same server, so this protects backups and disk copies, not a server someone fully controls. <a class="text-link" href="/signing-bridge#protection">Details</a>.</p></div>
         <div class="content-card reveal"><h3 class="title-md">Links that can't be guessed or replayed</h3><p>256-bit single-use links are stored only as SHA-256 hashes — even in your SharePoint lists. After signing, declining or revoking, a link is permanently dead (<code>410 Gone</code>).</p></div>
         <div class="content-card reveal"><h3 class="title-md">Brute-force lockout</h3><p>Five wrong codes lock the challenge, with a 30-second resend cooldown. A forwarded link alone reveals neither the contract nor the other parties.</p></div>
         <div class="content-card reveal"><h3 class="title-md">Tenant-isolated, keyless API</h3><p>Every call from the web part carries the user's Microsoft Entra token. The bridge checks signature, audience, issuer, tenant and scope, accepts only onboarded tenants, and has no shared API keys.</p></div>
@@ -261,8 +261,8 @@
             <h2 class="display-md">Run your own signing bridge.</h2>
           </div>
           <div>
-            <p>For regulated enterprises and teams with strict cloud-boundary requirements, talk to us about dedicated deployment options using our containerised signing bridge and Azure Bicep templates.</p>
-            <a class="btn btn-primary mt-lg" href="/contact?intent=dedicated">Ask about dedicated hosting</a>
+            <p>For regulated organisations and teams with strict cloud-boundary requirements, our Custom Implementation service deploys a private signing bridge into your own Azure subscription in Australian regions.</p>
+            <a class="btn btn-primary mt-lg" href="/custom-implementation">Explore Custom Implementation</a>
           </div>
         </div>
       </div>
@@ -346,6 +346,7 @@
           <li><a href="/install">Install guide</a></li>
           <li><a href="/security#checklist">IT verification checklist</a></li>
           <li><a href="/pricing#hosting">Hosting options</a></li>
+          <li><a href="/custom-implementation">Custom implementation</a></li>
         </ul>
       </div>
       <div>
