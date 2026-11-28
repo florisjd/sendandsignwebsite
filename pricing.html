@@ -41,8 +41,16 @@
         "applicationCategory": "BusinessApplication",
         "operatingSystem": "Microsoft 365, SharePoint Online, Microsoft Teams, iOS, Android",
         "url": "https://sendandsign.online/pricing",
-        "description": "Flat per-organisation SharePoint electronic signature pricing with unlimited, unmetered envelopes and a 14-day free trial.",
+        "description": "Flat per-organisation SharePoint electronic signature pricing with unlimited, unmetered envelopes on paid plans, a free plan for small teams and a 14-day free trial.",
         "offers": [
+          {
+            "@type": "Offer",
+            "name": "Free",
+            "price": "0",
+            "priceCurrency": "AUD",
+            "description": "Free single-tenant licence with up to 50 envelopes a month and one signer per envelope, for solo workers and teams of two or three.",
+            "url": "https://sendandsign.online/pricing"
+          },
           {
             "@type": "Offer",
             "name": "Tier 1",
@@ -145,7 +153,7 @@
         <div class="hero-panel">
           <p class="eyebrow">Pricing &amp; deployment</p>
           <h1 class="display-xl">Flat per&#8209;organisation pricing. No per&#8209;envelope surprises.</h1>
-          <p class="lead">Flat monthly or annual subscription per organisation — not per user — with a 14-day free trial.</p>
+          <p class="lead">Flat monthly or annual subscription per organisation — not per user — with a 14-day free trial. Small teams can start on the Free plan.</p>
         </div>
       </div>
     </section>
@@ -156,6 +164,31 @@
           <button id="billing-monthly-btn" type="button" style="border:none;background:var(--teal);color:#ffffff;font-weight:600;font-size:14px;padding:8px 18px;border-radius:24px;cursor:pointer;transition:all .15s ease;">Monthly</button>
           <button id="billing-annual-btn" type="button" style="border:none;background:transparent;color:var(--body);font-weight:500;font-size:14px;padding:8px 18px;border-radius:24px;cursor:pointer;transition:all .15s ease;">Annual <span style="background:var(--sage);color:#ffffff;font-size:11px;font-weight:600;padding:2px 8px;border-radius:10px;margin-left:4px;">Save 2 months</span></button>
         </div>
+      </div>
+
+      <div class="container" style="margin-bottom:24px">
+        <article class="pricing-tier standard reveal" id="free" style="background:var(--surface-card);border-color:transparent">
+          <div class="split" style="align-items:start;gap:32px">
+            <div style="display:flex;flex-direction:column;gap:var(--s-md)">
+              <span class="badge-pill badge-live" style="align-self:flex-start"><span class="dot"></span> Free forever</span>
+              <h2 class="title-lg">Free</h2>
+              <div class="price">$0 <span style="font-size:15px;font-weight:500;opacity:.75">/ month</span></div>
+              <p class="muted">A free single-tenant licence for solo workers and teams of two or three people.</p>
+              <a class="btn btn-secondary" href="https://sign.sendandsign.online/setup">Get started free</a>
+            </div>
+            <div>
+              <ul class="check-list">
+                <li><strong>Up to 50 envelopes a month</strong> for one Microsoft 365 tenant</li>
+                <li>One signer per envelope (multi-signer routing is on Tier 2 and up)</li>
+                <li>Send and sign PDF documents</li>
+                <li>6-digit email verification &amp; multi-page certificate</li>
+                <li><a class="text-link" href="/signer-verification">Two-factor access code &amp; passkeys</a> for signers</li>
+                <li>Same-folder save-back &amp; live dashboard</li>
+              </ul>
+              <p class="muted body-sm mt-md">Need more than 50 envelopes a month or more than one signer? Upgrade inside SharePoint at any time.</p>
+            </div>
+          </div>
+        </article>
       </div>
 
       <div class="container grid grid-4">
@@ -225,8 +258,8 @@
           <a class="center muted body-sm" href="/contact?intent=dedicated" style="display:block;text-decoration:underline;">or talk to us</a>
         </article>
       </div>
-      <p class="center muted body-sm mt-lg container">All plans include unlimited, unmetered envelopes — bounded only by
-        your standard Microsoft 365 Outlook sending limits. The only plan allowance is 100 <em>Transform with Claude</em>
+      <p class="center muted body-sm mt-lg container">All paid plans include unlimited, unmetered envelopes — bounded only by
+        your standard Microsoft 365 Outlook sending limits. The Free plan allows 50 envelopes a month. The only other plan allowance is 100 <em>Transform with Claude</em>
         PDF-to-HTML transforms per month on Tier 3 (custom allowances available on Custom plans). <em>Transform with Claude</em> is a voluntary add-on you must agree to: when used, the PDF you select is sent to
         Anthropic in the United States (<a class="text-link" href="/transform-with-claude">details</a>). A Global or SharePoint Administrator can upgrade or renew inside
         SharePoint under <em>Admin → Licence &amp; plan</em>, by Stripe checkout or activation key.</p>
@@ -330,7 +363,7 @@
         <span class="badge-pill badge-on-dark"><span class="dot"></span> Included on every plan</span>
         <h2 id="unmetered-title" class="display-md">Unlimited, unmetered envelopes for every user.</h2>
         <p>No per-envelope fees, no surprise overage bills, and no per-seat metering. Every team member can send as many agreements as they need — bounded only by your standard Microsoft 365 Outlook sending limits.</p>
-        <p class="unmetered-fine">The only monthly allowance is 100 Transform with Claude PDF-to-HTML proposal transforms on Tier 3 (custom allowances available on Custom plans).</p>
+        <p class="unmetered-fine">On every paid plan. The Free plan allows 50 envelopes a month, and Tier 3 includes 100 Transform with Claude PDF-to-HTML proposal transforms a month (custom allowances available on Custom plans).</p>
       </div>
       <div class="unmetered-stat">
         <div class="unmetered-stat-top">
@@ -343,7 +376,7 @@
         <div class="chip-row">
           <span class="chip chip-ok">Flat org pricing</span>
           <span class="chip chip-ok">No seat fees</span>
-          <span class="chip chip-ok">Every tier</span>
+          <span class="chip chip-ok">Every paid tier</span>
         </div>
         <a class="btn btn-primary" href="/pricing">See flat-rate pricing</a>
       </div>
