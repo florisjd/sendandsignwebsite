@@ -19,7 +19,7 @@
   <meta property="og:type" content="website">
   <link rel="canonical" href="https://sendandsign.online/transform-with-claude">
   <meta property="og:url" content="https://sendandsign.online/transform-with-claude">
-  <meta property="og:image" content="https://sendandsign.online/assets/screens/claude-step2-au.png">
+  <meta property="og:image" content="https://sendandsign.online/assets/hero/claude-1920.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="theme-color" content="#fffaf0">
   <link rel="icon" href="assets/favicon-16.png" type="image/png" sizes="16x16">
@@ -35,6 +35,12 @@
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
   })(window,document,'script','dataLayer','GTM-5B7S4TZL');
 </script>
+  <style>
+    @media (min-width: 901px) {
+      .photo-hero.panel-edge.claude-banner .hero-panel { width: clamp(340px, 42vw, 560px); padding: 28px clamp(22px, 2.4vw, 36px) 30px; }
+      .photo-hero.panel-edge.claude-banner .hero-panel h1 { font-size: clamp(30px, min(3.2vw, 6.6vh), 46px); }
+    }
+  </style>
 </head>
 
 <body>
@@ -84,13 +90,14 @@
 
 <main id="main">
 
-  <section class="page-hero" style="padding-bottom:32px">
+  <section class="photo-hero panel-edge is-banner claude-banner" style="--focus: 100% center; --focus-mobile: 100% center">
+    <picture><source type="image/webp" srcset="assets/hero/claude-960.webp 960w, assets/hero/claude-1920.webp 1920w" sizes="100vw"><img class="photo-hero-img" src="assets/hero/claude-1920.jpg" srcset="assets/hero/claude-960.jpg 960w, assets/hero/claude-1920.jpg 1920w" sizes="100vw" alt="A smiling clay-animated man flips a desk switch on as a paper document unfolds into interactive panels with checkboxes, option tiles, a slider and a green tick." width="1920" height="1080" fetchpriority="high"></picture>
     <div class="container">
-      <div class="section-head" style="margin-bottom:0;max-width:860px">
+      <div class="hero-panel">
         <span class="badge-pill"><span class="dot"></span> Voluntary add-on · Tier 3</span>
-        <h1 class="display-xl mt-md">Transform with Claude.</h1>
-        <p class="lead mt-lg">Turn a static PDF proposal into an interactive, mobile-friendly document before you send it for signature. It is optional: it only runs if you agree to it and a member of your team chooses to use it.</p>
-        <div class="btn-row mt-xl">
+        <h1 class="display-xl">Transform with Claude.</h1>
+        <p class="lead">Turn a static PDF proposal into an interactive, mobile-friendly document before you send it. It only runs if you agree to it and someone on your team chooses to use it.</p>
+        <div class="btn-row">
           <a class="btn btn-primary" href="#data">What gets sent</a>
           <a class="btn btn-secondary" href="/pricing">See Tier 3 pricing</a>
         </div>

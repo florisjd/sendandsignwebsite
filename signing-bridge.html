@@ -19,7 +19,7 @@
   <meta property="og:type" content="website">
   <link rel="canonical" href="https://sendandsign.online/signing-bridge">
   <meta property="og:url" content="https://sendandsign.online/signing-bridge">
-  <meta property="og:image" content="https://sendandsign.online/assets/hero/security-v2-1920.jpg">
+  <meta property="og:image" content="https://sendandsign.online/assets/hero/bridge-1920.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="theme-color" content="#fffaf0">
   <link rel="icon" href="assets/favicon-16.png" type="image/png" sizes="16x16">
@@ -43,6 +43,10 @@
       .data-table.stack tr { border-bottom: 1px solid var(--hairline); padding: 10px 0; }
       .data-table.stack tr:last-child { border-bottom: 0; }
       .data-table.stack td { border: 0; padding: 3px 14px; font-size: 15px; }
+    }
+    @media (min-width: 901px) {
+      .photo-hero.panel-edge.bridge-banner .hero-panel { width: clamp(320px, 39vw, 540px); padding: 26px clamp(20px, 2.2vw, 36px) 28px; }
+      .photo-hero.panel-edge.bridge-banner .hero-panel h1 { font-size: clamp(30px, min(3.2vw, 6.6vh), 46px); }
     }
   </style>
 </head>
@@ -94,14 +98,15 @@
 
 <main id="main">
 
-  <section class="page-hero" style="padding-bottom:32px">
+  <section class="photo-hero panel-edge is-banner bridge-banner" style="--focus: 100% 35%; --focus-mobile: 100% center">
+    <picture><source type="image/webp" srcset="assets/hero/bridge-960.webp 960w, assets/hero/bridge-1920.webp 1920w" sizes="100vw"><img class="photo-hero-img" src="assets/hero/bridge-1920.jpg" srcset="assets/hero/bridge-960.jpg 960w, assets/hero/bridge-1920.jpg 1920w" sizes="100vw" alt="A smiling clay-animated woman watches a padlocked envelope cross a small timber bridge from a filing cabinet to a signer's phone, beside a sand timer and a green shield." width="1920" height="1080" fetchpriority="high"></picture>
     <div class="container">
-      <div class="section-head" style="margin-bottom:0;max-width:880px">
+      <div class="hero-panel">
         <span class="badge-pill"><span class="dot"></span> Data handling disclosure · November 2026</span>
-        <h1 class="display-xl mt-md">Inside the signing bridge.</h1>
-        <p class="lead mt-lg">The signing bridge is the temporary, encrypted relay that lets your clients sign without a Microsoft 365 login, then returns the signed copy to your SharePoint. This page sets out what it receives, what it does, how long it keeps each item and where that happens.</p>
+        <h1 class="display-xl">Inside the signing bridge.</h1>
+        <p class="lead">The temporary, encrypted relay that lets your clients sign without a Microsoft 365 login. See what it receives, how long it keeps it and where.</p>
         <p class="mt-md"><strong>The signing bridge is not hosted in Australia.</strong></p>
-        <div class="btn-row mt-xl">
+        <div class="btn-row">
           <a class="btn btn-primary" href="#retention">How long data is kept</a>
           <a class="btn btn-secondary" href="#location">Where it is processed</a>
         </div>
@@ -109,7 +114,7 @@
     </div>
   </section>
 
-  <section class="section anchor-offset" id="principles" style="padding-top:0" aria-labelledby="principles-title">
+  <section class="section anchor-offset" id="principles" style="padding-top:48px" aria-labelledby="principles-title">
     <div class="container">
       <div class="section-head">
         <p class="eyebrow">Principles</p>
