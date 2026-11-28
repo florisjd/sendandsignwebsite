@@ -12,10 +12,10 @@
   </script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>E-Signature Compliance in Australia | Send &amp; Sign</title>
-  <meta name="description" content="How Send &amp; Sign supports Australia's Electronic Transactions Act 1999 (Cth) for simple contracts: identity, intention, consent, audit evidence and exclusions.">
-  <meta property="og:title" content="E-Signature Compliance in Australia | Send &amp; Sign">
-  <meta property="og:description" content="How Send &amp; Sign supports Australia's Electronic Transactions Act 1999 (Cth) for simple contracts: identity, intention, consent, audit evidence and exclusions.">
+  <title>E-Signature Compliance in Australia (ETA 1999) | Send &amp; Sign</title>
+  <meta name="description" content="How Send &amp; Sign meets the Electronic Transactions Act 1999 (Cth) s 9, s 10 and s 12: identity, consent, evidence, retention and what is excluded.">
+  <meta property="og:title" content="E-Signature Compliance in Australia (ETA 1999) | Send &amp; Sign">
+  <meta property="og:description" content="How Send &amp; Sign meets the Electronic Transactions Act 1999 (Cth) s 9, s 10 and s 12: identity, consent, evidence, retention and what is excluded.">
   <meta property="og:type" content="website">
   <link rel="canonical" href="https://sendandsign.online/compliance">
   <meta property="og:url" content="https://sendandsign.online/compliance">
@@ -92,66 +92,61 @@
       <div class="hero-panel">
         <p class="eyebrow">Built for Australia</p>
         <h1 class="display-xl">E&#8209;signature compliance for Australia.</h1>
-        <p class="lead">Built for simple contracts under the <em>Electronic Transactions Act 1999</em> (Cth) and the State and Territory Electronic Transactions Acts.</p>
+        <p class="lead">Built for simple contracts under the <em>Electronic Transactions Act 1999</em> (Cth) and the harmonised State and Territory Electronic Transactions Acts.</p>
         <div class="btn-row">
-          <a class="btn btn-primary" href="/compliance-eta">Australian ETA 1999 guide</a>
+          <a class="btn btn-primary" href="#controls">How we meet each requirement</a>
           <a class="btn btn-secondary" href="#scope">What it covers</a>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="section" style="padding-top:32px" aria-labelledby="guides-title">
-    <div class="container">
-      <div class="section-head">
-        <p class="eyebrow">Australian law and your data</p>
-        <h2 id="guides-title" class="display-md">What you should know up front.</h2>
-      </div>
-      <div class="grid grid-2">
-        <article class="feature-card card-cream reveal">
-          <span class="badge-pill badge-live"><span class="dot"></span> Live · Australia</span>
-          <h3 class="title-lg">Electronic Transactions Act 1999 (Cth)</h3>
-          <p>Full statutory mapping for s 9, s 10 and s 12, <em>Williams Group v Crocker</em> attribution controls, AWST/UTC certificates, data retention and Australian exclusions.</p>
-          <a class="arrow-link mt-sm" href="/compliance-eta">Read the ETA 1999 compliance page</a>
-        </article>
-        <article class="feature-card card-ochre reveal">
-          <span class="badge-pill" style="background:var(--canvas)">Data location</span>
-          <h3 class="title-lg">Our servers are not in Australia</h3>
-          <p>The signing bridge, which holds an encrypted temporary copy while a document is out for signature, is not currently hosted in Australia. Your permanent signed records are filed in your own Microsoft 365 SharePoint.</p>
-          <a class="arrow-link mt-sm" href="/security">See how data is handled</a>
-        </article>
-      </div>
+  <section class="container" style="margin-top:32px">
+    <div class="callout">
+      <span class="ico" aria-hidden="true">!</span>
+      <p><strong>Our servers are not in Australia.</strong> The ETA 1999 does not require servers to be located in Australia, and we do not claim Australian hosting or data residency. The signing bridge holds an encrypted temporary copy while a document is out for signature; your permanent signed records are filed in your own SharePoint. See the <a class="text-link" href="/signing-bridge#location">providers and locations</a>.</p>
     </div>
   </section>
 
-  <section class="section" style="padding-top:0" aria-labelledby="pillars-title">
+  <!-- STATUTORY MAPPING TABLE -->
+  <section class="section anchor-offset" id="controls" style="padding-top:48px" aria-labelledby="controls-title">
     <div class="container">
       <div class="section-head">
-        <p class="eyebrow">Evidentiary foundation</p>
-        <h2 id="pillars-title" class="display-lg">Four pillars, built around the ETA.</h2>
-        <p class="lead">Every envelope records who signed, what they intended, what they consented to and what the document looked like.</p>
+        <p class="eyebrow">ETA 1999 (Cth) s 9, s 10 &amp; s 12</p>
+        <h2 id="controls-title" class="display-lg">How Send &amp; Sign meets each requirement.</h2>
+        <p class="lead">Every envelope sent under Australian law follows the same verifiable chain — from identity check through consent, signing and retention.</p>
       </div>
-      <div class="grid grid-4">
-        <article class="feature-card card-terracotta reveal">
-          <span class="pillar-letter">I</span>
-          <h3 class="title-lg" style="color:#fff">Identity &amp; attribution</h3>
-          <p>Each signer receives a single-use 256-bit link tied to their email, then proves control of that inbox with a 6-digit one-time code (5 wrong attempts locks it) — supporting identification under ETA s 10(1)(a).</p>
-        </article>
-        <article class="feature-card card-teal reveal">
-          <span class="pillar-letter">I</span>
-          <h3 class="title-lg" style="color:#fff">Intention &amp; delivery</h3>
-          <p>Consent and signing stay locked until the document opens on the signer's device. The signer confirms with a deliberate <em>Sign and complete</em> action.</p>
-        </article>
-        <article class="feature-card card-sage reveal">
-          <span class="pillar-letter">R</span>
-          <h3 class="title-lg">Reliability &amp; retention</h3>
-          <p>Server-verified SHA-256 fingerprints, an RFC 8785 hash-chained audit trail, a multi-page certificate (UTC + AWST), and a signed PDF emailed to every party.</p>
-        </article>
-        <article class="feature-card card-ochre reveal">
-          <span class="pillar-letter">C</span>
-          <h3 class="title-lg">Consent &amp; disclosure</h3>
-          <p>Server-owned, versioned consent notices with a paper-copy option. Exact wording hash is recorded per signer.</p>
-        </article>
+      <div class="data-table-wrap reveal">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th style="width:26%">Statutory or case-law requirement</th>
+              <th>How Send &amp; Sign meets it today</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>s 10(1)(a) — Identification</strong><br><span class="body-sm muted">Who signed</span></td>
+              <td>Each signer receives a unique 256-bit single-use link bound to their email address and must enter a mandatory 6-digit email code before the document unlocks (link-only signing is refused; five wrong codes lock the check). The signer recorded on the certificate is always the code-verified recipient — any differently typed name is stored separately as an adopted signature name.</td>
+            </tr>
+            <tr>
+              <td><strong>s 10(1)(a) — Intention</strong><br><span class="body-sm muted">They meant to sign</span></td>
+              <td>Consent and signing remain locked until the document opens on the signer's device. The signer actively draws, types or uploads a signature, ticks the electronic-signature consent box, and confirms with a deliberate <strong>Sign and complete</strong> action (or <strong>Decline</strong> with a reason), recorded as its own <code>IntentConfirmed</code> event.</td>
+            </tr>
+            <tr>
+              <td><strong>s 10(1)(b) — Reliability &amp; <em>Williams Group v Crocker</em> [2016] NSWCA 265</strong></td>
+              <td>Eliminates the shared-password failure mode: mandatory per-recipient 6-digit email OTP, single-use links that cannot be replayed (<code>410 Gone</code> after use), real signer IP address and browser captured per recipient, and server-computed <code>OriginalSha256</code> verification (any mismatch is refused).</td>
+            </tr>
+            <tr>
+              <td><strong>s 10(1)(c) — Consent &amp; paper opt-out</strong><br><span class="body-sm muted">Agreed to sign electronically</span></td>
+              <td>The consent wording (<code>AU-ETA-1999-v1</code>) is defined and served by our signing service — never by the signer's browser — and states that electronic signing is binding and that the signer may choose paper instead. Each signer's acceptance is recorded with the version and SHA-256 fingerprint of the exact wording shown, and printed on the certificate.</td>
+            </tr>
+            <tr>
+              <td><strong>s 9 (Writing) &amp; s 12 (Retention &amp; integrity)</strong><br><span class="body-sm muted">Accessible &amp; unchanged</span></td>
+              <td>Computes pre-signing <code>OriginalSha256</code> and post-signing <code>SignedSha256</code>, chains every event with RFC 8785 canonical JSON + SHA-256, appends a multi-page Certificate of Electronic Signature, attaches the signed PDF (up to 10 MB) to completion emails for every party, and saves <code>{OriginalName}_Signed.pdf</code> (or <code>_Signed.html</code>) back into your SharePoint folder next to the untouched original.</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </section>
@@ -183,12 +178,77 @@
     </div>
   </section>
 
-  <section class="section anchor-offset" id="scope" style="padding-top:0" aria-labelledby="scope-title">
+  <section class="section" style="padding-top:0" id="evidence" aria-labelledby="evidence-title">
+    <div class="container split" style="align-items:start">
+      <div class="reveal">
+        <p class="eyebrow">Evidence on every document</p>
+        <h2 id="evidence-title" class="display-md">What travels with every signed copy.</h2>
+        <ul class="check-list mt-lg">
+          <li><strong>Multi-page Certificate of Electronic Signature:</strong> states the Australian ETA s 10 simple-contract scope (<code>SimpleContract-ETA1999-s10</code>), sender, sent and completed times, identity check used, every signer's OTP verification time, signing time, IP address, browser, adopted name, consent version + text SHA-256, and every event in the signing history.</li>
+          <li><strong>Clear timestamps:</strong> certificate and audit trail events show <strong>UTC and Perth time (AWST)</strong>; visual signature stamps display local AWST time.</li>
+          <li><strong>Independent verification:</strong> export the full RFC 8785 hash-chained audit trail as a JSON evidence pack, or use one-click <strong>Verify HTML integrity</strong> for signed interactive proposals.</li>
+          <li><strong>A copy for every party:</strong> completion emails attach the signed PDF (up to 10 MB) for the sender and every signer, while your permanent copy is filed in SharePoint.</li>
+          <li><strong>Australian privacy notice:</strong> signers see an APP 5 collection notice. Invitation, code and receipt emails are strictly transactional.</li>
+        </ul>
+      </div>
+      <div class="feature-card card-teal reveal">
+        <p class="eyebrow" style="color:var(--on-dark-soft)">Stated plainly</p>
+        <h3 class="title-lg" style="color:#fff">What we don't do yet</h3>
+        <p>We prefer to be clear about what is live today versus what is on our roadmap:</p>
+        <ul class="check-list mt-sm">
+          <li><strong>No PAdES / HSM digital seal yet:</strong> signed PDFs are not yet certificate-sealed, so Adobe Acrobat does not show a "certified" banner. Integrity is demonstrated via SHA-256 fingerprints, the multi-page certificate and the hash-chained audit trail. Hardware-backed PAdES B-LT sealing with RFC 3161 trusted timestamps is on our Enterprise roadmap.</li>
+          <li><strong>Planned for the Enterprise edition, not yet available:</strong> sealing with a hardware security module (Azure Key Vault Managed HSM), SMS one-time codes and Digital ID verification (myID / ConnectID).</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0" id="retention" aria-labelledby="retention-title">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Data minimisation &amp; retention</p>
+        <h2 id="retention-title" class="display-md">Your SharePoint stays the system of record.</h2>
+        <p class="lead">Our signing service holds zero SharePoint or Microsoft Graph permissions and deletes documents as soon as they are no longer needed.</p>
+      </div>
+      <div class="data-table-wrap reveal">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Item on the signing service</th>
+              <th>When it is deleted</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Original document (once signing completes)</td>
+              <td>As soon as your SharePoint confirms it holds the signed copy (verified against its SHA-256 fingerprint).</td>
+            </tr>
+            <tr>
+              <td>Signed copy</td>
+              <td>7 days after SharePoint save-back confirmation (so signers have a download window in addition to their emailed copy).</td>
+            </tr>
+            <tr>
+              <td>Original document (declined, cancelled or expired)</td>
+              <td>Within the hour.</td>
+            </tr>
+            <tr>
+              <td>Remaining envelope record (names, emails, fingerprints, audit trail)</td>
+              <td>After 90 days. Fingerprints and your signed copy stay in your SharePoint for as long as you keep them.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="mt-md">Backups and the full list of data are covered in the <a class="text-link" href="/signing-bridge#retention">signing bridge disclosure</a>.</p>
+    </div>
+  </section>
+
+  <section class="section anchor-offset" id="scope" style="padding-top:0" aria-labelledby="exclusions-title">
+    <span id="exclusions"></span>
     <div class="container">
       <div class="section-head">
         <p class="eyebrow">Clear scope</p>
-        <h2 id="scope-title" class="display-lg">Built for everyday agreements.</h2>
-        <p class="lead">We'd rather be clear about what Send &amp; Sign is for than leave you guessing.</p>
+        <h2 id="exclusions-title" class="display-lg">What Send &amp; Sign is for — and not for.</h2>
+        <p class="lead">Senders see a clear "simple contracts only" notice in Step 1 of the New Envelope wizard.</p>
       </div>
       <div class="grid grid-2">
         <div class="feature-card card-cream reveal">
@@ -196,45 +256,21 @@
           <ul class="check-list">
             <li>Commercial contracts and service agreements</li>
             <li>Quotes and interactive HTML proposals</li>
-            <li>Non-disclosure agreements</li>
+            <li>Non-disclosure agreements (NDAs)</li>
             <li>HR agreements and offer letters</li>
-            <li>Internal and external multi-party sign-offs and approvals</li>
+            <li>Internal and external multi-party approvals (up to 20 signers)</li>
           </ul>
           <p class="body-sm mt-md"><strong>Supported file types:</strong> PDFs and interactive HTML proposals only. Word, Excel and PowerPoint files must be saved as PDF first.</p>
         </div>
         <div class="content-card reveal" style="padding:32px;border-radius:24px">
-          <h3 class="title-lg" style="margin-bottom:16px">Not intended for</h3>
+          <h3 class="title-lg" style="margin-bottom:16px">Not supported under Australian law</h3>
           <ul class="x-list">
-            <li>Deeds (including <em>Corporations Act</em> s 127), witnessed instruments, wills, powers of attorney, statutory declarations, affidavits and land-registry instruments</li>
+            <li>Deeds, including company deeds executed under <em>Corporations Act 2001 (Cth)</em> s 127</li>
+            <li>Documents that must be witnessed</li>
+            <li>Wills, powers of attorney (including enduring) and advance health directives</li>
+            <li>Statutory declarations, affidavits and court documents</li>
+            <li>Land-registry instruments (use PEXA or another ELNO)</li>
             <li>Some documents have further State and Territory rules: get legal advice if you are unsure</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" style="padding-top:0">
-    <div class="container grid grid-3">
-      <div class="content-card reveal"><h3 class="title-md">Australian privacy notice</h3><p>Signers see an APP 5 collection notice. All invitation, code and receipt emails are strictly transactional.</p></div>
-      <div class="content-card reveal"><h3 class="title-md">Exportable evidence pack</h3><p>The complete, hash-chained event history can be exported as a JSON evidence pack and verified independently, for audits or disputes.</p></div>
-      <div class="content-card reveal"><h3 class="title-md">Hosting &amp; sub-processors</h3><p>Our servers are not currently located in Australia. See the <a class="text-link" href="/signing-bridge#location">providers and locations</a>.</p></div>
-    </div>
-  </section>
-
-  <section class="section anchor-offset" id="roadmap" style="padding-top:0">
-    <div class="container">
-      <div class="feature-card card-teal reveal" style="padding:48px">
-        <div class="split" style="align-items:start">
-          <div>
-            <span class="badge-pill badge-on-dark">Enterprise roadmap</span>
-            <h2 class="display-md mt-md" style="color:#fff">Stronger assurance, on the way.</h2>
-            <p class="mt-md">Today's evidence is the SHA-256 fingerprints, certificate page and hash-chained audit trail. These upgrades are planned for the Enterprise edition — they are not yet available.</p>
-          </div>
-          <ul class="check-list" style="margin-top:8px">
-            <li>PAdES B-LT digital sealing with a hardware security module (Azure Key Vault Managed HSM)</li>
-            <li>RFC 3161 trusted timestamps</li>
-            <li>SMS one-time codes</li>
-            <li>Digital ID verification (myID / ConnectID)</li>
           </ul>
         </div>
       </div>
@@ -244,7 +280,7 @@
   <section class="container" style="margin-bottom:var(--s-section)">
     <div class="callout">
       <span class="ico" aria-hidden="true">!</span>
-      <p><strong>General information only — not legal advice.</strong> This page summarises how Send &amp; Sign's controls relate to Australian electronic-signature law (<em>ETA 1999</em>). Please seek advice from qualified Australian legal counsel for your document types.</p>
+      <p><strong>General information only — not legal advice.</strong> This page summarises how Send &amp; Sign's engineering controls map to the <em>Electronic Transactions Act 1999 (Cth)</em> and harmonised State and Territory Acts. Whether a particular document can be signed electronically depends on its type, the parties and the jurisdiction. Please seek advice from qualified Australian legal counsel for your circumstances.</p>
     </div>
   </section>
 
@@ -312,8 +348,7 @@
       <div>
         <h4>Trust</h4>
         <ul>
-          <li><a href="/compliance">Compliance overview</a></li>
-          <li><a href="/compliance-eta">Australian ETA 1999</a></li>
+          <li><a href="/compliance">Australian compliance</a></li>
           <li><a href="/security">Security &amp; architecture</a></li>
           <li><a href="/signing-bridge">Signing bridge &amp; data</a></li>
         </ul>

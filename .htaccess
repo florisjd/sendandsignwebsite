@@ -15,6 +15,8 @@
 
   # Retired page (Australia-only site): send old links to the compliance overview
   RewriteRule ^compliance-us(\.html)?/?$ /compliance [R=301,L]
+  # Merged into the compliance page
+  RewriteRule ^compliance-eta(\.html)?/?$ /compliance [R=301,L]
 
   # 2. Automatically serve WebP if browser supports it and .webp file exists
   RewriteCond %{HTTP_ACCEPT} image/webp
